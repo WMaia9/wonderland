@@ -5,4 +5,12 @@ project-goals
 data
 analysis
 evaluation
-a-caucus-race-and-a-long-tale
+ok-cupid
+introdution-1
+project-goals-1
+data-1
+analysis-1
+evaluation-1
+knowing-the-data
+data-characteristics
+explore-the-data

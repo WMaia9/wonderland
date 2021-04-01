@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Project 2 Medical Insurance Costs: Case study to discover relationships between the amounts charged for life insurance with some customer indexes | Portfolio</title>
-  <meta name="description" content="Project 2 Medical Insurance Costs: Case study to discover relationships between the amounts charged for life insurance with some customer indexes | Portfolio" />
+  <title>Project 3 Ok Cupid | Portfolio</title>
+  <meta name="description" content="Project 3 Ok Cupid | Portfolio" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Project 2 Medical Insurance Costs: Case study to discover relationships between the amounts charged for life insurance with some customer indexes | Portfolio" />
+  <meta property="og:title" content="Project 3 Ok Cupid | Portfolio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Project 2 Medical Insurance Costs: Case study to discover relationships between the amounts charged for life insurance with some customer indexes | Portfolio" />
+  <meta name="twitter:title" content="Project 3 Ok Cupid | Portfolio" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="ok-cupid.html"/>
+<link rel="prev" href="medical-insurance-costs-case-study-to-discover-relationships-between-the-amounts-charged-for-life-insurance-with-some-customer-indexes.html"/>
+
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -112,30 +112,79 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="medical-insurance-costs-case-study-to-discover-relationships-between-the-amounts-charged-for-life-insurance-with-some-customer-indexes" class="section level1" number="2">
-<h1><span class="header-section-number">Project 2</span> Medical Insurance Costs: Case study to discover relationships between the amounts charged for life insurance with some customer indexes</h1>
-<div id="introdution" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Introdution</h2>
-<p>This project we will analyses data from US Medical Insurance Costs. Recently many people are looking for this type of insurance and prices can vary widely according to the user’s data. The main question of this analysis is to answer the final price that users need to pay.</p>
+<div id="ok-cupid" class="section level1" number="3">
+<h1><span class="header-section-number">Project 3</span> Ok Cupid</h1>
+<div id="introdution-1" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Introdution</h2>
+<p>This project analyzes data from on-line dating application OKCupid. In recent years, there has been a massive rise in the usage of dating apps to find love. Many of these apps use sophisticated data science techniques to recommend possible matches to users and to optimize the user experience. These apps give us access to a wealth of information that we’ve never had before about how different people experience romance.</p>
 <p><strong>Data sources:</strong></p>
-<p><code>insurance.csv</code> was provided by Kaggle.com: <a href="https://www.kaggle.com/mirichoi0218/insurance">Medical Cost Personal Datasets</a></p>
-<div id="project-goals" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Project Goals</h3>
-<p>In this project will be make a case study using the linear regression method on Medical Insurance Costs dataset provided by the kaggle</p>
+<p><code>okcupid_profiles.csv</code> was provided by Kaggle.com: <a href="https://www.kaggle.com/andrewmvd/okcupid-profiles">OkCupid Profiles</a></p>
+<div id="project-goals-1" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Project Goals</h3>
+<p>In this project, the goal is analyzes the data from Kaggle using tools of Data Science. The primary research question that will be answered is whether an OkCupid’s user astrological sign can be predicted using other variables from their profiles.</p>
 </div>
-<div id="data" class="section level3" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Data</h3>
-<p>The project has one data set provided by Kaggle called <code>insurance.csv</code>. In the data, each row represents an user and the columns are the responses to their user profiles which include data about them.</p>
+<div id="data-1" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Data</h3>
+<p>The project has one data set provided by Kaggle called <code>okcupid_profiles.csv</code>. In the data, each row represents an OkCupid user and the columns are the responses to their user profiles which include multi-choice and short answer questions.</p>
 </div>
-<div id="analysis" class="section level3" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> Analysis</h3>
-<p>This solution will use descriptive statistics and data visualization to find key figures in understanding the distribution, count, and relationship between variables.</p>
+<div id="analysis-1" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Analysis</h3>
+<p>This solution will use descriptive statistics and data visualization to find key figures in understanding the distribution, count, and relationship between variables. Since the goal of the project to make predictions on the user’s astrological signs, classification algorithms from the supervised learning family of machine learning models will be implemented.</p>
 </div>
-<div id="evaluation" class="section level3" number="2.1.4">
-<h3><span class="header-section-number">2.1.4</span> Evaluation</h3>
-<p>The project will conclude with the evaluation of linear model. A simple case study will be done for one variable and then for multiple variables. After that will be focus on visualizing the adjusted models than will be look at the residual plots and the error band.</p>
+<div id="evaluation-1" class="section level3" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Evaluation</h3>
+<p>The project will conclude with the evaluation of the machine learning model selected with a validation data set. The output of the predictions can be checked through a confusion matrix, and metrics such as accuracy, precision, recall, F1 and Kappa scores.</p>
+</div>
+</div>
+<div id="knowing-the-data" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Knowing the Data</h2>
+<p>To analyze the user profiles from OkCupid, pandas will be used to load the dataset into a <code>DataFrame</code> so that it can be explored and visualized with Python.</p>
+<div id="data-characteristics" class="section level4" number="3.2.0.1">
+<h4><span class="header-section-number">3.2.0.1</span> Data Characteristics</h4>
+<p><code>profiles</code> has 59,946 rows and 31 columns, this is a good sign since there seems to be enough data for machine learning.</p>
+<p>The columns in the dataset include:</p>
+<ul>
+<li><strong>age:</strong> continuous variable of age of user</li>
+<li><strong>body_type:</strong> categorical variable of body type of user</li>
+<li><strong>diet:</strong> categorical variable of dietary information</li>
+<li><strong>drinks:</strong> categorical variable of alcohol consumption</li>
+<li><strong>drugs:</strong> categorical variable of drug usage</li>
+<li><strong>education:</strong> categorical variable of educational attainment</li>
+<li><strong>ethnicity:</strong> categorical variable of ethnic backgrounds</li>
+<li><strong>height:</strong> continuous variable of height of user</li>
+<li><strong>income:</strong> continuous variable of income of user</li>
+<li><strong>job:</strong> categorical variable of employment description</li>
+<li><strong>offspring:</strong> categorical variable of children status</li>
+<li><strong>orientation:</strong> categorical variable of sexual orientation</li>
+<li><strong>pets:</strong> categorical variable of pet preferences</li>
+<li><strong>religion:</strong> categorical variable of religious background</li>
+<li><strong>sex:</strong> categorical variable of gender</li>
+<li><strong>sign:</strong> categorical variable of astrological symbol</li>
+<li><strong>smokes:</strong> categorical variable of smoking consumption</li>
+<li><strong>speaks:</strong> categorical variable of language spoken</li>
+<li><strong>status:</strong> categorical variable of relationship status</li>
+<li><strong>last_online:</strong> date variable of last login</li>
+<li><strong>location:</strong> categorical variable of user locations</li>
+</ul>
+<p>And a set of open short-answer responses to :</p>
+<ul>
+<li><strong>essay0:</strong> My self summary</li>
+<li><strong>essay1:</strong> What I’m doing with my life</li>
+<li><strong>essay2:</strong> I’m really good at</li>
+<li><strong>essay3:</strong> The first thing people usually notice about me</li>
+<li><strong>essay4:</strong> Favorite books, movies, show, music, and food</li>
+<li><strong>essay5:</strong> The six things I could never do without</li>
+<li><strong>essay6:</strong> I spend a lot of time thinking about</li>
+<li><strong>essay7:</strong> On a typical Friday night I am</li>
+<li><strong>essay8:</strong> The most private thing I am willing to admit</li>
+<li><strong>essay9:</strong> You should message me if…</li>
+</ul>
+</div>
+</div>
+<div id="explore-the-data" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Explore the Data</h2>
+<p>First to be explored is the number of unique signs, and the values. It seems that there are 48, but there should only be 12 signs. Upon closer inspection, there seems to be qualifiers attached with the signs.</p>
 
-</div>
 </div>
 </div>
             </section>
@@ -143,8 +192,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ok-cupid.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="medical-insurance-costs-case-study-to-discover-relationships-between-the-amounts-charged-for-life-insurance-with-some-customer-indexes.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -175,7 +224,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/WMaia9/wonderland/edit/master/02-tears.Rmd",
+"link": "https://github.com/WMaia9/wonderland/edit/master/03-race.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -183,7 +232,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/WMaia9/wonderland/blob/master/02-tears.Rmd",
+"link": "https://github.com/WMaia9/wonderland/blob/master/03-race.Rmd",
 "text": null
 },
 "download": null,
