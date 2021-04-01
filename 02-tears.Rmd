@@ -25,3 +25,5 @@ This solution will use descriptive statistics and data visualization to find key
 The project will conclude with the evaluation of linear model. A simple case study will be done for one variable and then for multiple variables. After that will be focus on visualizing the adjusted models than will be look at the residual plots and the error band.
 
 Testando como escrever bem
+
+![](images/project1/Capturar.PNG)
