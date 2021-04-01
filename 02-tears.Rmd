@@ -1,9 +1,7 @@
-# Medical Insurance Costs
-
-## Case study to discover relationships between the amounts charged for life insurance with some customer indexes
+# Medical Insurance Costs: Case study to discover relationships between the amounts charged for life insurance with some customer indexes
 
 
-# Introdution
+## Introdution
 
 This project we will analyses data from US Medical Insurance Costs. Recently many people are looking for this type of insurance and prices can vary widely according to the user's data. The main question of this analysis is to answer the final price that users need to pay.
 

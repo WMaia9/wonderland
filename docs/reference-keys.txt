@@ -1,3 +1,8 @@
 teste
-the-pool-of-tears
+medical-insurance-costs-case-study-to-discover-relationships-between-the-amounts-charged-for-life-insurance-with-some-customer-indexes
+introdution
+project-goals
+data
+analysis
+evaluation
 a-caucus-race-and-a-long-tale
