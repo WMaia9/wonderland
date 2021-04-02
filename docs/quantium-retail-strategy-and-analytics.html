@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Project 3 Quantium Retail Strategy and Analytics | Data Science Portfolio</title>
+  <meta name="description" content="Project 3 Quantium Retail Strategy and Analytics | Data Science Portfolio" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Project 3 Quantium Retail Strategy and Analytics | Data Science Portfolio" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Project 3 Quantium Retail Strategy and Analytics | Data Science Portfolio" />
+  
+  
+  
+
+<meta name="author" content="Wesley Maia" />
+
+
+<meta name="date" content="2021-05-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="medical-insurance-costs.html"/>
+<link rel="next" href="ok-cupid.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#case-studies"><i class="fa fa-check"></i>Case studies</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="author.html"><a href="author.html"><i class="fa fa-check"></i>About Me</a></li>
+<li class="chapter" data-level="1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html"><i class="fa fa-check"></i><b>1</b> GPD And Energy Supply</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#introduction-1"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#data"><i class="fa fa-check"></i><b>1.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#energy-indicators"><i class="fa fa-check"></i><b>1.2.1</b> Energy Indicators</a></li>
+<li class="chapter" data-level="1.2.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#country-gdp"><i class="fa fa-check"></i><b>1.2.2</b> Country GDP</a></li>
+<li class="chapter" data-level="1.2.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#energy-technology"><i class="fa fa-check"></i><b>1.2.3</b> Energy Technology</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#data-analysis"><i class="fa fa-check"></i><b>1.3</b> Data Analysis</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years"><i class="fa fa-check"></i><b>1.3.1</b> What are the top 15 countries for average GDP over the past 10 years?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil"><i class="fa fa-check"></i><b>1.3.2</b> How much did the average GDP vary over the 10-year period for Brazil?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-average-energy-supply-per-capita"><i class="fa fa-check"></i><b>1.3.3</b> What is the average energy supply per capita?</a></li>
+<li class="chapter" data-level="1.3.4" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-percentage-do-countries-use-of-renewable-energy"><i class="fa fa-check"></i><b>1.3.4</b> What percentage do countries use of Renewable Energy?</a></li>
+<li class="chapter" data-level="1.3.5" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita"><i class="fa fa-check"></i><b>1.3.5</b> What is the estimated population size using Energy Supply and Energy Supply per capita?</a></li>
+<li class="chapter" data-level="1.3.6" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-proportion-of-self-citations-to-the-total-citations"><i class="fa fa-check"></i><b>1.3.6</b> What is the proportion of self-citations to the total citations?</a></li>
+<li class="chapter" data-level="1.3.7" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita"><i class="fa fa-check"></i><b>1.3.7</b> What is the correlation between the number of documents cited per capita and the supply of energy per capita?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html"><i class="fa fa-check"></i><b>2</b> Medical Insurance Costs</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#introduction-2"><i class="fa fa-check"></i><b>2.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#project-goals"><i class="fa fa-check"></i><b>2.1.1</b> Project Goals</a></li>
+<li class="chapter" data-level="2.1.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#analysis"><i class="fa fa-check"></i><b>2.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="2.1.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#evaluation"><i class="fa fa-check"></i><b>2.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#data-1"><i class="fa fa-check"></i><b>2.2</b> Data</a></li>
+<li class="chapter" data-level="2.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#exploring-the-data"><i class="fa fa-check"></i><b>2.3</b> Exploring the Data</a></li>
+<li class="chapter" data-level="2.4" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#linear-regression"><i class="fa fa-check"></i><b>2.4</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#interpreting-regression-parameters-in-a-basic-model"><i class="fa fa-check"></i><b>2.4.1</b> Interpreting regression parameters in a basic model</a></li>
+<li class="chapter" data-level="2.4.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#r-square"><i class="fa fa-check"></i><b>2.4.2</b> R-square</a></li>
+<li class="chapter" data-level="2.4.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#adding-more-variables-to-the-model"><i class="fa fa-check"></i><b>2.4.3</b> Adding more variables to the model</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#visualization-of-the-fitted-models"><i class="fa fa-check"></i><b>2.5</b> Visualization of the fitted models</a></li>
+<li class="chapter" data-level="2.6" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#conclusion-1"><i class="fa fa-check"></i><b>2.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html"><i class="fa fa-check"></i><b>3</b> Quantium Retail Strategy and Analytics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#introduction-3"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#data-2"><i class="fa fa-check"></i><b>3.2</b> Data</a></li>
+<li class="chapter" data-level="3.3" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#exploring-the-data-1"><i class="fa fa-check"></i><b>3.3</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#examining-transaction-data"><i class="fa fa-check"></i><b>3.3.1</b> Examining transaction data</a></li>
+<li class="chapter" data-level="3.3.2" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#examining-customer-data"><i class="fa fa-check"></i><b>3.3.2</b> Examining customer data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#data-analysis-on-customer-segments"><i class="fa fa-check"></i><b>3.4</b> Data analysis on customer segments</a></li>
+<li class="chapter" data-level="3.5" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#deep-dive-into-specific-customer-segments-for-insights"><i class="fa fa-check"></i><b>3.5</b> Deep dive into specific customer segments for insights</a></li>
+<li class="chapter" data-level="3.6" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#conclusion-2"><i class="fa fa-check"></i><b>3.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ok-cupid.html"><a href="ok-cupid.html"><i class="fa fa-check"></i><b>4</b> Ok Cupid</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="ok-cupid.html"><a href="ok-cupid.html#introduction-4"><i class="fa fa-check"></i><b>4.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="ok-cupid.html"><a href="ok-cupid.html#project-goals-1"><i class="fa fa-check"></i><b>4.1.1</b> Project Goals</a></li>
+<li class="chapter" data-level="4.1.2" data-path="ok-cupid.html"><a href="ok-cupid.html#analysis-1"><i class="fa fa-check"></i><b>4.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="4.1.3" data-path="ok-cupid.html"><a href="ok-cupid.html#evaluation-1"><i class="fa fa-check"></i><b>4.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ok-cupid.html"><a href="ok-cupid.html#data-3"><i class="fa fa-check"></i><b>4.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="ok-cupid.html"><a href="ok-cupid.html#data-characteristics"><i class="fa fa-check"></i><b>4.2.1</b> Data Characteristics</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="ok-cupid.html"><a href="ok-cupid.html#exploring-the-data-2"><i class="fa fa-check"></i><b>4.3</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="ok-cupid.html"><a href="ok-cupid.html#continuous-variables"><i class="fa fa-check"></i><b>4.3.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="4.3.2" data-path="ok-cupid.html"><a href="ok-cupid.html#discrete-variables"><i class="fa fa-check"></i><b>4.3.2</b> Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="ok-cupid.html"><a href="ok-cupid.html#data-preparation"><i class="fa fa-check"></i><b>4.4</b> Data Preparation</a></li>
+<li class="chapter" data-level="4.5" data-path="ok-cupid.html"><a href="ok-cupid.html#prediction"><i class="fa fa-check"></i><b>4.5</b> Prediction</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="ok-cupid.html"><a href="ok-cupid.html#model-building"><i class="fa fa-check"></i><b>4.5.1</b> Model building</a></li>
+<li class="chapter" data-level="4.5.2" data-path="ok-cupid.html"><a href="ok-cupid.html#evaluation-metrics"><i class="fa fa-check"></i><b>4.5.2</b> Evaluation Metrics</a></li>
+<li class="chapter" data-level="4.5.3" data-path="ok-cupid.html"><a href="ok-cupid.html#logistic-regression"><i class="fa fa-check"></i><b>4.5.3</b> Logistic Regression</a></li>
+<li class="chapter" data-level="4.5.4" data-path="ok-cupid.html"><a href="ok-cupid.html#k-nearest-neighbor"><i class="fa fa-check"></i><b>4.5.4</b> K Nearest Neighbor</a></li>
+<li class="chapter" data-level="4.5.5" data-path="ok-cupid.html"><a href="ok-cupid.html#decision-trees"><i class="fa fa-check"></i><b>4.5.5</b> Decision Trees</a></li>
+<li class="chapter" data-level="4.5.6" data-path="ok-cupid.html"><a href="ok-cupid.html#final-model"><i class="fa fa-check"></i><b>4.5.6</b> Final Model</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="ok-cupid.html"><a href="ok-cupid.html#conclusion-3"><i class="fa fa-check"></i><b>4.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html"><i class="fa fa-check"></i><b>5</b> Real Estate São Paulo Rent Prediction</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#introduction-5"><i class="fa fa-check"></i><b>5.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#analysis-2"><i class="fa fa-check"></i><b>5.1.1</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#data-4"><i class="fa fa-check"></i><b>5.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#data-preparation-1"><i class="fa fa-check"></i><b>5.2.1</b> Data Preparation</a></li>
+<li class="chapter" data-level="5.2.2" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#external-data"><i class="fa fa-check"></i><b>5.2.2</b> External data</a></li>
+<li class="chapter" data-level="5.2.3" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#text-processing"><i class="fa fa-check"></i><b>5.2.3</b> Text Processing</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#model"><i class="fa fa-check"></i><b>5.3</b> Model</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#root-mean-square-error-rmse"><i class="fa fa-check"></i><b>5.3.1</b> <strong>Root Mean Square Error (RMSE)</strong></a></li>
+<li class="chapter" data-level="5.3.2" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#correlation-check"><i class="fa fa-check"></i><b>5.3.2</b> <strong>Correlation Check</strong></a></li>
+<li class="chapter" data-level="5.3.3" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#multicollinearity-analysis"><i class="fa fa-check"></i><b>5.3.3</b> <strong>Multicollinearity Analysis</strong></a></li>
+<li class="chapter" data-level="5.3.4" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#feature-engineering"><i class="fa fa-check"></i><b>5.3.4</b> <strong>Feature Engineering</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#prediction-1"><i class="fa fa-check"></i><b>5.4</b> Prediction</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#linear-models"><i class="fa fa-check"></i><b>5.4.1</b> <strong>Linear Models</strong></a></li>
+<li class="chapter" data-level="5.4.2" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#ensemble-methods"><i class="fa fa-check"></i><b>5.4.2</b> <strong>Ensemble Methods</strong></a></li>
+<li class="chapter" data-level="5.4.3" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#model-stacking"><i class="fa fa-check"></i><b>5.4.3</b> <strong>Model Stacking</strong></a></li>
+<li class="chapter" data-level="5.4.4" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#summary"><i class="fa fa-check"></i><b>5.4.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#use-case-of-the-model"><i class="fa fa-check"></i><b>5.5</b> Use Case of the Model</a></li>
+<li class="chapter" data-level="5.6" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#conclusion-4"><i class="fa fa-check"></i><b>5.6</b> Conclusion</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science Portfolio</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="quantium-retail-strategy-and-analytics" class="section level1" number="3">
+<h1><span class="header-section-number">Project 3</span> Quantium Retail Strategy and Analytics</h1>
+<p>Code: <a href="https://github.com/WMaia9/Quantium-Retail-Strategy-and-Analytics">GitHub</a></p>
+<div id="introduction-3" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Introduction</h2>
+<p>This work is part of the virtual internship program of the company Quantium.</p>
+<p>Quantium is a Data Science company that helps companies with insights and models looking to improve their performance.</p>
+<p>Quantium has had a data partnership with a major supermarket brand in recent years, which provides transactional and customer data.</p>
+<p>The analysis is based on Quantium chip data to better understand the types of customers who buy chips and their buying behavior in the region.</p>
+<p>The analysis insights serve to feed the supermarket’s strategic plan for the chip category.</p>
+</div>
+<div id="data-2" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Data</h2>
+<p>The first step in any analysis is to first understand the data. Let’s take a look at each of the datasets provided.</p>
+</div>
+<div id="exploring-the-data-1" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Exploring the Data</h2>
+<p>Starting with the analysis of the dataset transaction, let’s look at the first few lines.</p>
+<div id="examining-transaction-data" class="section level3" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Examining transaction data</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="center">DATE</th>
+<th align="center">STORE</th>
+<th align="center">LYLTY_CARD</th>
+<th align="center">TXN_ID</th>
+<th align="center">PROD</th>
+<th align="center">NAME</th>
+<th align="center">QTY</th>
+<th align="center">TOT_SALES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">43390</td>
+<td align="center">1</td>
+<td align="center">1000</td>
+<td align="center">1</td>
+<td align="center">5</td>
+<td align="center">Natural Chip Compny SeaSalt175g</td>
+<td align="center">2</td>
+<td align="center">6</td>
+</tr>
+<tr class="even">
+<td align="center">43599</td>
+<td align="center">1</td>
+<td align="center">1307</td>
+<td align="center">348</td>
+<td align="center">66</td>
+<td align="center">CCs Nacho Cheese 175g</td>
+<td align="center">3</td>
+<td align="center">6.3</td>
+</tr>
+<tr class="odd">
+<td align="center">43605</td>
+<td align="center">1</td>
+<td align="center">1343</td>
+<td align="center">383</td>
+<td align="center">61</td>
+<td align="center">Smiths Crinkle Cut Chips Chicken 170g</td>
+<td align="center">2</td>
+<td align="center">2.9</td>
+</tr>
+<tr class="even">
+<td align="center">43329</td>
+<td align="center">2</td>
+<td align="center">2373</td>
+<td align="center">974</td>
+<td align="center">69</td>
+<td align="center">Smiths Chip Thinly S/Cream&amp;Onion 175g</td>
+<td align="center">5</td>
+<td align="center">15</td>
+</tr>
+<tr class="odd">
+<td align="center">43330</td>
+<td align="center">2</td>
+<td align="center">2426</td>
+<td align="center">1038</td>
+<td align="center">108</td>
+<td align="center">Kettle Tortilla ChpsHny&amp;Jlpno Chili 150g</td>
+<td align="center">3</td>
+<td align="center">13.8</td>
+</tr>
+</tbody>
+</table>
+<p>As we are only interested in words that tell us if the product is chips or not, let’s remove all words with digits and special characters such as ‘&amp;’ from our set of product words.</p>
+<p>There are salsa products in the dataset but we are only interested in the chips category, so let’s remove these.</p>
+<p>Next, we can check summary statistics such as mean, min and max values for each feature to see if there are any obvious outliers in the data and if there are any nulls in any of the columns</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">STORE</th>
+<th align="right">QTY</th>
+<th align="right">TOT_SALES</th>
+<th align="right">PROD_SIZE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">count</td>
+<td align="right">246740</td>
+<td align="right">246740</td>
+<td align="right">246740</td>
+<td align="right">246740</td>
+</tr>
+<tr class="even">
+<td align="left">mean</td>
+<td align="right">135.05</td>
+<td align="right">1.90646</td>
+<td align="right">7.31611</td>
+<td align="right">175.584</td>
+</tr>
+<tr class="odd">
+<td align="left">std</td>
+<td align="right">76.787</td>
+<td align="right">0.342499</td>
+<td align="right">2.4749</td>
+<td align="right">59.4321</td>
+</tr>
+<tr class="even">
+<td align="left">min</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1.7</td>
+<td align="right">70</td>
+</tr>
+<tr class="odd">
+<td align="left">25%</td>
+<td align="right">70</td>
+<td align="right">2</td>
+<td align="right">5.8</td>
+<td align="right">150</td>
+</tr>
+<tr class="even">
+<td align="left">50%</td>
+<td align="right">130</td>
+<td align="right">2</td>
+<td align="right">7.4</td>
+<td align="right">170</td>
+</tr>
+<tr class="odd">
+<td align="left">75%</td>
+<td align="right">203</td>
+<td align="right">2</td>
+<td align="right">8.8</td>
+<td align="right">175</td>
+</tr>
+<tr class="even">
+<td align="left">max</td>
+<td align="right">272</td>
+<td align="right">5</td>
+<td align="right">29.5</td>
+<td align="right">380</td>
+</tr>
+</tbody>
+</table>
+<p>There are no nulls in the columns but product quantity appears to have an outlier which we should investigate further. Let’s investigate further the case where 200 packets of chips are bought in one transactions.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">DATE</th>
+<th align="right">STORE</th>
+<th align="right">LYLTY_CARD</th>
+<th align="right">TXN_ID</th>
+<th align="right">PROD</th>
+<th align="left">PROD_NAME</th>
+<th align="right">QTY</th>
+<th align="right">TOT_SALES</th>
+<th align="right">PROD_SIZE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2018-08-19</td>
+<td align="right">226</td>
+<td align="right">226000</td>
+<td align="right">226201</td>
+<td align="right">4</td>
+<td align="left">dorito corn chp supreme</td>
+<td align="right">200</td>
+<td align="right">650</td>
+<td align="right">380</td>
+</tr>
+<tr class="even">
+<td align="left">2019-05-20</td>
+<td align="right">226</td>
+<td align="right">226000</td>
+<td align="right">226210</td>
+<td align="right">4</td>
+<td align="left">dorito corn chp supreme</td>
+<td align="right">200</td>
+<td align="right">650</td>
+<td align="right">380</td>
+</tr>
+</tbody>
+</table>
+<p>There are two transactions where 200 packets of chips are bought in one transaction and both of these transactions were by the same customer. Let’s see if the customer has had other transactions</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">DATE</th>
+<th align="right">STORE</th>
+<th align="right">LYLTY_CARD</th>
+<th align="right">TXN_ID</th>
+<th align="right">PROD</th>
+<th align="left">NAME</th>
+<th align="right">PROD_QTY</th>
+<th align="right">TOT_SALES</th>
+<th align="right">PROD_SIZE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2018-08-19</td>
+<td align="right">226</td>
+<td align="right">226000</td>
+<td align="right">226201</td>
+<td align="right">4</td>
+<td align="left">dorito corn chp supreme</td>
+<td align="right">200</td>
+<td align="right">650</td>
+<td align="right">380</td>
+</tr>
+<tr class="even">
+<td align="left">2019-05-20</td>
+<td align="right">226</td>
+<td align="right">226000</td>
+<td align="right">226210</td>
+<td align="right">4</td>
+<td align="left">dorito corn chp supreme</td>
+<td align="right">200</td>
+<td align="right">650</td>
+<td align="right">380</td>
+</tr>
+</tbody>
+</table>
+<p>It looks like this customer has only had the two transactions over the year and is not an ordinary retail customer. The customer might be buying chips for commercial purposes instead. We remove this loyalty card number from further analysis.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">STORE</th>
+<th align="right">QTY</th>
+<th align="right">TOT_SALES</th>
+<th align="right">PROD_SIZE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">count</td>
+<td align="right">246740</td>
+<td align="right">246740</td>
+<td align="right">246740</td>
+<td align="right">246740</td>
+</tr>
+<tr class="even">
+<td align="left">mean</td>
+<td align="right">135.05</td>
+<td align="right">1.90646</td>
+<td align="right">7.31611</td>
+<td align="right">175.584</td>
+</tr>
+<tr class="odd">
+<td align="left">std</td>
+<td align="right">76.787</td>
+<td align="right">0.342499</td>
+<td align="right">2.4749</td>
+<td align="right">59.4321</td>
+</tr>
+<tr class="even">
+<td align="left">min</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1.7</td>
+<td align="right">70</td>
+</tr>
+<tr class="odd">
+<td align="left">25%</td>
+<td align="right">70</td>
+<td align="right">2</td>
+<td align="right">5.8</td>
+<td align="right">150</td>
+</tr>
+<tr class="even">
+<td align="left">50%</td>
+<td align="right">130</td>
+<td align="right">2</td>
+<td align="right">7.4</td>
+<td align="right">170</td>
+</tr>
+<tr class="odd">
+<td align="left">75%</td>
+<td align="right">203</td>
+<td align="right">2</td>
+<td align="right">8.8</td>
+<td align="right">175</td>
+</tr>
+<tr class="even">
+<td align="left">max</td>
+<td align="right">272</td>
+<td align="right">5</td>
+<td align="right">29.5</td>
+<td align="right">380</td>
+</tr>
+</tbody>
+</table>
+<p>That’s better. Now,looking at the number of transaction lines over time to see if there are any obvious data issues such as missing data, we see that is missing a value. There’s only 364 rows, meaning only 364 dates which indicates a missing date.</p>
+<p>figure 1</p>
+<p><img src="images/project3/1.png" width="900" /></p>
+<p>Zooming in on the data to take a closer look:</p>
+<p><img src="images/project3/2.png" width="900" /></p>
+<p>We can see that the increase in sales occurs in the lead-up to Christmas and that there are zero sales on Christmas day itself. This is due to shops being closed on Christmas day.</p>
+<p>Now that we are satisfied that the data no longer has outliers, we can move on to creating other features such as brand of chips or pack size from PROD_NAME. We start with pack size.</p>
+<p>The largest size is 380g and the smallest size is 70g - seems sensible!</p>
+<p>Let’s plot a histogram of PACK_SIZE since we know that it is a categorical variable and not a continuous variable even though it is numeric.</p>
+<p>figure3</p>
+<p><img src="images/project3/3.png" width="900" /></p>
+</div>
+<div id="examining-customer-data" class="section level3" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Examining customer data</h3>
+<p>Now that we are happy with the transaction dataset, let’s have a look at the customer dataset.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">LYLTY_CARD_NBR</th>
+<th align="left">LIFESTAGE</th>
+<th align="left">PREMIUM_CUSTOMER</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1000</td>
+<td align="left">YOUNG SINGLES/COUPLES</td>
+<td align="left">Premium</td>
+</tr>
+<tr class="even">
+<td align="right">1002</td>
+<td align="left">YOUNG SINGLES/COUPLES</td>
+<td align="left">Mainstream</td>
+</tr>
+<tr class="odd">
+<td align="right">1003</td>
+<td align="left">YOUNG FAMILIES</td>
+<td align="left">Budget</td>
+</tr>
+<tr class="even">
+<td align="right">1004</td>
+<td align="left">OLDER SINGLES/COUPLES</td>
+<td align="left">Mainstream</td>
+</tr>
+<tr class="odd">
+<td align="right">1005</td>
+<td align="left">MIDAGE SINGLES/COUPLES</td>
+<td align="left">Mainstream</td>
+</tr>
+</tbody>
+</table>
+<p>We will now join the two data using the python merge function.</p>
+<table>
+<colgroup>
+<col width="8%" />
+<col width="10%" />
+<col width="5%" />
+<col width="6%" />
+<col width="25%" />
+<col width="3%" />
+<col width="7%" />
+<col width="4%" />
+<col width="16%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">DATE</th>
+<th align="right">LYLTY_CARD_NBR</th>
+<th align="right">TXN_ID</th>
+<th align="right">PROD_NBR</th>
+<th align="left">PROD_NAME</th>
+<th align="right">QTY</th>
+<th align="right">TOT_SALES</th>
+<th align="right">SIZE</th>
+<th align="left">LIFESTAGE</th>
+<th align="left">PREMIUM_CUSTOMER</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2018-10-17</td>
+<td align="right">1000</td>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="left">natural chip compny seasalt</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">175</td>
+<td align="left">YOUNG SINGLES/COUPLES</td>
+<td align="left">Premium</td>
+</tr>
+<tr class="even">
+<td align="left">2019-05-14</td>
+<td align="right">1307</td>
+<td align="right">348</td>
+<td align="right">66</td>
+<td align="left">ccs nacho cheese</td>
+<td align="right">3</td>
+<td align="right">6.3</td>
+<td align="right">175</td>
+<td align="left">MIDAGE SINGLES/COUPLES</td>
+<td align="left">Budget</td>
+</tr>
+<tr class="odd">
+<td align="left">2019-05-20</td>
+<td align="right">1343</td>
+<td align="right">383</td>
+<td align="right">61</td>
+<td align="left">smiths crinkle cut chips chicken</td>
+<td align="right">2</td>
+<td align="right">2.9</td>
+<td align="right">170</td>
+<td align="left">MIDAGE SINGLES/COUPLES</td>
+<td align="left">Budget</td>
+</tr>
+<tr class="even">
+<td align="left">2018-08-17</td>
+<td align="right">2373</td>
+<td align="right">974</td>
+<td align="right">69</td>
+<td align="left">smiths chip thinly cream onion</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">175</td>
+<td align="left">MIDAGE SINGLES/COUPLES</td>
+<td align="left">Budget</td>
+</tr>
+<tr class="odd">
+<td align="left">2018-08-18</td>
+<td align="right">2426</td>
+<td align="right">1038</td>
+<td align="right">108</td>
+<td align="left">kettle tortilla chpshny jlpno chili</td>
+<td align="right">3</td>
+<td align="right">13.8</td>
+<td align="right">150</td>
+<td align="left">MIDAGE SINGLES/COUPLES</td>
+<td align="left">Budget</td>
+</tr>
+</tbody>
+</table>
+<p>As the number of rows in ‘result’ is the same as that of ‘transactionData’, we can be sure that no duplicates were created. This is because we created ‘result’ by setting a left join which means take all the rows in ‘transactionData’ and find rows with matching values in shared columns and then join the details in these rows to the ‘x’ or the first mentioned table.</p>
+</div>
+</div>
+<div id="data-analysis-on-customer-segments" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Data analysis on customer segments</h2>
+<p>Now that the data is ready for analysis, we can define some metrics of interest to the client: - Who spends the most on chips (total sales), describing customers by lifestage and how premium their general purchasing behaviour is - How many customers are in each segment - How many chips are bought per customer by segment - What’s the average chip price by customer segment</p>
+<p>Let’s start with calculating total sales by LIFESTAGE and PREMIUM_CUSTOMER and plotting the split by these segments to describe which customer segment contributes most to chip sales.</p>
+<pre><code>                                          TOT_SALES
+PREMIUM_CUSTOMER LIFESTAGE                        
+Budget           MIDAGE SINGLES/COUPLES   33345.70
+                 NEW FAMILIES             20607.45
+                 OLDER FAMILIES          156863.75
+                 OLDER SINGLES/COUPLES   127833.60
+                 RETIREES                105916.30
+                 YOUNG FAMILIES          129717.95
+                 YOUNG SINGLES/COUPLES    57122.10
+Mainstream       MIDAGE SINGLES/COUPLES   84734.25
+                 NEW FAMILIES             15979.70
+                 OLDER FAMILIES           96413.55
+                 OLDER SINGLES/COUPLES   124648.50
+                 RETIREES                145168.95
+                 YOUNG FAMILIES           86338.25
+                 YOUNG SINGLES/COUPLES   147582.20
+Premium          MIDAGE SINGLES/COUPLES   54443.85
+                 NEW FAMILIES             10760.80
+                 OLDER FAMILIES           75242.60
+                 OLDER SINGLES/COUPLES   123537.55
+                 RETIREES                 91296.65
+                 YOUNG FAMILIES           78571.70
+                 YOUNG SINGLES/COUPLES    39052.30</code></pre>
+<p>Plotting the bar graph of the data, we have:</p>
+<p><img src="images/project3/4.png" width="900" /></p>
+<p>Sales are coming mainly from Budget - older families, Mainstream - young singles/couples, and Mainstream - retirees</p>
+<p>Let’s see if the higher sales are due to there being more customers who buy chips.</p>
+<pre><code>                                         TOT_SALES
+PREMIUM_CUSTOMER LIFESTAGE                        
+Budget           MIDAGE SINGLES/COUPLES   35514.80
+                 NEW FAMILIES             21928.45
+                 OLDER FAMILIES          168363.25
+                 OLDER SINGLES/COUPLES   136769.80
+                 RETIREES                113147.80
+                 YOUNG FAMILIES          139345.85
+                 YOUNG SINGLES/COUPLES    61141.60
+Mainstream       MIDAGE SINGLES/COUPLES   90803.85
+                 NEW FAMILIES             17013.90
+                 OLDER FAMILIES          103445.55
+                 OLDER SINGLES/COUPLES   133393.80
+                 RETIREES                155677.05
+                 YOUNG FAMILIES           92788.75
+                 YOUNG SINGLES/COUPLES   157621.60
+Premium          MIDAGE SINGLES/COUPLES   58432.65
+                 NEW FAMILIES             11491.10
+                 OLDER FAMILIES           81958.40
+                 OLDER SINGLES/COUPLES   132263.15
+                 RETIREES                 97646.05
+                 YOUNG FAMILIES           84025.50
+                 YOUNG SINGLES/COUPLES    41642.10</code></pre>
+<p>Plotting again:</p>
+<p><img src="images/project3/5.png" width="900" /></p>
+<p>There are more Mainstream - young singles/couples and Mainstream - retirees who buy chips. This contributes to there being more sales to these customer segments but this is not a major driver for the Budget - Older families segment.</p>
+<p>Higher sales may also be driven by more units of chips being bought per customer.</p>
+<p>Let’s have a look at this next.</p>
+<p><img src="images/project3/6.png" width="900" /></p>
+<p>Mainstream mid aged and young singles and couples are more willing to pay more per packet of chips compared to their budget and premium counterparts. This may be due to premium shoppers being more likely to buy healthy snacks and when they buy chips, this is mainly for entertainment purposes rather than their own consumption. This is also supported by there being fewer premium mid aged and young singles and couples buying chips compared to their mainstream counterparts.</p>
+<p>As the difference in average price per unit isn’t large, we can check if this difference is statistically different.</p>
+<p>The t-test results &lt; 2.2e-16, i.e. the unit price for mainstream, young and mid-age singles and couples are significantly higher than that of budget or premium, young and mid age singles and couples.</p>
+</div>
+<div id="deep-dive-into-specific-customer-segments-for-insights" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Deep dive into specific customer segments for insights</h2>
+<p>We have found quite a few interesting insights that we can dive deeper into. We might want to target customer segments that contribute the most to sales to retain them or further increase sales. Let’s look at Mainstream - young singles/couples. For instance, let’s find out if they tend to buy a particular brand of chips.</p>
+<pre><code>MIDAGE SINGLES/COUPLES
+smiths crinkle chips salt   vinegar     194
+cheezels cheese                         186
+doritos corn chips  nacho cheese        179
+kettle chilli                           179
+cobs popd sour crm   chives chips       176
+
+YOUNG SINGLES/COUPLES
+tostitos splash of  lime                335
+kettle mozzarella   basil   pesto       332
+doritos corn chips  cheese supreme      326
+smiths crnkle chip  orgnl big bag       323
+kettle tortilla chpshny jlpno chili     323</code></pre>
+<p>We can see that : - Mainstream young singles/couples are 23% more likely to purchase Tyrrells chips compared to the rest of the population - Mainstream young singles/couples are 56% less likely to purchase Burger Rings compared to the rest of the population</p>
+<p>Let’s also find out if our target segment tends to buy large packs of chips.</p>
+<pre><code>MIDAGE SINGLES/COUPLES
+175.0    2975
+150.0    1777
+134.0    1159
+110.0    1124
+170.0     882
+
+MIDAGE SINGLES/COUPLES
+175.0    2975
+150.0    1777
+134.0    1159
+110.0    1124
+170.0     882</code></pre>
+<p>Both the segment buy 175g, 150g and 134g packets mostly</p>
+</div>
+<div id="conclusion-2" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Conclusion</h2>
+<p>Sales have mainly been due to Budget - older families, Mainstream - young singles/couples, and Mainstream - retirees shoppers. We found that the high spend in chips for mainstream young singles/couples and retirees is due to there being more of them than other buyers. Mainstream, midage and young singles and couples are also more likely to pay more per packet of chips. This is indicative of impulse buying behavior.</p>
+<p>We’ve also found that Mainstream young singles and couples are 23% more likely to purchase Tyrrells chips compared to the rest of the population. The Category Manager may want to increase the category’s performance by off-locating some Tyrrells and smaller packs of chips in discretionary space near segments where young singles and couples frequent more often to increase visibility and impulse behavior.</p>
+<p>Quantium can help the Category Manager with recommendations of where these segments are and further help them with measuring the impact of the changed placement. We’ll work on measuring the impact of trials in the next task and putting all these together in the third task.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="medical-insurance-costs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ok-cupid.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdownproj.pdf", "bookdownproj.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

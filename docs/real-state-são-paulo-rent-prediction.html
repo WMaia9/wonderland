@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Project 5 Real State São Paulo Rent Prediction | Data Science Portfolio</title>
+  <meta name="description" content="Project 5 Real State São Paulo Rent Prediction | Data Science Portfolio" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Project 5 Real State São Paulo Rent Prediction | Data Science Portfolio" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Project 5 Real State São Paulo Rent Prediction | Data Science Portfolio" />
+  
+  
+  
+
+<meta name="author" content="Wesley Maia" />
+
+
+<meta name="date" content="2021-04-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ok-cupid.html"/>
+
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#case-studies"><i class="fa fa-check"></i>Case studies</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="author.html"><a href="author.html"><i class="fa fa-check"></i>About Me</a></li>
+<li class="chapter" data-level="1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html"><i class="fa fa-check"></i><b>1</b> GPD And Energy Supply</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#introduction-1"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#data"><i class="fa fa-check"></i><b>1.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#energy-indicators"><i class="fa fa-check"></i><b>1.2.1</b> Energy Indicators</a></li>
+<li class="chapter" data-level="1.2.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#country-gdp"><i class="fa fa-check"></i><b>1.2.2</b> Country GDP</a></li>
+<li class="chapter" data-level="1.2.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#energy-technology"><i class="fa fa-check"></i><b>1.2.3</b> Energy Technology</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#data-analysis"><i class="fa fa-check"></i><b>1.3</b> Data Analysis</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years"><i class="fa fa-check"></i><b>1.3.1</b> What are the top 15 countries for average GDP over the past 10 years?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil"><i class="fa fa-check"></i><b>1.3.2</b> How much did the average GDP vary over the 10-year period for Brazil?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-average-energy-supply-per-capita"><i class="fa fa-check"></i><b>1.3.3</b> What is the average energy supply per capita?</a></li>
+<li class="chapter" data-level="1.3.4" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-percentage-do-countries-use-of-renewable-energy"><i class="fa fa-check"></i><b>1.3.4</b> What percentage do countries use of Renewable Energy?</a></li>
+<li class="chapter" data-level="1.3.5" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita"><i class="fa fa-check"></i><b>1.3.5</b> What is the estimated population size using Energy Supply and Energy Supply per capita?</a></li>
+<li class="chapter" data-level="1.3.6" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-proportion-of-self-citations-to-the-total-citations"><i class="fa fa-check"></i><b>1.3.6</b> What is the proportion of self-citations to the total citations?</a></li>
+<li class="chapter" data-level="1.3.7" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita"><i class="fa fa-check"></i><b>1.3.7</b> What is the correlation between the number of documents cited per capita and the supply of energy per capita?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html"><i class="fa fa-check"></i><b>2</b> Medical Insurance Costs</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#introduction-2"><i class="fa fa-check"></i><b>2.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#project-goals"><i class="fa fa-check"></i><b>2.1.1</b> Project Goals</a></li>
+<li class="chapter" data-level="2.1.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#analysis"><i class="fa fa-check"></i><b>2.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="2.1.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#evaluation"><i class="fa fa-check"></i><b>2.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#data-1"><i class="fa fa-check"></i><b>2.2</b> Data</a></li>
+<li class="chapter" data-level="2.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#exploring-the-data"><i class="fa fa-check"></i><b>2.3</b> Exploring the Data</a></li>
+<li class="chapter" data-level="2.4" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#linear-regression"><i class="fa fa-check"></i><b>2.4</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#interpreting-regression-parameters-in-a-basic-model"><i class="fa fa-check"></i><b>2.4.1</b> Interpreting regression parameters in a basic model</a></li>
+<li class="chapter" data-level="2.4.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#r-square"><i class="fa fa-check"></i><b>2.4.2</b> R-square</a></li>
+<li class="chapter" data-level="2.4.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#adding-more-variables-to-the-model"><i class="fa fa-check"></i><b>2.4.3</b> Adding more variables to the model</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#visualization-of-the-fitted-models"><i class="fa fa-check"></i><b>2.5</b> Visualization of the fitted models</a></li>
+<li class="chapter" data-level="2.6" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#conclusion-1"><i class="fa fa-check"></i><b>2.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html"><i class="fa fa-check"></i><b>3</b> Quantium Retail Strategy and Analytics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#introduction-3"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#data-2"><i class="fa fa-check"></i><b>3.2</b> Data</a></li>
+<li class="chapter" data-level="3.3" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#exploring-the-data-1"><i class="fa fa-check"></i><b>3.3</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#examining-transaction-data"><i class="fa fa-check"></i><b>3.3.1</b> Examining transaction data</a></li>
+<li class="chapter" data-level="3.3.2" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#examining-customer-data"><i class="fa fa-check"></i><b>3.3.2</b> Examining customer data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#data-analysis-on-customer-segments"><i class="fa fa-check"></i><b>3.4</b> Data analysis on customer segments</a></li>
+<li class="chapter" data-level="3.5" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#deep-dive-into-specific-customer-segments-for-insights"><i class="fa fa-check"></i><b>3.5</b> Deep dive into specific customer segments for insights</a></li>
+<li class="chapter" data-level="3.6" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#conclusion-2"><i class="fa fa-check"></i><b>3.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ok-cupid.html"><a href="ok-cupid.html"><i class="fa fa-check"></i><b>4</b> Ok Cupid</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="ok-cupid.html"><a href="ok-cupid.html#introduction-4"><i class="fa fa-check"></i><b>4.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="ok-cupid.html"><a href="ok-cupid.html#project-goals-1"><i class="fa fa-check"></i><b>4.1.1</b> Project Goals</a></li>
+<li class="chapter" data-level="4.1.2" data-path="ok-cupid.html"><a href="ok-cupid.html#analysis-1"><i class="fa fa-check"></i><b>4.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="4.1.3" data-path="ok-cupid.html"><a href="ok-cupid.html#evaluation-1"><i class="fa fa-check"></i><b>4.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ok-cupid.html"><a href="ok-cupid.html#data-3"><i class="fa fa-check"></i><b>4.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="ok-cupid.html"><a href="ok-cupid.html#data-characteristics"><i class="fa fa-check"></i><b>4.2.1</b> Data Characteristics</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="ok-cupid.html"><a href="ok-cupid.html#exploring-the-data-2"><i class="fa fa-check"></i><b>4.3</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="ok-cupid.html"><a href="ok-cupid.html#continuous-variables"><i class="fa fa-check"></i><b>4.3.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="4.3.2" data-path="ok-cupid.html"><a href="ok-cupid.html#discrete-variables"><i class="fa fa-check"></i><b>4.3.2</b> Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="ok-cupid.html"><a href="ok-cupid.html#data-preparation"><i class="fa fa-check"></i><b>4.4</b> Data Preparation</a></li>
+<li class="chapter" data-level="4.5" data-path="ok-cupid.html"><a href="ok-cupid.html#prediction"><i class="fa fa-check"></i><b>4.5</b> Prediction</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="ok-cupid.html"><a href="ok-cupid.html#model-building"><i class="fa fa-check"></i><b>4.5.1</b> Model building</a></li>
+<li class="chapter" data-level="4.5.2" data-path="ok-cupid.html"><a href="ok-cupid.html#evaluation-metrics"><i class="fa fa-check"></i><b>4.5.2</b> Evaluation Metrics</a></li>
+<li class="chapter" data-level="4.5.3" data-path="ok-cupid.html"><a href="ok-cupid.html#logistic-regression"><i class="fa fa-check"></i><b>4.5.3</b> Logistic Regression</a></li>
+<li class="chapter" data-level="4.5.4" data-path="ok-cupid.html"><a href="ok-cupid.html#k-nearest-neighbor"><i class="fa fa-check"></i><b>4.5.4</b> K Nearest Neighbor</a></li>
+<li class="chapter" data-level="4.5.5" data-path="ok-cupid.html"><a href="ok-cupid.html#decision-trees"><i class="fa fa-check"></i><b>4.5.5</b> Decision Trees</a></li>
+<li class="chapter" data-level="4.5.6" data-path="ok-cupid.html"><a href="ok-cupid.html#final-model"><i class="fa fa-check"></i><b>4.5.6</b> Final Model</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="ok-cupid.html"><a href="ok-cupid.html#conclusion-3"><i class="fa fa-check"></i><b>4.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html"><i class="fa fa-check"></i><b>5</b> Real State São Paulo Rent Prediction</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#introduction-5"><i class="fa fa-check"></i><b>5.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#analysis-2"><i class="fa fa-check"></i><b>5.1.1</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#data-4"><i class="fa fa-check"></i><b>5.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#data-preparation-1"><i class="fa fa-check"></i><b>5.2.1</b> Data Preparation</a></li>
+<li class="chapter" data-level="5.2.2" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#external-data"><i class="fa fa-check"></i><b>5.2.2</b> External data</a></li>
+<li class="chapter" data-level="5.2.3" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#text-processing"><i class="fa fa-check"></i><b>5.2.3</b> Text Processing</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#model"><i class="fa fa-check"></i><b>5.3</b> Model</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#root-mean-square-error-rmse"><i class="fa fa-check"></i><b>5.3.1</b> <strong>Root Mean Square Error (RMSE)</strong></a></li>
+<li class="chapter" data-level="5.3.2" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#correlation-check"><i class="fa fa-check"></i><b>5.3.2</b> <strong>Correlation Check</strong></a></li>
+<li class="chapter" data-level="5.3.3" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#multicollinearity-analysis"><i class="fa fa-check"></i><b>5.3.3</b> <strong>Multicollinearity Analysis</strong></a></li>
+<li class="chapter" data-level="5.3.4" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#feature-engineering"><i class="fa fa-check"></i><b>5.3.4</b> <strong>Feature Engineering</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#prediction-1"><i class="fa fa-check"></i><b>5.4</b> Prediction</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#linear-models"><i class="fa fa-check"></i><b>5.4.1</b> <strong>Linear Models</strong></a></li>
+<li class="chapter" data-level="5.4.2" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#ensemble-methods"><i class="fa fa-check"></i><b>5.4.2</b> <strong>Ensemble Methods</strong></a></li>
+<li class="chapter" data-level="5.4.3" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#model-stacking"><i class="fa fa-check"></i><b>5.4.3</b> <strong>Model Stacking</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#conclusion-4"><i class="fa fa-check"></i><b>5.5</b> Conclusion</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science Portfolio</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="real-state-são-paulo-rent-prediction" class="section level1" number="5">
+<h1><span class="header-section-number">Project 5</span> Real State São Paulo Rent Prediction</h1>
+<div id="introduction-5" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Introduction</h2>
+<p>Everyone needs a place to live. It can be a house, a flat or an apartment. Everyone, at some point in life, is faced with the choice of buying or renting a home. On top of that, the following questions can be asked: Is buying a property worthwhile or staying in rent is the best alternative? In a society that values and idealizes the dream of home ownership, those who question themselves about the subject end up being seen as crazy.</p>
+<p>After all, from an early age, we are led to believe that home ownership is a goal that everyone should have and strive to achieve. This, however, is not an absolute truth.</p>
+<p>Furthermore, having a home, for many, is synonymous with stability and security. But, is it really worth buying a house? Or can continuing to rent make more sense?</p>
+<p>Let’s point out some of the reasons that it makes sense to rent and why this is such an attractive business.</p>
+<p><strong>Renting is not synonymous with losing money</strong></p>
+<p>Considering the fixed income, depending on how the interest rates are, for example, it is more worthwhile to continue renting and invest the money that was reserved for the home itself. Thus, it is possible to pay the lease with the proceeds and save the rest to, who knows, buy it later.</p>
+<p>After all, the vast majority of people do not buy their house in cash and resort to financing. And this type of business is not advantageous, as the person ends up assuming a debt for years, and the amount to be paid for the property can even triple in comparison with the original value of the property.</p>
+<p>In this way, it can be much more worthwhile to invest your money - making it work for you - and to continue renting, paying this expense (or part of it) with the income.</p>
+<p><strong>Property is not an investment</strong></p>
+<p>It is important to keep in mind that owning a home is only for the sake of the family and does not generate any profit. With this new acquisition, debts such as property tax and other taxes, maintenance expenses and a series of repairs that may appear will come.</p>
+<p>Certainly your money will be invested there, but it can both appreciate - with the appreciation of the good itself over the years - as well as devalue itself. Not to mention that the money is immobilized, causing you to lose liquidity.</p>
+<p><strong>The property is not yours until it is paid off</strong></p>
+<p>The property is not yours! Yes, the apartment will be yours only after paying off the debt. That is, you will only be the owner after the twenty years that you were paying for the good! Is it worth it to spend all that time paying off a debt? Depending on the contract signed, you will only be the owner after a few decades</p>
+<p>In addition to the reasons mentioned above, São Paulo is a very busy city and many people go to it to work or study for a while, and renting makes a lot more sense than buying.</p>
+<p>Regardless of the reasons for renting, the sides need to agree on a price. It is always good to know how much a property is worth, what the expected transaction price is.</p>
+<div id="analysis-2" class="section level3" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Analysis</h3>
+<p>In this work, we want to find an answer to these questions. This case study is intended to be a comprehensive use case of how to deal with a regression problem for Data Science. We will start with some questions that allow us to understand the problems related to the price of renting a property.</p>
+<p>The owner does not know how to increase the value of the property so that the investment is less than the added value. For example, building a swimming pool can increase the price and forming a bathroom is not worth it.</p>
+<p>The owner does not know how much he is going to rent a property. He makes an offer on the portal and doesn’t know if the price is right,</p>
+<p>The tenant does not know how much the property is worth.</p>
+<p>These are some of the questions that can be asked. As a definition of our problem, we define the property’s valuation, and through explanations we try to get an answer depending on the position we choose.</p>
+<p>Initially we will see how the literature says what the amount should be charged in a rent.</p>
+<p>According to, the basic rule most used to calculate rent is to apply a value between 0.5% and 1%, per month, on the market value of the property. This means that if the property is worth R$ 100 thousand, the rent must be between R$ 500 and R$ 1,000 per month. Research shows that, on average, two- and three-bedroom houses and apartments, the rental price is 0.75%.</p>
+<p>But there are many variables that make up the rent calculation. The real estate market itself regulates itself and pricing the rental price of properties by supply and demand. Supply and demand is an important concept of the Liberal Economy.</p>
+<p>The characteristics of the property itself are also decisive in the calculation of rent. Similar properties in the same region of the city, in general, have approximate values. That is why it is always important to observe the values ​​in force in the real estate market in the region in which you will invest or prospect your property for business.</p>
+<p>There are cases of similar properties in the same neighborhood that may have different rentals. This is justified by the commercial and transport structure available. Factors such as the total length of the property, leisure facilities, swimming pool, party room, condominium, concierge services, security, garage, number of rooms influence the calculation of rent</p>
+<p>An apartment or house, for example, close to bus or metro stations may have a higher rental price than a more remote one. The same goes for properties in regions with supermarkets, pharmacies and bakeries located next to a park.</p>
+<p>With this premise, we can now analyze the data.</p>
+</div>
+</div>
+<div id="data-4" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Data</h2>
+<p>As a data source for information on property characteristics and prices, a set of data obtained from a web scraper on the Zap Imóveis website was used. Web Scraper is a tool with the purpose of extracting data from a HyperText Markup Language (HTML) website. The web scraper was developed by GeovRodri based on Beautiful Soup and made available through the link: <a href="https://pypi.org/project/zapimoveis-scraper/">zapimoveis-scraper</a></p>
+<p>The set of data collected on the website is based on rental advertisements in the city of São Paulo containing more than 60 thousand data. The data set obtained contains the data according to TABLE 5.1.</p>
+<p>TABLE 5.1.1: Description of variables in the dataset.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>description</td>
+<td>property description</td>
+</tr>
+<tr class="even">
+<td>price</td>
+<td>price (monthly)</td>
+</tr>
+<tr class="odd">
+<td>bedrooms</td>
+<td>number of bedrooms on property</td>
+</tr>
+<tr class="even">
+<td>bathrooms</td>
+<td>number of bathrooms on property</td>
+</tr>
+<tr class="odd">
+<td>total_area_m2</td>
+<td>property area (square meters)</td>
+</tr>
+<tr class="even">
+<td>vacancies</td>
+<td>parking spots available on property</td>
+</tr>
+<tr class="odd">
+<td>address</td>
+<td>property address</td>
+</tr>
+<tr class="even">
+<td>link</td>
+<td>link of the property</td>
+</tr>
+</tbody>
+</table>
+<p>Another idea on how to enrich our solution was to add external data. Our hypothesis took into account the information given in the introduction of how a property is calculated, therefore, a location of the property can significantly affect the price. Therefore, we also take into account the distance to the nearest public transport (Metro and bus), distance to the nearest school, number of cultural variety within 1km and addition to the crime rate in the region.</p>
+<div id="data-preparation-1" class="section level3" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Data Preparation</h3>
+<p>Like all automatic data collection processes, the web scraper described above generated data with quality problems. To solve this problem, we apply some cleaning processes. The first filter was to remove instances that had null values (absent) for attributes considered fundamental for the analysis. To eliminate outliers that left the data inconsistent, such as, for example, rent with sale price of properties, places with more than 50 bathrooms and houses with areas the size of a city, conditions were added for the property to be considered consistent with reality.</p>
+</div>
+<div id="external-data" class="section level3" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> External data</h3>
+<p>External data has been added. We believe that many other variables describe the rental price. Geospatial information was missing. Why do some places tend to be more expensive? Perhaps it is because of the availability of public transport. That is why we decided to add, for example, a variable that describes the distance to the nearest bus or metro station.</p>
+<p>In the data described, we note that unfortunately there is no zip code and geolocation of the properties. To our happiness, the website provides address, and from that it was possible to use a geolocation tool called <a href="https://geopy.readthedocs.io/en/stable/">Geopy</a> available for Python. With it it is possible to enter an address and automatically the library provides you with the longitude and latitude of the location.</p>
+<p>After obtaining the geolocation values of the properties, a second cleaning was performed on the data. Many registrations and inconsistencies of Geopy cause some locations of the respective properties to be outside the city of São Paulo (curiously some even in the middle of the Atlantic Ocean). To solve this problem, we took the official data from the location of the city of São Paulo, made available by <a href="https://www.ibge.gov.br/">IBGE</a> and with the help of <a href="https://geopandas.org/">Geopandas</a>, we applied the data so that all the properties in our database were within the region.</p>
+<p>After another treatment of data, we added variables that describe the distances to the bus, subway station and school closest to the property. The data were obtained from the <a href="http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx">GeoSampa</a> website provided by the city of São Paulo.</p>
+<p>Another reason we took into account for the price of renting the property was that they may be more expensive because of some interesting places around, such as museums, galleries, shopping centers or libraries. These places are not just stand-alone facilities, but are connected to other infrastructure, which is generally expected to increase the price. For this variable, we consider a radius of 700 meters chosen arbitrarily. The data were again obtained from the GeoSampa website.</p>
+<p>With the same situation in mind, we also added a variable called “food” to calculate the number of places to eat within a radius of 700 meters. We consider restaurants, bars, cafes, among others. To obtain the data, we use the <a href="https://overpass-turbo.eu/">Overpass Turbo</a> site which is a web based data mining tool for <a href="https://www.openstreetmap.org/">OpenStreetMap</a>.</p>
+<p>Finally, we also decided to add a crime rate variable around real estate, as we believe that more violent places tend to have lower rent values. The data were obtained through the <a href="https://www.kaggle.com/danlessa/geospatial-sao-paulo-crime-database">Geospatial São Paulo Crime Database</a> made available by Kaggle.</p>
+<p>The data can be viewed in FIGURE X. There are 21367 bus stops, 89 metro stations, 4761 schools, 1697 cultural points and 12899 crime data.</p>
+<p>TABLE 5.1.2: Description of the external variables in the dataset.</p>
+<table>
+<colgroup>
+<col width="32%" />
+<col width="67%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Id</td>
+<td>property Id</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>house / apartment</td>
+</tr>
+<tr class="odd">
+<td>Region</td>
+<td>region of the city</td>
+</tr>
+<tr class="even">
+<td>dist_subway</td>
+<td>distance from properly to the nearest subway station</td>
+</tr>
+<tr class="odd">
+<td>dist_bus</td>
+<td>distance from properly to the nearest bus station</td>
+</tr>
+<tr class="even">
+<td>school</td>
+<td>distance from properly to the nearest school</td>
+</tr>
+<tr class="odd">
+<td>ncult</td>
+<td>number of cult place in area of the property</td>
+</tr>
+<tr class="even">
+<td>food</td>
+<td>number of food place in area of the property</td>
+</tr>
+<tr class="odd">
+<td>crime%</td>
+<td>% of crime in property area</td>
+</tr>
+<tr class="even">
+<td>latitude</td>
+<td>latitude of the property</td>
+</tr>
+<tr class="odd">
+<td>longitude</td>
+<td>longitude of the property</td>
+</tr>
+<tr class="even">
+<td>items</td>
+<td>Items of the property</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/project5/bus.PNG" width="681" /></p>
+<p>FIGURE 5.1:</p>
+<p><img src="images/project5/escolas.PNG" width="691" /></p>
+<p>FIGURE 5.2:</p>
+<p><img src="images/project5/heatmap_crimes.png" width="381" /></p>
+<p>FIGURE 5.3:</p>
+<p>Most cultural locations are located in the city center. Thus, this variable also tells the story of how much city center the property has. As all these places are in the center of the city, these other points must reflect some local centers.</p>
+<p>As can be seen in the figure, bus stops and schools are very dense across the city. Showing that all properties have a good connection to public transport and education. This can, for example, facilitate the movement of children to schools and parents to workplaces. But the problem of transport via the Metro is evident on the map. We see that it covers a very small region of the city, being that it is the fastest means of transport, which probably properties in its surroundings must have rents much more expensive than the rest of the region.</p>
+<p>In the last figure, we plot the density of crime in the city. We see that the center has a much higher density than the rest of the region.</p>
+<p>After doing this localization step, an id was created for the locations, noting that the property link exists a unique id for each one of them. This was important to eliminate duplicate data.</p>
+<p>The last step was to divide the data into training and test samples at random with a 70/30 ratio to apply machine learning.</p>
+<p>The script to download, clean and process the data can be found on GitHub. For the analysis of spatial data, a small geofast script was made. The distances between 2 arbitrary points on the earth can be obtained in the Geopy package for Python. However, the general equation is very computationally expensive for the purpose of this work. Then an adjustment was made in our case without losing almost any precision. A simple equation of geospatial calculation was used that can be applied for short distances of a few hundred kilometers.</p>
+</div>
+<div id="text-processing" class="section level3" number="5.2.3">
+<h3><span class="header-section-number">5.2.3</span> Text Processing</h3>
+<p>To extract information from the title and description, we followed the regular Natural Language Processing pipeline, which encompasses tokenization (splitting sentences into separate words), removal of common unhelpful words such as prepositions (stopwords removal), and lemmatization (reduction of words to their root forms).</p>
+<p>From the texts we add variables that we think are important for the price of the property. For example, if it is a townhouse, if it has a swimming pool, barbecue, if it is furnished and so on.</p>
+</div>
+</div>
+<div id="model" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Model</h2>
+<p>In this project, We will be using the linear model as a base model to finalize the data pre-processing steps. We will use outlier removal techniques, coding techniques, sizing / normalization techniques, resource engineering and different types of imputation combinations.</p>
+<p>We divided the modeling into five steps.</p>
+<p><strong>Step1: Linear Models</strong></p>
+<p>In this step We used linear models like Linear Regression, Bayesian Ridge Regression, Lasso, Elastic Net and Ridge.</p>
+<p><strong>Step2: Support Vector Machines</strong></p>
+<p>We used SVR(Support Vector Regressor). Similar to linear models for SVR also.</p>
+<p><strong>Step3: Ensemble Methods</strong></p>
+<p>In first two steps We used basic models, from step 3 onward models becomes complex. We used models like Gradient Boosting Regressor, LightGBM Regressor, XGB Regressor.</p>
+<p><strong>Step4: Model Stacking</strong></p>
+<p>Stacking is an ensemble learning technique to combine multiple regression models via a meta-regressor. At this stage we have good mix of multiple models, now is the best time to use StackingCVRegressor to combine all above models to improve the score even further. As expected this model resulted in best possible score!</p>
+<p><strong>Step5: Model Blending</strong></p>
+<p>Model blending is the manual step, where we manually adjust the weight for each model in order to ensemble the predictions to improve the score. Thumb rle is to give highest weights to best performing model and lowest to least performing model. After few trial and and error I could settle on the weights and manage to top my model stacking score!</p>
+<div id="root-mean-square-error-rmse" class="section level3" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> <strong>Root Mean Square Error (RMSE)</strong></h3>
+<p>Root Mean square is the standard deviation of the residuals. Now let’s understand what Standard deviation and residuals are.</p>
+<p><strong>Standard deviation</strong>: Standard deviation is a measure of how spread out numbers are. Its formula is the square root of the Variance. Variance is defined as the average of the squared differences from the Mean. In the below formula of standard deviation ‘xi’= numbers, ‘μ’= Mean of the numbers and ‘N’ = Total number of values</p>
+<p><strong>Residuals</strong>: Residuals are a measure of how far from the regression line data points are. Residuals are nothing but prediction error, we can find it by subtracting the predicted value from actual value.</p>
+<p>In order to get RMSE we will use Standard deviation formula but instead of square root of variance we will calculate the square root of average of squared residuals.</p>
+<p>Standard deviation is used to measure the spread of data around the mean, while RMSE is used to measure distance between predicted and actual values.</p>
+<p>RMSE is a measure of how spread out these residuals are. In other words, it tells you how concentrated the data is around the line of best fit.</p>
+<p>Since the errors are squared before they are averaged, the RMSE gives a relatively high weight to large errors. This means the RMSE is most useful when large errors are particularly undesirable. Note that, as per competition rules submissions are evaluated on the logarithm of the predicted value and the logarithm of the observed sales price. Taking logs means that errors in predicting expensive houses and cheap houses will affect the result equally.</p>
+<ul>
+<li><p><strong>What does RMSE indicate?</strong>:</p>
+<ul>
+<li><p>It indicates the absolute fit of the model to the data.</p></li>
+<li><p>Provides average model prediction error in units of the variable of interest.</p></li>
+<li><p>They are negatively-oriented scores, which means lower values are better.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="correlation-check" class="section level3" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> <strong>Correlation Check</strong></h3>
+<p>Correlation is a measure of the linear relationship of 2 or more variables. Through correlation, we can predict one variable from the other. The logic behind using correlation for feature selection is that the good variables are highly correlated with the target.</p>
+<p>A correlation matrix is a table showing correlation coefficients between variables. Each cell in the table shows the correlation between two variables.</p>
+<p>We will use <strong>Pearson’s correlation</strong>. It is utilized we you have two quantitative variables and you wish to see if there is a linear relationship between those variables.</p>
+<p><img src="images/project5/paste-9E889BA7.png" /></p>
+<p>FIGURE 5.4: Correlation Map of the variables.</p>
+<p>In above correlation map:</p>
+<p>-1 indicates a perfectly negative linear correlation between two variables.</p>
+<p>0 indicates no linear correlation between two variables.</p>
+<p>1 indicates a perfectly positive linear correlation between two variables.</p>
+</div>
+<div id="multicollinearity-analysis" class="section level3" number="5.3.3">
+<h3><span class="header-section-number">5.3.3</span> <strong>Multicollinearity Analysis</strong></h3>
+<p>Multicollinearity refers to a situation in which more than two explanatory variables in a multiple regression model are highly linearly related. Below are few of the multicollinear features based on correlation matrix.</p>
+<p><img src="images/project5/paste-F8533030.png" /></p>
+<p>FIGURE 5.5:</p>
+<p><img src="images/project5/paste-70DCB12A.png" /></p>
+<p>FIGURE 5.5:</p>
+</div>
+<div id="feature-engineering" class="section level3" number="5.3.4">
+<h3><span class="header-section-number">5.3.4</span> <strong>Feature Engineering</strong></h3>
+<div id="numeric-feature-scaling" class="section level4" number="5.3.4.1">
+<h4><span class="header-section-number">5.3.4.1</span> <strong>Numeric Feature Scaling</strong></h4>
+<p>In order to give every feature the same importance we perform feature scaling. There are many techniques like Min-Max Scaler, Robust Scaler etc. to do feature scaling.</p>
+<p>Before we can finalize any scaling technique let’s check the skewness of our numeric features. Skewness is the measure of degree of asymmetry of a distribution:</p>
+<ul>
+<li><p>skewness = 0 : normally distributed.</p></li>
+<li><p>skewness &gt; 0 : more weight in the left tail of the distribution.</p></li>
+<li><p>skewness &lt; 0 : more weight in the right tail of the distribution.</p></li>
+</ul>
+</div>
+<div id="target-variable-analysis-and-transformation" class="section level4" number="5.3.4.2">
+<h4><span class="header-section-number">5.3.4.2</span> <strong>Target Variable Analysis and Transformation</strong></h4>
+<p>Price is our target variable. If we want to predict the target variables accurately then the first task is to understand the underlying behavior of our target variable. Note that model can make more reliable predictions if our target variable is normally distributed. We will use both graphical and statistical methods to do a normality test of our target variable.</p>
+<p><strong>Statistical</strong></p>
+<p>We will use Skewness, Kurtosis and Shapiro-Wilk test for normality.</p>
+<ul>
+<li><p>Skewness assesses the extent to which a variable’s distribution is symmetrical. The thumb rule is,</p>
+<ul>
+<li><p>If the skewness is between -0.5 and 0.5, the data are fairly symmetrical.</p></li>
+<li><p>If the skewness is between -1 and – 0.5 or between 0.5 and 1, the data are moderately skewed.</p></li>
+<li><p>If the skewness is less than -1 or greater than 1, the data are highly skewed.</p></li>
+</ul></li>
+<li><p>Kurtosis tells you the height and sharpness of the central peak, relative to that of a standard bell curve. The thumb rule is,</p>
+<ul>
+<li><p>Kurtosis greater than +1 indicates distribution is too peaked.</p></li>
+<li><p>Kurtosis less than –1 indicates a distribution that is too flat.</p></li>
+</ul></li>
+</ul>
+<p><img src="images/project5/paste-71055EC8.png" /></p>
+<p>FIGURE 5.6:</p>
+<p>From a normal distribution plot it’s clear that the mean is greater than mode, similarly from the probability plot we can see that most of the observations fall on the lower end of the Y axis. So we can conclude that that the target variable ‘Price’ is right skewed. There are multiple transformation techniques to handle the skewed data. We use log transformation.</p>
+<p><img src="images/project5/paste-E45C942A.png" /></p>
+<p>FIGURE 5.6:</p>
+</div>
+</div>
+</div>
+<div id="prediction-1" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Prediction</h2>
+<div id="linear-models" class="section level3" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> <strong>Linear Models</strong></h3>
+<div id="linear-regression-1" class="section level4" number="5.4.1.1">
+<h4><span class="header-section-number">5.4.1.1</span> <strong>Linear Regression</strong></h4>
+<p>Linear Regression fits a linear model with coefficients w = (w1, …, wp) to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.</p>
+<p>TABLE 5.2: Results for Random Forest with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.38291 ± 0.00506</td>
+<td align="center">0.37982</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="bayesian-ridge-regression" class="section level4" number="5.4.1.2">
+<h4><span class="header-section-number">5.4.1.2</span> <strong>Bayesian Ridge Regression</strong></h4>
+<p>BayesianRidge estimates a probabilistic model of the regression. Bayesian regression techniques can be used to include regularization parameters in the estimation procedure: the regularization parameter is not set in a hard sense but tuned to the data at hand.</p>
+<ul>
+<li><p>The advantages of Bayesian Regression are:</p>
+<ul>
+<li><p>It adapts to the data at hand.</p></li>
+<li><p>It can be used to include regularization parameters in the estimation procedure.</p></li>
+</ul></li>
+<li><p>The disadvantages of Bayesian regression include:</p>
+<ul>
+<li>Inference of the model can be time consuming.</li>
+</ul></li>
+</ul>
+<p>TABLE 5.3: Results for Random Forest with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.3829 ± 0.0050</td>
+<td align="center">0.3797</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="lasso" class="section level4" number="5.4.1.3">
+<h4><span class="header-section-number">5.4.1.3</span> <strong>Lasso</strong></h4>
+<p>Linear Model trained with L1 prior as regularizer.</p>
+<p>TABLE 5.4: Results for Lasso with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.3831 ± 0.0050</td>
+<td align="center">0.3801</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="elastic-net" class="section level4" number="5.4.1.4">
+<h4><span class="header-section-number">5.4.1.4</span> <strong>Elastic Net</strong></h4>
+<p>Linear regression with combined L1 and L2 priors as regularizer.</p>
+<p>TABLE 5.5: Results for Elastic Net with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.4064 ± 0.0031</td>
+<td align="center">0.4035</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ridge" class="section level4" number="5.4.1.5">
+<h4><span class="header-section-number">5.4.1.5</span> Ridge</h4>
+<p>Linear least squares with l2 regularization. This model solves a regression model where the loss function is the linear least squares function and regularization is given by the l2-norm. Also known as Ridge Regression or Tikhonov regularization. This estimator has built-in support for multi-variate regression (i.e., when y is a 2d-array of shape (n_samples, n_targets)).</p>
+<p>TABLE 5.6: Results for Ridge with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.4064 ± 0.0031</td>
+<td align="center">0.4035</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="support-vector-machines" class="section level4" number="5.4.1.6">
+<h4><span class="header-section-number">5.4.1.6</span> <strong>Support Vector Machines</strong></h4>
+<p>Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection. The model produced by Support Vector Regression depends only on a subset of the training data, because the cost function ignores samples whose prediction is close to their target.</p>
+<p>TABLE 5.7: Results for Support Vector Machines with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.3461 ± 0.0064</td>
+<td align="center">0.3427</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="ensemble-methods" class="section level3" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> <strong>Ensemble Methods</strong></h3>
+<p>The goal of ensemble methods is to combine the predictions of several base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator.</p>
+<p>Two families of ensemble methods are usually distinguished:</p>
+<blockquote>
+<p>In <strong>averaging methods</strong>, the driving principle is to build several estimators independently and then to average their predictions. On average, the combined estimator is usually better than any of the single base estimator because its variance is reduced. Examples: Bagging methods, Forests of randomized trees,etc</p>
+<p>By contrast, in <strong>boosting methods</strong>, base estimators are built sequentially and one tries to reduce the bias of the combined estimator. The motivation is to combine several weak models to produce a powerful ensemble. Examples: AdaBoost, Gradient Tree Boosting, etc</p>
+</blockquote>
+<div id="gradient-boosting-regressor" class="section level4" number="5.4.2.1">
+<h4><span class="header-section-number">5.4.2.1</span> <strong>Gradient Boosting Regressor</strong></h4>
+<p>GBR supports a number of different loss functions for regression which can be specified via the argument loss; the default loss function for regression is least squares (‘ls’).</p>
+<p>TABLE 5.8: Results for Gradient Boosting with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.3148 ± 0.0050</td>
+<td align="center">0.3128</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="lightgbm-regressor-light-gradient-boosting-machine" class="section level4" number="5.4.2.2">
+<h4><span class="header-section-number">5.4.2.2</span> <strong>LightGBM Regressor (Light Gradient Boosting Machine)</strong></h4>
+<p>LightGBM is a gradient boosting framework based on decision trees to increases the efficiency of the model and reduces memory usage. It uses two novel techniques: Gradient-based One Side Sampling and Exclusive Feature Bundling (EFB) which fulfills the limitations of histogram-based algorithm that is primarily used in all GBDT (Gradient Boosting Decision Tree) frameworks.</p>
+<p>TABLE 5.9: Results for LightGBM with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.3152 ± 0.0038</td>
+<td align="center">0.3198</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="xgb-regressor" class="section level4" number="5.4.2.3">
+<h4><span class="header-section-number">5.4.2.3</span> <strong>XGB Regressor</strong></h4>
+<p>XGBoost is a decision-tree-based ensemble Machine Learning algorithm that uses a gradient boosting framework. XGBoost stands for “Extreme Gradient Boosting” We can use it to solve classification and regression problems. The XGBoost is a popular supervised machine learning model with characteristics like computation speed, parallelization, and performance.</p>
+<p>TABLE 5.10: Results for XGBoost with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.3164 ± 0.0040</td>
+<td align="center">0.3124</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="model-stacking" class="section level3" number="5.4.3">
+<h3><span class="header-section-number">5.4.3</span> <strong>Model Stacking</strong></h3>
+<div id="stacking-cv-regressor" class="section level4" number="5.4.3.1">
+<h4><span class="header-section-number">5.4.3.1</span> Stacking CV Regressor</h4>
+<p>An ensemble-learning meta-regressor for stacking regression. Stacking is an ensemble learning technique to combine multiple regression models via a meta-regression. The StackingCVRegressor extends the standard stacking algorithm (implemented as StackingRegressor) using out-of-fold predictions to prepare the input data for the level-2 regressor. In the standard stacking procedure, the first-level regressors are fit to the same training set that is used to prepare the inputs for the second-level regressor, which may lead to overfitting.</p>
+<p>The StackingCVRegressor, however, uses the concept of out-of-fold predictions: the dataset is split into k folds, and in k successive rounds, k-1 folds are used to fit the first level regressor. In each round, the first-level regressors are then applied to the remaining 1 subset that was not used for model fitting in each iteration. The resulting predictions are then stacked and provided – as input data – to the second-level regressor. After the training of the StackingCVRegressor, the first-level regressors are fit to the entire dataset for optimal predictions.</p>
+<p>Ref. <a href="http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/" class="uri">http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/</a></p>
+<p><img src="images/project5/paste-B7B477F1.png" width="421" /></p>
+<p>FIGURE 5.7: Staking Model</p>
+<p>TABLE 5.11: Results for Stacking CV Regressor with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training (CV = 5)</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.3112 ± 0.0048</td>
+<td align="center">0.3198</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="model-blending" class="section level4" number="5.4.3.2">
+<h4><span class="header-section-number">5.4.3.2</span> <strong>Model Blending</strong></h4>
+<p>And finally We use Model Blending to combine all models together.</p>
+<p>TABLE 5.12: Results for Model Blending with 5-Fold Cross-Validation.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">RMSLE on Training</th>
+<th align="center">RMSLE on Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0.2973</td>
+<td align="center">0.2923</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="conclusion-4" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> Conclusion</h2>
+<p>Predicting housing rent prices from online advertisements in Brazil is a task which requires insight into the data combined with powerful ML algorithms. Many locations in the city of São Paulo do not have standards in the choice of price, which makes it very difficult for machine learning models. In this work, we applied 9 different methods for this task, and combined them into a final prediction. We provided a strong baseline to overcome, as our final ensemble hit a score of 0.2973 RMSLE showing how powerful the combined model methods are.</p>
+<p>For future work, we can make a web scraper again on the site, take images of the properties and apply a covolutional neural network, an aggression that could help in the accuracy of the model with real photos inside the properties.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ok-cupid.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdownproj.pdf", "bookdownproj.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

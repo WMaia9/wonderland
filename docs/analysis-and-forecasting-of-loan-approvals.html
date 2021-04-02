@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Project 6 Analysis and Forecasting of Loan Approvals | Data Science Portfolio</title>
+  <meta name="description" content="Project 6 Analysis and Forecasting of Loan Approvals | Data Science Portfolio" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Project 6 Analysis and Forecasting of Loan Approvals | Data Science Portfolio" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Project 6 Analysis and Forecasting of Loan Approvals | Data Science Portfolio" />
+  
+  
+  
+
+<meta name="author" content="Wesley Maia" />
+
+
+<meta name="date" content="2021-04-10" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="real-state-são-paulo-rent-prediction.html"/>
+
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#case-studies"><i class="fa fa-check"></i>Case studies</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html"><i class="fa fa-check"></i><b>1</b> GPD And Energy Supply</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#introduction"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#data"><i class="fa fa-check"></i><b>1.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#energy-indicators"><i class="fa fa-check"></i><b>1.2.1</b> Energy Indicators</a></li>
+<li class="chapter" data-level="1.2.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#country-gdp"><i class="fa fa-check"></i><b>1.2.2</b> Country GDP</a></li>
+<li class="chapter" data-level="1.2.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#energy-technology"><i class="fa fa-check"></i><b>1.2.3</b> Energy Technology</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#data-analysis"><i class="fa fa-check"></i><b>1.3</b> Data Analysis</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years"><i class="fa fa-check"></i><b>1.3.1</b> What are the top 15 countries for average GDP over the past 10 years?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil"><i class="fa fa-check"></i><b>1.3.2</b> How much did the average GDP vary over the 10-year period for Brazil?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-average-energy-supply-per-capita"><i class="fa fa-check"></i><b>1.3.3</b> What is the average energy supply per capita?</a></li>
+<li class="chapter" data-level="1.3.4" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-percentage-do-countries-use-of-renewable-energy"><i class="fa fa-check"></i><b>1.3.4</b> What percentage do countries use of Renewable Energy?</a></li>
+<li class="chapter" data-level="1.3.5" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita"><i class="fa fa-check"></i><b>1.3.5</b> What is the estimated population size using Energy Supply and Energy Supply per capita?</a></li>
+<li class="chapter" data-level="1.3.6" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-proportion-of-self-citations-to-the-total-citations"><i class="fa fa-check"></i><b>1.3.6</b> What is the proportion of self-citations to the total citations?</a></li>
+<li class="chapter" data-level="1.3.7" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita"><i class="fa fa-check"></i><b>1.3.7</b> What is the correlation between the number of documents cited per capita and the supply of energy per capita?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html"><i class="fa fa-check"></i><b>2</b> Medical Insurance Costs</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#introduction-1"><i class="fa fa-check"></i><b>2.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#project-goals"><i class="fa fa-check"></i><b>2.1.1</b> Project Goals</a></li>
+<li class="chapter" data-level="2.1.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#analysis"><i class="fa fa-check"></i><b>2.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="2.1.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#evaluation"><i class="fa fa-check"></i><b>2.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#data-1"><i class="fa fa-check"></i><b>2.2</b> Data</a></li>
+<li class="chapter" data-level="2.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#exploring-the-data"><i class="fa fa-check"></i><b>2.3</b> Exploring the Data</a></li>
+<li class="chapter" data-level="2.4" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#linear-regression"><i class="fa fa-check"></i><b>2.4</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#interpreting-regression-parameters-in-a-basic-model"><i class="fa fa-check"></i><b>2.4.1</b> Interpreting regression parameters in a basic model</a></li>
+<li class="chapter" data-level="2.4.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#r-square"><i class="fa fa-check"></i><b>2.4.2</b> R-square</a></li>
+<li class="chapter" data-level="2.4.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#adding-more-variables-to-the-model"><i class="fa fa-check"></i><b>2.4.3</b> Adding more variables to the model</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#visualization-of-the-fitted-models"><i class="fa fa-check"></i><b>2.5</b> Visualization of the fitted models</a></li>
+<li class="chapter" data-level="2.6" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#conclusion-1"><i class="fa fa-check"></i><b>2.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html"><i class="fa fa-check"></i><b>3</b> Quantium Retail Strategy and Analytics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#introduction-2"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#data-2"><i class="fa fa-check"></i><b>3.2</b> Data</a></li>
+<li class="chapter" data-level="3.3" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#exploring-the-data-1"><i class="fa fa-check"></i><b>3.3</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#examining-transaction-data"><i class="fa fa-check"></i><b>3.3.1</b> Examining transaction data</a></li>
+<li class="chapter" data-level="3.3.2" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#examining-customer-data"><i class="fa fa-check"></i><b>3.3.2</b> Examining customer data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#data-analysis-on-customer-segments"><i class="fa fa-check"></i><b>3.4</b> Data analysis on customer segments</a></li>
+<li class="chapter" data-level="3.5" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#deep-dive-into-specific-customer-segments-for-insights"><i class="fa fa-check"></i><b>3.5</b> Deep dive into specific customer segments for insights</a></li>
+<li class="chapter" data-level="3.6" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#conclusion-2"><i class="fa fa-check"></i><b>3.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ok-cupid.html"><a href="ok-cupid.html"><i class="fa fa-check"></i><b>4</b> Ok Cupid</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="ok-cupid.html"><a href="ok-cupid.html#introduction-3"><i class="fa fa-check"></i><b>4.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="ok-cupid.html"><a href="ok-cupid.html#project-goals-1"><i class="fa fa-check"></i><b>4.1.1</b> Project Goals</a></li>
+<li class="chapter" data-level="4.1.2" data-path="ok-cupid.html"><a href="ok-cupid.html#analysis-1"><i class="fa fa-check"></i><b>4.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="4.1.3" data-path="ok-cupid.html"><a href="ok-cupid.html#evaluation-1"><i class="fa fa-check"></i><b>4.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ok-cupid.html"><a href="ok-cupid.html#data-3"><i class="fa fa-check"></i><b>4.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="ok-cupid.html"><a href="ok-cupid.html#data-characteristics"><i class="fa fa-check"></i><b>4.2.1</b> Data Characteristics</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="ok-cupid.html"><a href="ok-cupid.html#exploring-the-data-2"><i class="fa fa-check"></i><b>4.3</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="ok-cupid.html"><a href="ok-cupid.html#continuous-variables"><i class="fa fa-check"></i><b>4.3.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="4.3.2" data-path="ok-cupid.html"><a href="ok-cupid.html#discrete-variables"><i class="fa fa-check"></i><b>4.3.2</b> Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="ok-cupid.html"><a href="ok-cupid.html#data-preparation"><i class="fa fa-check"></i><b>4.4</b> Data Preparation</a></li>
+<li class="chapter" data-level="4.5" data-path="ok-cupid.html"><a href="ok-cupid.html#prediction"><i class="fa fa-check"></i><b>4.5</b> Prediction</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="ok-cupid.html"><a href="ok-cupid.html#model-building"><i class="fa fa-check"></i><b>4.5.1</b> Model building</a></li>
+<li class="chapter" data-level="4.5.2" data-path="ok-cupid.html"><a href="ok-cupid.html#evaluation-metrics"><i class="fa fa-check"></i><b>4.5.2</b> Evaluation Metrics</a></li>
+<li class="chapter" data-level="4.5.3" data-path="ok-cupid.html"><a href="ok-cupid.html#logistic-regression"><i class="fa fa-check"></i><b>4.5.3</b> Logistic Regression</a></li>
+<li class="chapter" data-level="4.5.4" data-path="ok-cupid.html"><a href="ok-cupid.html#k-nearest-neighbor"><i class="fa fa-check"></i><b>4.5.4</b> K Nearest Neighbor</a></li>
+<li class="chapter" data-level="4.5.5" data-path="ok-cupid.html"><a href="ok-cupid.html#decision-trees"><i class="fa fa-check"></i><b>4.5.5</b> Decision Trees</a></li>
+<li class="chapter" data-level="4.5.6" data-path="ok-cupid.html"><a href="ok-cupid.html#final-model"><i class="fa fa-check"></i><b>4.5.6</b> Final Model</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="ok-cupid.html"><a href="ok-cupid.html#conclusion-3"><i class="fa fa-check"></i><b>4.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html"><i class="fa fa-check"></i><b>5</b> Real State São Paulo Rent Prediction</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#introduction-4"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#data-4"><i class="fa fa-check"></i><b>5.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#data-preparation-1"><i class="fa fa-check"></i><b>5.2.1</b> Data Preparation</a></li>
+<li class="chapter" data-level="5.2.2" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#external-data"><i class="fa fa-check"></i><b>5.2.2</b> External data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="real-state-são-paulo-rent-prediction.html"><a href="real-state-são-paulo-rent-prediction.html#model"><i class="fa fa-check"></i><b>5.3</b> Model</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html"><i class="fa fa-check"></i><b>6</b> Analysis and Forecasting of Loan Approvals</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#introduction-5"><i class="fa fa-check"></i><b>6.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#objectives-of-the-work"><i class="fa fa-check"></i><b>6.1.1</b> Objectives of the work</a></li>
+<li class="chapter" data-level="6.1.2" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#analysis-2"><i class="fa fa-check"></i><b>6.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="6.1.3" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#evaluation-2"><i class="fa fa-check"></i><b>6.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#data-5"><i class="fa fa-check"></i><b>6.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#data-characteristics-1"><i class="fa fa-check"></i><b>6.2.1</b> Data Characteristics</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#explorando-the-data"><i class="fa fa-check"></i><b>6.3</b> Explorando the Data</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#continuous-variables-1"><i class="fa fa-check"></i><b>6.3.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="6.3.2" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#categorical-variables"><i class="fa fa-check"></i><b>6.3.2</b> Categorical Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#data-treatments"><i class="fa fa-check"></i><b>6.4</b> Data Treatments</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#missing-values"><i class="fa fa-check"></i><b>6.4.1</b> Missing Values</a></li>
+<li class="chapter" data-level="6.4.2" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#feature-engineering"><i class="fa fa-check"></i><b>6.4.2</b> Feature Engineering</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#prediction-model"><i class="fa fa-check"></i><b>6.5</b> Prediction Model</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#model-construction"><i class="fa fa-check"></i><b>6.5.1</b> Model Construction</a></li>
+<li class="chapter" data-level="6.5.2" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#logistic-regression-1"><i class="fa fa-check"></i><b>6.5.2</b> Logistic Regression</a></li>
+<li class="chapter" data-level="6.5.3" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#decisiondecision"><i class="fa fa-check"></i><b>6.5.3</b> DecisionDecision</a></li>
+<li class="chapter" data-level="6.5.4" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#random-forest-random"><i class="fa fa-check"></i><b>6.5.4</b> Random Forest Random</a></li>
+<li class="chapter" data-level="6.5.5" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#xgboost"><i class="fa fa-check"></i><b>6.5.5</b> XGBoost</a></li>
+<li class="chapter" data-level="6.5.6" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#assembly-methods"><i class="fa fa-check"></i><b>6.5.6</b> Assembly methods</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="analysis-and-forecasting-of-loan-approvals.html"><a href="analysis-and-forecasting-of-loan-approvals.html#conclusion-4"><i class="fa fa-check"></i><b>6.6</b> Conclusion</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science Portfolio</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="analysis-and-forecasting-of-loan-approvals" class="section level1" number="6">
+<h1><span class="header-section-number">Project 6</span> Analysis and Forecasting of Loan Approvals</h1>
+<div id="introduction-5" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Introduction</h2>
+<p>This paper analyzes data on bank loans</p>
+<div id="objectives-of-the-work" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Objectives of the work</h3>
+<p>In this work, the objective is to analyze data on lending using data science tools. The main question we will seek to answer is whether we can predict the granting of loans using customer history.</p>
+</div>
+<div id="analysis-2" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Analysis</h3>
+<p>This work uses descriptive statistics and data visualization to find key figures in understanding the distribution, count and relationship between variables. Since the objective of the work is to make lending predictions for users, classification algorithms of the supervised learning family of machine learning models are implemented.</p>
+</div>
+<div id="evaluation-2" class="section level3" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Evaluation</h3>
+<p>The work ends with an evaluation of the selected machine learning model with a set of validation data. The output of the forecasts can be verified using a confusion matrix and Score metrics from the Cross validation.</p>
+</div>
+</div>
+<div id="data-5" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Data</h2>
+<p>The project has two sets of data provided by the MBA program of the University of São Paulo in Data Science, they are, “File Treino.csv” that will be used for all data analysis, and the second, “File Teste.csv”, which will be used to validate the algorithms.</p>
+<div id="data-characteristics-1" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Data Characteristics</h3>
+<p>The Training File has 614 rows and 13 columns, this is not a good sign, since we have very little data for machine learning.</p>
+<p>Columns in the dataset include:</p>
+<ul>
+<li><strong>Loan_ID</strong>: unique loan id</li>
+<li><strong>Gender</strong>: Male / Female</li>
+<li><strong>MarriedMarried</strong>:applicant (Y / N)</li>
+<li><strong>Dependents</strong>: User dependent numbers</li>
+<li><strong>EducationEducation</strong>:level</li>
+<li><strong>Sel_Empoyedemployed</strong>: Self-(Y / N)</li>
+<li><strong>ApplicantIncome: </strong>Income from applicant</li>
+<li><strong>Coapplicantlncome: </strong>Revenue from the co-applicant</li>
+<li><strong>LoanAmount: </strong>Loan amount in thousands</li>
+<li><strong>Loan_Amount_Term: </strong>Loan term in months</li>
+<li><strong>Credit_History: </strong>Credit history meets the guidelines</li>
+<li><strong>Property_Area: </strong>Urban / Semi-Urban / Rural</li>
+<li><strong>Loan_Status: </strong>Loan approved (Y / N)</li>
+</ul>
+</div>
+</div>
+<div id="explorando-the-data" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Explorando the Data</h2>
+<p>To explore the data, we use the Pandas library. We start with a statistical summary of the data.</p>
+<pre><code>Table 1 - statistical summary of the numerical variables. </code></pre>
+<p id="gdcalert1">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image1.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>With it we can see the main descriptive statistics of the data, including count, average, standard deviation, minimum, maximum and quartiles.</p>
+<p>With table 1 we can already see some discoveries.</p>
+<ul>
+<li>LoanAmount has 22 missing values ​​(614-592).</li>
+<li>Loan_Amount_Term has 14 missing values ​​(614-600)</li>
+<li>Credit_History has 50 missing values ​​(614-564)</li>
+<li>We can see that about 84% of customers have a credit history.</li>
+<li>The distribution of thevariable Applicantincome appears to be in line with expectations. The same occurs with Caopplicantincome</li>
+</ul>
+<p>It can be noted that there may be a possible distortion in the data comparing the average with the median, that is, the median value of 50% of the customers.</p>
+<pre><code>## Distribution Analysis
+
+Now that we are familiar with the basic characteristics of the data, we will try to study the distribution of the variables. Let&#39;s start with the continuous variables. </code></pre>
+<div id="continuous-variables-1" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Continuous Variables</h3>
+<div id="applicantincome" class="section level4" number="6.3.1.1">
+<h4><span class="header-section-number">6.3.1.1</span> Applicantincome</h4>
+<pre><code>Let&#39;s first look at thehistogram Applicantincome. </code></pre>
+<p id="gdcalert2">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image2.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<pre><code>Figure 1 - ApplicantIncome Histogram
+
+We can see from the histogram that there are not many extreme values. We will now analyze the variable through the boxplot to understand the distributions. </code></pre>
+<p id="gdcalert3">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image3.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Figure 2 - Boxplot of the ApplicantIncome variable</p>
+<p>Analyzing figure 2, we see that the boxplot shows that there are extreme values. This can be attributed to the income gap in society. Part of this can be explained, for example, by the fact that we are looking at people with different levels of education. Let’s look at the Education variable to verify this hypothesis.</p>
+<p id="gdcalert4">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image4.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Figure 3 - Boxplot grouped by level of education.</p>
+<pre><code>We can see that there is no substantial difference between the average income of graduates and non-graduates. On the other hand, we can see that there are a greater number of graduates with very high incomes that appear to be the extreme values. </code></pre>
+</div>
+<div id="loanamount" class="section level4" number="6.3.1.2">
+<h4><span class="header-section-number">6.3.1.2</span> LoanAmount</h4>
+<pre><code>Let us now analyze the histogram and boxplot of the loan amount of the variable Loan Amount.</code></pre>
+<p id="gdcalert5">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image5.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p id="gdcalert6">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image6.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<pre><code>Figure 4 - Histogram and Boxplot of the value of the variable Loan Amount
+
+Again, through the boxplot, we can see that there are some extreme values. Clearly, both Applicantincome and LoanAmount require a certain amount of data processing. LoanAmount has missing and extreme values, while Applicantincome has some extreme values, which require deeper understanding. </code></pre>
+</div>
+</div>
+<div id="categorical-variables" class="section level3" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Categorical Variables</h3>
+<p>Now that the distributions of the main variables related to the problem,have already been explained ApplicantIncome and LoanIncome, let’s explore the categorical variables in more detail.</p>
+<div id="clients" class="section level4" number="6.3.2.1">
+<h4><span class="header-section-number">6.3.2.1</span> Clients</h4>
+<p id="gdcalert7">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image7.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Figure 5 - Histogram of Clients by History and their probabilities.</p>
+<p>In the graph in figure 5, we can see that the chance of getting a loan is much greater if the applicant has a valid credit history.</p>
+<p>####Status</p>
+<p id="gdcalert8">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image8.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>MaritalFigure 6 - Histogram of loan by marital statusMarital</p>
+<p>We now have the chance to get a loan according to the user’sStatus. The chance of being approved is much greater for married couples.</p>
+</div>
+<div id="gender" class="section level4" number="6.3.2.2">
+<h4><span class="header-section-number">6.3.2.2</span> Gender</h4>
+<p id="gdcalert9">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image9.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Figure 7 - Histogram of loan by gender.</p>
+<p>Looking now at the gender category, we see that there is a greater chance of getting a loan if it is from the male sex.</p>
+</div>
+</div>
+</div>
+<div id="data-treatments" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Data Treatments</h2>
+<p>After a first exploration of the data, we saw that there are some problems that need to be solved so that we can use machine learning algorithms.</p>
+<p>In the exploration, we saw that there are values ​​missing in some of the variables. We then need to estimate these values.</p>
+<p>When you look at the distributions, you see that ApplicantIncome and LoanAmount contain extreme values ​​at each end. Although they can intuitively make sense, they must be treated appropriately, as they can distort the results of the analysis to be elaborated.</p>
+<p>Finally, we need to look at non-numeral data, to see if it contains any useful information for our purpose.</p>
+<div id="missing-values" class="section level3" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Missing Values</h3>
+<pre><code>We will start by analyzing the missing values ​​in all variables, as machine learning algorithms do not behave well with them.</code></pre>
+<p>Table 2 - Number of Missing values ​​per variables</p>
+<p id="gdcalert10">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image10.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<pre><code>Looking at Table 2, we see that there are many variables with missing values, so we will treat each one separately according to the dominance of the probability of the variable being in a certain category. </code></pre>
+<p>We started by grouping Education and Autonomous, we have:</p>
+<p id="gdcalert11">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image11.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Figure 8 - Boxplot of grouping of Education and Autonomous</p>
+<p>We can observe some variations in the average loan amount for each group and this can be used to fill in the values. But first, we have to make sure that the variables Self_Employed and Education do not have missing values.</p>
+<p>Analyzing the data we see that 86% of the values ​​are “no”, we can assume that it is safe to replace absent with “no” because it is a high probability of success.</p>
+<p>Now, let’s create a pivot table that gives us average values ​​for all groups of unique values ​​of characteristics of Self_Employed and Education. Next, we will define a function, which returns the values ​​of these cells and apply them to fill in the missing values ​​of the LoanAmount loan amount.</p>
+<p>We will use the same methods for the other missing variables. The variable Gender 81% of the data are women, the missing data will be filled with values ​​of this gender.</p>
+<p>For the Married variable, 65% of the data are from married people. In this situation, it was preferred to make a random distribution of the missing data.</p>
+<p>Thevariable Dependents 57% of users have no children. In this case, it was assumed that the missing values ​​also have no children.</p>
+<pre><code>Looking at the variable Credit_History we have that 84% of the data is “Yes”, so the remaining values ​​will be filled in with “yes”.
+
+Finally, the variable Loan_Amount_Term 85% of the data has a value of 360. The rest of the remaining data will be exchanged for this value. </code></pre>
+</div>
+<div id="feature-engineering" class="section level3" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Feature Engineering</h3>
+<pre><code>Now that we have finished dealing with the missing data, we can focus on Feature Engineering, which is an informal topic, but absolutely known and considered the key to success in applied machine learning. 
+
+Features Engineering is the process of transforming raw data into resources that best represent the problem underlying predictive models, resulting in greater model accuracy in invisible data. Creating a resource can be important if it is highly correlated with the dependent variable and thus increases the accuracy of the model. </code></pre>
+<p>We will create some new columns in our data so that we can get better accuracy in our model later on.</p>
+<ul>
+<li><strong>Total Income - </strong>Us** **we combine the applicant’s revenue and the co-applicant’s revenue. If the total revenue is high, the chances of approval of the loan can also be high.</li>
+</ul>
+<p id="gdcalert12">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<ul>
+<li><strong>Conditions To Pay</strong> - which is the division of the variable “Loan Amount” by “TotalIcome” and represents the probability of the client’s conditions to pay the loan.</li>
+</ul>
+<p id="gdcalert13">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<p id="gdcalert14">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<p id="gdcalert15">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<ul>
+<li><strong>EMI</strong> - EMI is the monthly amount to be paid by the applicant to pay the loan. The idea behind this variable is that people with high EMI may find it difficult to repay the loan. We can calculate the EMI by taking the ratio of the loan amount to the term of the loan amount, ie:</li>
+</ul>
+<p id="gdcalert16">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<ul>
+<li><strong>Balance Income</strong> - This is the revenue remaining after the EMI has been paid. The idea behind the creation of this variable is that, if this amount is high, the chances of a person paying the loan are high, thus increasing the chances of approval of the loan.</li>
+</ul>
+<p id="gdcalert17">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<p id="gdcalert18">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+</div>
+</div>
+<div id="prediction-model" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Prediction Model</h2>
+<p>In this topic we will talk about the learning models that will be used. Before going into the subject in depth, a correlation figure was plotted between the variables that will most often be used in that topic.</p>
+<p id="gdcalert19">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image12.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Figure 9 - Correlation between the main variables.</p>
+<p>According to the correlation table, we see a great dependence on Loan Status with Credit History. We will now see if with the proposed models this dependency will be confirmed.</p>
+<div id="model-construction" class="section level3" number="6.5.1">
+<h3><span class="header-section-number">6.5.1</span> Model Construction</h3>
+<p>Now it’s time to create some models, For this work 4 prediction algorithms will be used. We will start with the most classic, Logistic Regression, then we will move to the Decision Tree model and its more sophisticated model, Random Forest and finally we will use the model XGBoost which is usually quite powerful.</p>
+</div>
+<div id="logistic-regression-1" class="section level3" number="6.5.2">
+<h3><span class="header-section-number">6.5.2</span> Logistic Regression</h3>
+<p>We will start with the logistic regression algorithm. One way would be to include all variables in the model, however this can result in overfitting or over-adjustment.</p>
+<pre><code>We can make some intuitive hypotheses to start our model. We can, for example, assume that the chance of getting a loan will be greater for:</code></pre>
+<ol style="list-style-type: decimal">
+<li>Customers who have a credit history (remember that we observed this in the exploration of the data);</li>
+<li>Customers and guarantors with higher yields (it seems reasonable for the institution to consider that there is less risk in lending so that it has higher yields);</li>
+<li>Customers with a higher level of education (it seems reasonable for the institution to consider that customers with a higher level of education better assess their ability to repay the loan);</li>
+<li>Properties in urban areas with high growth prospects (it seems reasonable to imagine that properties in urban areas with high growth expectations will increase more and reduce the institution’s risk if the client does not pay the loan).</li>
+</ol>
+<p>We will start by using only the variable “Credit History” (Credit_History) as a predictor variable and loan status (Loan_Status) as a dependent variable.</p>
+<p id="gdcalert20">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image13.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>As can be seen, the accuracy and the cross-validation score obtained seem to be good. We will now add the variables Education, Married, Self_Employed, Property_Area:</p>
+<p id="gdcalert21">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image14.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>It was expected that the precision would increase by adding variables. But this is not the case here. Accuracy and cross-validation scores are not being impacted by less important variables. As can be seen in the next figure, Credit History is dominating the model.</p>
+<p id="gdcalert22">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image15.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Figure 10 - Weight of importance of the variables in the Logistic Regression model.</p>
+<pre><code>To get around this problem we have some options:</code></pre>
+<ol style="list-style-type: decimal">
+<li><p><strong>Collect more data to feed the algorithm</strong>: We can go out collecting a lot more data to try to improve the accuracy of the model. There are only 614 lines of data, which is considered a very small amount to be used in machine learning algorithms</p></li>
+<li><p><strong>. Resource Engineering</strong>: New information (variables) is derived and an attempt is made to predict with them.</p></li>
+<li><p><strong>Other algorithms</strong>: Use other modeling techniques with algorithms than Logistic Regression.</p>
+<p>As we are unable to obtain new data. We will focus on the second and third options. We’ll start with Resource Engineering.</p>
+<p>From topic X, we made some assumptions for new variables for our model. Let’s use them:</p></li>
+</ol>
+<p id="gdcalert23">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image16.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+</div>
+<div id="decisiondecision" class="section level3" number="6.5.3">
+<h3><span class="header-section-number">6.5.3</span> DecisionDecision</h3>
+<p>Treetree is another predictive model technique or algorithm known for providing greater precision than the logistic regression model.</p>
+<p>Starting again only with the Credit History variable, we obtain the same precision as the Logistic Regression.</p>
+<p id="gdcalert24">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image17.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<pre><code>Increasing the variables as in the previous case:</code></pre>
+<p id="gdcalert25">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image18.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<pre><code>Again, the accuracy remained the same. Finally, using the new variables:</code></pre>
+<p id="gdcalert26">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image19.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>We had an overfitting problem in our model when using all the variables obtained by resource engineering, which for the Decision Tree ended up being a big problem.</p>
+</div>
+<div id="random-forest-random" class="section level3" number="6.5.4">
+<h3><span class="header-section-number">6.5.4</span> Random Forest Random</h3>
+<p>forest is another algorithm to solve the classification problem, where it basically consists of a random combination of several decision trees to obtain better precision when using a single tree as in the previous case.</p>
+<p>An advantage of the Random Forest is that we can make it work with all characteristics or variables, as it returns a resource importance matrix (variable) that can be used to select the resources (variables) most relevant to the solution of the problem.</p>
+<p id="gdcalert27">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image20.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Again we had an overfitting problem with our model. The solution for our case can be solved by reducing the number of variables or adjusting the hyperparameters of the model.</p>
+<pre><code>We will try both. </code></pre>
+<p id="gdcalert28">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image21.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Figure 10 - Weight of importance of variables in the Random Forest model.</p>
+<p>We see again the greater predominance of the variable Credit_History. this clearly means that customers who have already received credit tend to receive it again. However, is this really the best credit policy to be adopted by our institution? It seems that this would be the “obvious”, but certainly, as scientists, we have to try to go further through the data and the analytical tools that we have.</p>
+<p>We will use the 5 main variables for the creation of the model. In addition, let’s modify the parameters of the random forest model a little:</p>
+<p id="gdcalert29">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image22.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<pre><code>We can see that the model is now generalizing well after these modifications. Finally, we will implement the resource engineering variables. </code></pre>
+<p id="gdcalert30">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image23.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p id="gdcalert31">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image24.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>From the table, we can see that with resource engineering the model had a substantial improvement in accuracy and cross-validation.</p>
+</div>
+<div id="xgboost" class="section level3" number="6.5.5">
+<h3><span class="header-section-number">6.5.5</span> XGBoost</h3>
+<p>The XGBoost is a fast and efficient algorithm. It is often used when looking for a high level of accuracy. It is very common to see it being used in sophisticated models with high scores on Kaggle (site focused on machine learning competitions)</p>
+<pre><code>Starting with the use of only the Credit History variable, we obtained an accuracy as equal as Random Forest and Logistic Regression. </code></pre>
+<p id="gdcalert32">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image25.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<p>Using the resource engineering variables, we obtained better precision, and a small improvement in the score cross-validation, which leads us to believe that it seems to be behaving a little better than the other models.</p>
+<p id="gdcalert33">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="analysis-and-forecasting-of-loan-approvals.html#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image26.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+</div>
+<div id="assembly-methods" class="section level3" number="6.5.6">
+<h3><span class="header-section-number">6.5.6</span> Assembly methods</h3>
+<pre><code>For the last part of the model, we use the Ensemble methods, which are meta-algorithms that combine various machine learning techniques in a predictive model to decrease bagging, polarization (boosting) ) or improve predictions (stacking). In our case we use the stacking method with the combination of the Logistic Regression, Random Forest and XGBoost models. </code></pre>
+<p id="gdcalert34">
+<span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">&gt;&gt;&gt;&gt;&gt; </span>
+</p>
+<div class="figure">
+<img src="images/image27.png" title="image_tooltip" alt="" />
+<p class="caption">alt_text</p>
+</div>
+<pre><code>The accuracy of the model increased slightly compared to XGBoost, however the cross-validation score remained the same, which makes us believe that it may be a case of overfitting. 
+
+From the analysis of the models used, we see that the Random Forest combined with resource engineering ends up being a more interesting model than Logistic Regression. In our work, XGBoost combined with resource engineering had a better accuracy result, with a slight improvement in score the validation while the combination of all models had a result that would have to be investigated further. Perhaps a variation in the hyperparameters of the model can bring us better results.</code></pre>
+</div>
+</div>
+<div id="conclusion-4" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> Conclusion</h2>
+<pre><code>Data analysis is a fundamental area for Data Scientist, with which we were able to make several hypotheses and draw conclusions to be used in our machine learning model. Knowing a little about the business model was essential to deal with outlier and extreme houses. 
+
+Another important aspect was the use of resource engineering, which was a simple implementation, but nevertheless it enabled us to improve the accuracy of our Machine Learning model, proving to be an essential tool if we want to take our precision model seriously.  
+
+We saw that more sophisticated models do not always bring us better results, it is useless to use models that consume more computational power without understanding them or if they give you the same result as simpler models. In order to take better advantage of the more sophisticated models, it was necessary to use resource engineering and different hyperparameters in the model to avoid overfitting. In the method of sets we did not have an improvement in the model as expected, this is perhaps one to analyze with different variables and parameters in the model. 
+
+Finally, Data Science is multidisciplinary and goes far beyond running ready-made algorithms and statistical techniques, it is necessary to do more research on the business model being analyzed and to question very obvious results. </code></pre>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="real-state-são-paulo-rent-prediction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdownproj.pdf", "bookdownproj.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

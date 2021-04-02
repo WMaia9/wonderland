@@ -1,8 +1,8 @@
 book_filename: "bookdownproj"
 output_dir: docs
 delete_merged_file: true
-edit: https://github.com/WMaia9/wonderland/edit/master/%s
-view: https://github.com/WMaia9/wonderland/blob/master/%s
+#edit: https://github.com/WMaia9/wonderland/edit/master/%s
+#view: https://github.com/WMaia9/wonderland/blob/master/%s
 language:
   ui:
     chapter_name: "Project "

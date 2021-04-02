@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Project 1 GPD And Energy Supply | Data Science Portfolio</title>
+  <meta name="description" content="Project 1 GPD And Energy Supply | Data Science Portfolio" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Project 1 GPD And Energy Supply | Data Science Portfolio" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Project 1 GPD And Energy Supply | Data Science Portfolio" />
+  
+  
+  
+
+<meta name="author" content="Wesley Maia" />
+
+
+<meta name="date" content="2021-05-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="author.html"/>
+<link rel="next" href="medical-insurance-costs.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#case-studies"><i class="fa fa-check"></i>Case studies</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="author.html"><a href="author.html"><i class="fa fa-check"></i>About Me</a></li>
+<li class="chapter" data-level="1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html"><i class="fa fa-check"></i><b>1</b> GPD And Energy Supply</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#introduction-1"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#data"><i class="fa fa-check"></i><b>1.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#energy-indicators"><i class="fa fa-check"></i><b>1.2.1</b> Energy Indicators</a></li>
+<li class="chapter" data-level="1.2.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#country-gdp"><i class="fa fa-check"></i><b>1.2.2</b> Country GDP</a></li>
+<li class="chapter" data-level="1.2.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#energy-technology"><i class="fa fa-check"></i><b>1.2.3</b> Energy Technology</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#data-analysis"><i class="fa fa-check"></i><b>1.3</b> Data Analysis</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years"><i class="fa fa-check"></i><b>1.3.1</b> What are the top 15 countries for average GDP over the past 10 years?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil"><i class="fa fa-check"></i><b>1.3.2</b> How much did the average GDP vary over the 10-year period for Brazil?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-average-energy-supply-per-capita"><i class="fa fa-check"></i><b>1.3.3</b> What is the average energy supply per capita?</a></li>
+<li class="chapter" data-level="1.3.4" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-percentage-do-countries-use-of-renewable-energy"><i class="fa fa-check"></i><b>1.3.4</b> What percentage do countries use of Renewable Energy?</a></li>
+<li class="chapter" data-level="1.3.5" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita"><i class="fa fa-check"></i><b>1.3.5</b> What is the estimated population size using Energy Supply and Energy Supply per capita?</a></li>
+<li class="chapter" data-level="1.3.6" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-proportion-of-self-citations-to-the-total-citations"><i class="fa fa-check"></i><b>1.3.6</b> What is the proportion of self-citations to the total citations?</a></li>
+<li class="chapter" data-level="1.3.7" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita"><i class="fa fa-check"></i><b>1.3.7</b> What is the correlation between the number of documents cited per capita and the supply of energy per capita?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="gpd-and-energy-supply.html"><a href="gpd-and-energy-supply.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html"><i class="fa fa-check"></i><b>2</b> Medical Insurance Costs</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#introduction-2"><i class="fa fa-check"></i><b>2.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#project-goals"><i class="fa fa-check"></i><b>2.1.1</b> Project Goals</a></li>
+<li class="chapter" data-level="2.1.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#analysis"><i class="fa fa-check"></i><b>2.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="2.1.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#evaluation"><i class="fa fa-check"></i><b>2.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#data-1"><i class="fa fa-check"></i><b>2.2</b> Data</a></li>
+<li class="chapter" data-level="2.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#exploring-the-data"><i class="fa fa-check"></i><b>2.3</b> Exploring the Data</a></li>
+<li class="chapter" data-level="2.4" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#linear-regression"><i class="fa fa-check"></i><b>2.4</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#interpreting-regression-parameters-in-a-basic-model"><i class="fa fa-check"></i><b>2.4.1</b> Interpreting regression parameters in a basic model</a></li>
+<li class="chapter" data-level="2.4.2" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#r-square"><i class="fa fa-check"></i><b>2.4.2</b> R-square</a></li>
+<li class="chapter" data-level="2.4.3" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#adding-more-variables-to-the-model"><i class="fa fa-check"></i><b>2.4.3</b> Adding more variables to the model</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#visualization-of-the-fitted-models"><i class="fa fa-check"></i><b>2.5</b> Visualization of the fitted models</a></li>
+<li class="chapter" data-level="2.6" data-path="medical-insurance-costs.html"><a href="medical-insurance-costs.html#conclusion-1"><i class="fa fa-check"></i><b>2.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html"><i class="fa fa-check"></i><b>3</b> Quantium Retail Strategy and Analytics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#introduction-3"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#data-2"><i class="fa fa-check"></i><b>3.2</b> Data</a></li>
+<li class="chapter" data-level="3.3" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#exploring-the-data-1"><i class="fa fa-check"></i><b>3.3</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#examining-transaction-data"><i class="fa fa-check"></i><b>3.3.1</b> Examining transaction data</a></li>
+<li class="chapter" data-level="3.3.2" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#examining-customer-data"><i class="fa fa-check"></i><b>3.3.2</b> Examining customer data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#data-analysis-on-customer-segments"><i class="fa fa-check"></i><b>3.4</b> Data analysis on customer segments</a></li>
+<li class="chapter" data-level="3.5" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#deep-dive-into-specific-customer-segments-for-insights"><i class="fa fa-check"></i><b>3.5</b> Deep dive into specific customer segments for insights</a></li>
+<li class="chapter" data-level="3.6" data-path="quantium-retail-strategy-and-analytics.html"><a href="quantium-retail-strategy-and-analytics.html#conclusion-2"><i class="fa fa-check"></i><b>3.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ok-cupid.html"><a href="ok-cupid.html"><i class="fa fa-check"></i><b>4</b> Ok Cupid</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="ok-cupid.html"><a href="ok-cupid.html#introduction-4"><i class="fa fa-check"></i><b>4.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="ok-cupid.html"><a href="ok-cupid.html#project-goals-1"><i class="fa fa-check"></i><b>4.1.1</b> Project Goals</a></li>
+<li class="chapter" data-level="4.1.2" data-path="ok-cupid.html"><a href="ok-cupid.html#analysis-1"><i class="fa fa-check"></i><b>4.1.2</b> Analysis</a></li>
+<li class="chapter" data-level="4.1.3" data-path="ok-cupid.html"><a href="ok-cupid.html#evaluation-1"><i class="fa fa-check"></i><b>4.1.3</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ok-cupid.html"><a href="ok-cupid.html#data-3"><i class="fa fa-check"></i><b>4.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="ok-cupid.html"><a href="ok-cupid.html#data-characteristics"><i class="fa fa-check"></i><b>4.2.1</b> Data Characteristics</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="ok-cupid.html"><a href="ok-cupid.html#exploring-the-data-2"><i class="fa fa-check"></i><b>4.3</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="ok-cupid.html"><a href="ok-cupid.html#continuous-variables"><i class="fa fa-check"></i><b>4.3.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="4.3.2" data-path="ok-cupid.html"><a href="ok-cupid.html#discrete-variables"><i class="fa fa-check"></i><b>4.3.2</b> Discrete Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="ok-cupid.html"><a href="ok-cupid.html#data-preparation"><i class="fa fa-check"></i><b>4.4</b> Data Preparation</a></li>
+<li class="chapter" data-level="4.5" data-path="ok-cupid.html"><a href="ok-cupid.html#prediction"><i class="fa fa-check"></i><b>4.5</b> Prediction</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="ok-cupid.html"><a href="ok-cupid.html#model-building"><i class="fa fa-check"></i><b>4.5.1</b> Model building</a></li>
+<li class="chapter" data-level="4.5.2" data-path="ok-cupid.html"><a href="ok-cupid.html#evaluation-metrics"><i class="fa fa-check"></i><b>4.5.2</b> Evaluation Metrics</a></li>
+<li class="chapter" data-level="4.5.3" data-path="ok-cupid.html"><a href="ok-cupid.html#logistic-regression"><i class="fa fa-check"></i><b>4.5.3</b> Logistic Regression</a></li>
+<li class="chapter" data-level="4.5.4" data-path="ok-cupid.html"><a href="ok-cupid.html#k-nearest-neighbor"><i class="fa fa-check"></i><b>4.5.4</b> K Nearest Neighbor</a></li>
+<li class="chapter" data-level="4.5.5" data-path="ok-cupid.html"><a href="ok-cupid.html#decision-trees"><i class="fa fa-check"></i><b>4.5.5</b> Decision Trees</a></li>
+<li class="chapter" data-level="4.5.6" data-path="ok-cupid.html"><a href="ok-cupid.html#final-model"><i class="fa fa-check"></i><b>4.5.6</b> Final Model</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="ok-cupid.html"><a href="ok-cupid.html#conclusion-3"><i class="fa fa-check"></i><b>4.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html"><i class="fa fa-check"></i><b>5</b> Real Estate São Paulo Rent Prediction</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#introduction-5"><i class="fa fa-check"></i><b>5.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#analysis-2"><i class="fa fa-check"></i><b>5.1.1</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#data-4"><i class="fa fa-check"></i><b>5.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#data-preparation-1"><i class="fa fa-check"></i><b>5.2.1</b> Data Preparation</a></li>
+<li class="chapter" data-level="5.2.2" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#external-data"><i class="fa fa-check"></i><b>5.2.2</b> External data</a></li>
+<li class="chapter" data-level="5.2.3" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#text-processing"><i class="fa fa-check"></i><b>5.2.3</b> Text Processing</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#model"><i class="fa fa-check"></i><b>5.3</b> Model</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#root-mean-square-error-rmse"><i class="fa fa-check"></i><b>5.3.1</b> <strong>Root Mean Square Error (RMSE)</strong></a></li>
+<li class="chapter" data-level="5.3.2" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#correlation-check"><i class="fa fa-check"></i><b>5.3.2</b> <strong>Correlation Check</strong></a></li>
+<li class="chapter" data-level="5.3.3" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#multicollinearity-analysis"><i class="fa fa-check"></i><b>5.3.3</b> <strong>Multicollinearity Analysis</strong></a></li>
+<li class="chapter" data-level="5.3.4" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#feature-engineering"><i class="fa fa-check"></i><b>5.3.4</b> <strong>Feature Engineering</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#prediction-1"><i class="fa fa-check"></i><b>5.4</b> Prediction</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#linear-models"><i class="fa fa-check"></i><b>5.4.1</b> <strong>Linear Models</strong></a></li>
+<li class="chapter" data-level="5.4.2" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#ensemble-methods"><i class="fa fa-check"></i><b>5.4.2</b> <strong>Ensemble Methods</strong></a></li>
+<li class="chapter" data-level="5.4.3" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#model-stacking"><i class="fa fa-check"></i><b>5.4.3</b> <strong>Model Stacking</strong></a></li>
+<li class="chapter" data-level="5.4.4" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#summary"><i class="fa fa-check"></i><b>5.4.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#use-case-of-the-model"><i class="fa fa-check"></i><b>5.5</b> Use Case of the Model</a></li>
+<li class="chapter" data-level="5.6" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#conclusion-4"><i class="fa fa-check"></i><b>5.6</b> Conclusion</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science Portfolio</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="gpd-and-energy-supply" class="section level1" number="1">
+<h1><span class="header-section-number">Project 1</span> GPD And Energy Supply</h1>
+<p>Code: <a href="https://github.com/WMaia9/PIB-e-Energy-Supply">GitHub</a></p>
+<div id="introduction-1" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Introduction</h2>
+<p>GDP is an acronym that means “Gross Domestic Product” and it is something extremely important for nations, because it consists of the sum of a country’s monetary values.</p>
+<p>In this way, this means that all goods and other types of services that are produced in a given region are added together over a period of time to know whether they are growing or not.</p>
+<p>Thus, GDP is one of the most used indicators in the market economy, always aiming to carry out research on how all the economic activity of a country is doing.</p>
+<p>Equally important, measuring sustainability indicators allows plants to assess the positive impacts of power generation, as well as the economic, social and environmental gains provided by the project.</p>
+<p>Experts say combating climate change should be one of the pillars for post-pandemic economic recovery. This is due to the fact that sustainable investments can generate higher returns for the economy. In this sense, stimulating the generation of renewable energy in the plants is essential, both to reduce impacts on the environment and also for the plant to remain competitive even in challenging scenarios. And to assess this, it becomes even more important to monitor sustainability indicators on a daily basis.</p>
+<p>Thinking about the great importance that energy indicators and their research impact on GDP and the great world movements that are happening in the search for clean and renewable energy, it seems interesting to make a case study on this content.</p>
+<p>In this case study, some indicators of the last 10 years of the 15 largest economies in the world are analyzed. To do this, 3 datasets are used. A greater focus will be given to the analysis of Brazil in relation to other countries. The analysis is done using python with Jupyter Notebook.</p>
+</div>
+<div id="data" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Data</h2>
+<div id="energy-indicators" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Energy Indicators</h3>
+<p><code>Energy_Indicators.xls</code> is a list of United Nations energy supply and renewable electricity production indicators for the year 2015 with the last update in 2017. <a href="https://datacatalog.worldbank.org/dataset/mena-energy-indicators-2017" class="uri">Energy Indicators</a></p>
+<p>TABLE 1.1: Description of variables in the Energy Indicators dataset.</p>
+<table>
+<colgroup>
+<col width="48%" />
+<col width="51%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Variable</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Country</td>
+<td align="left">List of country</td>
+</tr>
+<tr class="even">
+<td align="left">Energy Supply (Petajoules)</td>
+<td align="left">Energy supply in each country</td>
+</tr>
+<tr class="odd">
+<td align="left">Energy Supply per Capita (Gigajoules)</td>
+<td align="left">Energy supply per capita in each country</td>
+</tr>
+<tr class="even">
+<td align="left">% Renewable (%)</td>
+<td align="left">Rate of renewable energy in the country</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="country-gdp" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Country GDP</h3>
+<p><code>world_bank.csv</code> is a GDP data for countries between 1960 and 2019 (last updated) provided by the <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" class="uri">World Bank</a></p>
+<p>TABLE 1.2: Description of variables in the GDP dataset.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>Variable</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Country</td>
+<td align="left">List of country</td>
+</tr>
+<tr class="even">
+<td align="left">Year (1960 until 2019)</td>
+<td align="left">GDP</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="energy-technology" class="section level3" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Energy Technology</h3>
+<p><code>scimagojr-3.xlsx</code> is a Engineering and Energy Technology data made available by the Scimago Journal &amp; Country Rank that are made available to the public and include journals and scientific indicators from developed countries based on the information contained in the Scopus database and that measure the impact and the influence of scientific publications, with the latest update being made available in 2019. <a href="https://www.scimagojr.com/countryrank.php?category=2102" class="uri">Engineering and Energy Technology</a></p>
+<p>TABLE 1.3: Description of variables in the Country Rank data for Energy Engineering and Power Technology dataset.</p>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="82%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rank</td>
+<td>Rank of the country who have more citations</td>
+</tr>
+<tr class="even">
+<td>Country</td>
+<td>Countries</td>
+</tr>
+<tr class="odd">
+<td>Country Documents</td>
+<td>Document numbers</td>
+</tr>
+<tr class="even">
+<td>Citable documents</td>
+<td>Number of citable documents published by a journal in the three previous years.</td>
+</tr>
+<tr class="odd">
+<td>Citations</td>
+<td>Number of citations received in the selected year by a journal to the documents published in the three previous years.</td>
+</tr>
+<tr class="even">
+<td>Self-citations</td>
+<td>Number of journal’s self-citations in the selected year to its own documents published in the three previous years.</td>
+</tr>
+<tr class="odd">
+<td>Citations per document</td>
+<td>Average citations per document in a 2 year period.</td>
+</tr>
+<tr class="even">
+<td>H index</td>
+<td>journal’s number of articles (<em>h</em>) that have received at least h citations.</td>
+</tr>
+</tbody>
+</table>
+<p>Knowing which dataset we are going to work with, we can now look at them to get a better idea of how to proceed with the data.</p>
+<p>We start by looking at the first 5 lines of Energy Indicators</p>
+<p>TABLE 1.4: first 5 line of Energy Indicators.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Country</th>
+<th align="center">Energy Supply</th>
+<th align="center">Energy Supply per Capita</th>
+<th align="center">% Renewable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Afghanistan</td>
+<td align="center">3.21e+08</td>
+<td align="center">10</td>
+<td align="center">78.6693</td>
+</tr>
+<tr class="even">
+<td align="center">Albania</td>
+<td align="center">1.02e+08</td>
+<td align="center">35</td>
+<td align="center">100</td>
+</tr>
+<tr class="odd">
+<td align="center">Algeria</td>
+<td align="center">1.959e+09</td>
+<td align="center">51</td>
+<td align="center">0.55101</td>
+</tr>
+<tr class="even">
+<td align="center">American Samoa</td>
+<td align="center">nan</td>
+<td align="center">…</td>
+<td align="center">0.641026</td>
+</tr>
+<tr class="odd">
+<td align="center">Andorra</td>
+<td align="center">9e+06</td>
+<td align="center">121</td>
+<td align="center">88.6957</td>
+</tr>
+</tbody>
+</table>
+<p>We can see that there is data that needs to be cleaned up. In these first lines, it is noted that Afghanistan and Andorra use a very high percentage of renewable energy.</p>
+<p>Next, we’ll look at the GDP indicators</p>
+<p>TABLE 1.5: first 5 line of GDP Indicators.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Country</th>
+<th align="center">2010</th>
+<th align="center">2011</th>
+<th align="center">2012</th>
+<th align="center">…</th>
+<th align="center">2018</th>
+<th align="center">2019</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Aruba</td>
+<td align="center">2.3905e+09</td>
+<td align="center">2.54972e+09</td>
+<td align="center">2.53464e+09</td>
+<td align="center">…</td>
+<td align="center">nan</td>
+<td align="center">nan</td>
+</tr>
+<tr class="even">
+<td align="center">Afghanistan</td>
+<td align="center">1.58566e+10</td>
+<td align="center">1.78043e+10</td>
+<td align="center">2.00016e+10</td>
+<td align="center">…</td>
+<td align="center">1.83539e+10</td>
+<td align="center">1.92911e+10</td>
+</tr>
+<tr class="odd">
+<td align="center">Angola</td>
+<td align="center">8.37995e+10</td>
+<td align="center">1.1179e+11</td>
+<td align="center">1.28053e+11</td>
+<td align="center">…</td>
+<td align="center">1.01353e+11</td>
+<td align="center">8.88157e+10</td>
+</tr>
+<tr class="even">
+<td align="center">Albania</td>
+<td align="center">1.19269e+10</td>
+<td align="center">1.28908e+10</td>
+<td align="center">1.23198e+10</td>
+<td align="center">…</td>
+<td align="center">1.5147e+10</td>
+<td align="center">1.52792e+10</td>
+</tr>
+<tr class="odd">
+<td align="center">Andorra</td>
+<td align="center">3.44997e+09</td>
+<td align="center">3.6292e+09</td>
+<td align="center">3.18881e+09</td>
+<td align="center">…</td>
+<td align="center">3.21832e+09</td>
+<td align="center">3.15406e+09</td>
+</tr>
+</tbody>
+</table>
+<p>Again we see some countries with values that are missing. I believe that it will not be a problem when the data was merged.</p>
+<p>Now let’s analyze the data from the Scimago Journal and Country Rank data for Energy Engineering and Power Technology</p>
+<p>TABLE 1.6: first 5 line of the Country Rank data for Energy Engineering and Power Technology.</p>
+<table>
+<colgroup>
+<col width="5%" />
+<col width="12%" />
+<col width="13%" />
+<col width="8%" />
+<col width="14%" />
+<col width="8%" />
+<col width="12%" />
+<col width="17%" />
+<col width="7%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Rank</th>
+<th align="center">Country</th>
+<th align="center">Region</th>
+<th align="center">Documents</th>
+<th align="center">Citable documents</th>
+<th align="center">Citations</th>
+<th align="center">Self-citations</th>
+<th align="center">Citations per document</th>
+<th align="center">H index</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">China</td>
+<td align="center">Asiatic Region</td>
+<td align="center">235126</td>
+<td align="center">233883</td>
+<td align="center">1909601</td>
+<td align="center">1306438</td>
+<td align="center">8.12</td>
+<td align="center">224</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">United States</td>
+<td align="center">Northern America</td>
+<td align="center">157811</td>
+<td align="center">154288</td>
+<td align="center">1940563</td>
+<td align="center">639345</td>
+<td align="center">12.3</td>
+<td align="center">333</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">Japan</td>
+<td align="center">Asiatic Region</td>
+<td align="center">46032</td>
+<td align="center">45559</td>
+<td align="center">436961</td>
+<td align="center">109968</td>
+<td align="center">9.49</td>
+<td align="center">181</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">India</td>
+<td align="center">Asiatic Region</td>
+<td align="center">39893</td>
+<td align="center">38848</td>
+<td align="center">368175</td>
+<td align="center">123446</td>
+<td align="center">9.23</td>
+<td align="center">171</td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="center">United Kingdom</td>
+<td align="center">Western Europe</td>
+<td align="center">38873</td>
+<td align="center">37780</td>
+<td align="center">536378</td>
+<td align="center">100038</td>
+<td align="center">13.8</td>
+<td align="center">208</td>
+</tr>
+</tbody>
+</table>
+<p>After clearing all the data and renaming the country names so as not to duplicate the lines, we can immerse the data according to the first 15 placed in the ranking provided by Scimago Journal. We can see this table below.</p>
+<p>TABLE 1.7: All top Rank 15 Scimago Journal Countries.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Country</th>
+<th align="center">Rank</th>
+<th align="center">Documents</th>
+<th align="center">Citations</th>
+<th align="center">Energy Supply</th>
+<th align="center">% Renewable</th>
+<th align="center">…</th>
+<th align="center">2019</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">China</td>
+<td align="center">1</td>
+<td align="center">235126</td>
+<td align="center">1909601</td>
+<td align="center">1.27191e+11</td>
+<td align="center">19.7549</td>
+<td align="center">…</td>
+<td align="center">1.43429e+13</td>
+</tr>
+<tr class="even">
+<td align="center">United States</td>
+<td align="center">2</td>
+<td align="center">157811</td>
+<td align="center">1940563</td>
+<td align="center">9.0838e+10</td>
+<td align="center">11.571</td>
+<td align="center">…</td>
+<td align="center">2.14332e+13</td>
+</tr>
+<tr class="odd">
+<td align="center">Japan</td>
+<td align="center">3</td>
+<td align="center">46032</td>
+<td align="center">436961</td>
+<td align="center">1.8984e+10</td>
+<td align="center">10.2328</td>
+<td align="center">…</td>
+<td align="center">5.08177e+12</td>
+</tr>
+<tr class="even">
+<td align="center">India</td>
+<td align="center">4</td>
+<td align="center">39893</td>
+<td align="center">368175</td>
+<td align="center">3.3195e+10</td>
+<td align="center">14.9691</td>
+<td align="center">…</td>
+<td align="center">2.86893e+12</td>
+</tr>
+<tr class="odd">
+<td align="center">United Kingdom</td>
+<td align="center">5</td>
+<td align="center">38873</td>
+<td align="center">536378</td>
+<td align="center">7.92e+09</td>
+<td align="center">10.6005</td>
+<td align="center">…</td>
+<td align="center">2.82911e+12</td>
+</tr>
+<tr class="even">
+<td align="center">Germany</td>
+<td align="center">6</td>
+<td align="center">32935</td>
+<td align="center">367356</td>
+<td align="center">1.3261e+10</td>
+<td align="center">17.9015</td>
+<td align="center">…</td>
+<td align="center">3.86112e+12</td>
+</tr>
+<tr class="odd">
+<td align="center">Russian Federation</td>
+<td align="center">7</td>
+<td align="center">31880</td>
+<td align="center">91906</td>
+<td align="center">3.0709e+10</td>
+<td align="center">17.2887</td>
+<td align="center">…</td>
+<td align="center">1.69988e+12</td>
+</tr>
+<tr class="even">
+<td align="center">Canada</td>
+<td align="center">8</td>
+<td align="center">29633</td>
+<td align="center">491467</td>
+<td align="center">1.0431e+10</td>
+<td align="center">61.9454</td>
+<td align="center">…</td>
+<td align="center">1.73643e+12</td>
+</tr>
+<tr class="odd">
+<td align="center">Italy</td>
+<td align="center">9</td>
+<td align="center">23725</td>
+<td align="center">312631</td>
+<td align="center">6.53e+09</td>
+<td align="center">33.6672</td>
+<td align="center">…</td>
+<td align="center">2.00358e+12</td>
+</tr>
+<tr class="even">
+<td align="center">South Korea</td>
+<td align="center">10</td>
+<td align="center">23451</td>
+<td align="center">279709</td>
+<td align="center">1.1007e+10</td>
+<td align="center">2.27935</td>
+<td align="center">…</td>
+<td align="center">1.64674e+12</td>
+</tr>
+<tr class="odd">
+<td align="center">France</td>
+<td align="center">11</td>
+<td align="center">22429</td>
+<td align="center">300015</td>
+<td align="center">1.0597e+10</td>
+<td align="center">17.0203</td>
+<td align="center">…</td>
+<td align="center">2.71552e+12</td>
+</tr>
+<tr class="even">
+<td align="center">Iran</td>
+<td align="center">12</td>
+<td align="center">19371</td>
+<td align="center">242250</td>
+<td align="center">9.172e+09</td>
+<td align="center">5.70772</td>
+<td align="center">…</td>
+<td align="center">nan</td>
+</tr>
+<tr class="odd">
+<td align="center">Spain</td>
+<td align="center">13</td>
+<td align="center">18882</td>
+<td align="center">312632</td>
+<td align="center">4.923e+09</td>
+<td align="center">37.9686</td>
+<td align="center">…</td>
+<td align="center">1.39349e+12</td>
+</tr>
+<tr class="even">
+<td align="center">Australia</td>
+<td align="center">14</td>
+<td align="center">18077</td>
+<td align="center">263733</td>
+<td align="center">5.386e+09</td>
+<td align="center">11.8108</td>
+<td align="center">…</td>
+<td align="center">1.39657e+12</td>
+</tr>
+<tr class="odd">
+<td align="center">Brazil</td>
+<td align="center">15</td>
+<td align="center">18024</td>
+<td align="center">152380</td>
+<td align="center">1.2149e+10</td>
+<td align="center">69.648</td>
+<td align="center">…</td>
+<td align="center">1.83976e+12</td>
+</tr>
+</tbody>
+</table>
+<p>After immersing the data, a 15-row, 20-column Data Frame was created. We can see the columns partially due to the limitation of the page, it can be seen in full how the immersion process was done and with all the data on the GitHub page</p>
+</div>
+</div>
+<div id="data-analysis" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Data Analysis</h2>
+<p>Now that we have cleaned up and merged the data, we can make inferences.</p>
+<div id="what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years" class="section level3" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> What are the top 15 countries for average GDP over the past 10 years?</h3>
+<p align="center">
+<p><img src="images/project1/1.PNG" width="600" /></p>
+</p>
+<p>FIGURE 1.1: The distribution of the top 15 GDP country.</p>
+<p>As can be seen in the graph, in the average GDP of the last 10 years there is a sovereignty of the USA still in relation to the other countries with China and Japan just behind the top 3. Brazil is the 8th best GDP average among the 15 largest.</p>
+</div>
+<div id="how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil" class="section level3" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> How much did the average GDP vary over the 10-year period for Brazil?</h3>
+<p>GDP has changed by -369.0 billion dollars over the past 10 years</p>
+<p align="center">
+<p><img src="images/project1/2.PNG" width="600" /></p>
+</p>
+<p>FIGURE 1.2: Distribution of the variation in Brazil GPD over the last 10 years.</p>
+<p>As can be seen in the information above, Brazil over the past 10 years has had a negative change in GDP. The graph above shows that the biggest drop occurred between 2015 and 2016, which can be explained by the national political-economic crisis, where sets of economic measures, in addition to certain external factors and certain internal political events, which occurred during the Dilma Rousseff Government, which, added , resulted in a drop in activity. In 2020 another recession is expected due to the global financial crisis caused by the Covid-19 pandemic.</p>
+</div>
+<div id="what-is-the-average-energy-supply-per-capita" class="section level3" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> What is the average energy supply per capita?</h3>
+<p>The average energy supply is 157.6 Petajoules</p>
+</div>
+<div id="what-percentage-do-countries-use-of-renewable-energy" class="section level3" number="1.3.4">
+<h3><span class="header-section-number">1.3.4</span> What percentage do countries use of Renewable Energy?</h3>
+<p align="center">
+<p><img src="images/project1/3.PNG" width="600" /></p>
+</p>
+<p>FIGURE 1.3: The distribution of the percentage fo countries use Renewable Energy.</p>
+<p>Analyzing the chart above, we see that Brazil is the country that has the highest percentage of use of renewable energy. According to the International Energy Agency, Brazil is the third largest renewable energy generator in the world and according to the Energy Research Company (EPE), the country has a predominant renewable energy electrical matrix, “with emphasis on the hydraulic generation which accounts for 68.1% of the domestic supply”and is one of the great Brazilian forces when it comes to renewable energy, thus justifying this high percentage.</p>
+</div>
+<div id="what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita" class="section level3" number="1.3.5">
+<h3><span class="header-section-number">1.3.5</span> What is the estimated population size using Energy Supply and Energy Supply per capita?</h3>
+<p align="center">
+<p><img src="images/project1/4.PNG" width="600" /></p>
+</p>
+<p align="center">
+FIGURE 1.4: The distribution of the Estimated Population in Billions of people.
+</p>
+<p>As the data were not available due to the size of the population, a simple way is to use the Energy Supply and Energy Supply values per capita to make an estimate. Doing a quick search on the internet is easy to see that the figures are very close to the real estimate of the population of these countries. We see that China has almost 1.4 billion people, followed by India with 1.3 billion and then the USA with approximately 300 million.</p>
+</div>
+<div id="what-is-the-proportion-of-self-citations-to-the-total-citations" class="section level3" number="1.3.6">
+<h3><span class="header-section-number">1.3.6</span> What is the proportion of self-citations to the total citations?</h3>
+<p align="center">
+<p><img src="images/project1/5.PNG" width="600" /></p>
+</p>
+<p>FIGURE 1.5: The distribution of the rank of the country with more self citations.</p>
+<p>Analyzing now more data related to Scimago Journal Rank, which is a measure of the scientific influence of academic journals that accounts for the number of citations received for a period and the importance or prestige of the journals from which these situations come, we see that China is the country which has a higher proportion of self-quotes on Energy and Telecommunications articles showing how interested China has been in this area in recent years.</p>
+<p>In Latin America, this impact is very visible with the recent revolution in the electricity transmission and distribution sector with the arrival of the Chinese state conglomerates State Grid and Three Gorges in the markets of Chile and Peru and which continue to expand their business in Brazil.</p>
+</div>
+<div id="what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita" class="section level3" number="1.3.7">
+<h3><span class="header-section-number">1.3.7</span> What is the correlation between the number of documents cited per capita and the supply of energy per capita?</h3>
+<p>An interesting analysis that can be seen with the data provided is whether there is a correlation between the number of documents cited per capita and the energy supply and we can see that there is a great relationship between these aspects what it is 0.75. We see then that the greater the interest of a country in studies related to Energy, the greater is also the energy supply of that same country.</p>
+</div>
+</div>
+<div id="conclusion" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Conclusion</h2>
+<p>After analyzing the dataset separately, we were able to use one of the great advantages of python to analyze data is the joining of data. With Datasets together we were able to make interesting inferences about the data. From GPDs at home in two countries to the correlation that there is energy supply and the number of citations visualizing graphs and data, showing the great power that the Python language has in data analysis and proving to be a great tool for Data Science.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="author.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="medical-insurance-costs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdownproj.pdf", "bookdownproj.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
