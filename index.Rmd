@@ -32,14 +32,14 @@ All codes and projects in this portfolio can be found on my Github page: [GitHub
 
 # About Me {#author .unnumbered}
 
-I am graduated in Science Physics, at this moment am taking an MBA course in Data Science and Analytics and working with projects in the area.
+I'm a data scientist and currently work at the Hand Talk company, which applies artificial intelligence for accessibility. I am graduated in Science Physics, at this moment am studding MBA course in Data Science and Analytics.
 
 I am passionate about technology and science. At all times I am always looking to learn new things. In free moments I like to play video games, watch movies and series.
 
 During graduation I participated in Scientific Initiation projects. The first one, Improvement of collimation systems for gamma-particle coincidence measurements, consisted of calculating Rutherford collisions by means of programming in C language and whose objective was to understand the operation of the collimator of the accelerator Pelletron from University of São Paulo. In the second one, the focus was on the High Energy Physics area at LHC at CERN with case studies.
 
-I worked for a while in the financial market, interning at the trading desk. After that, I dedicated myself for a few years to teaching Physics.
+I worked for a while in the financial market, interning at the trading desk. After that, I dedicated myself for a few years to teaching Physic.
 
-On this page you will find some of the projects that I am currently working on. You can see my CV [Here](https://drive.google.com/file/d/1qNNzgfLYYjUj0nCQD_vRI8yd5tBzRhxw/view?usp=sharing).\
+On this page you will find some of the projects that I am currently working on. You can see my Linkedin [Here](https://www.linkedin.com/in/wesley-maia-62009612a/).\
 
 ![](images/eu.jpg "eu"){width="402"}
