@@ -694,7 +694,7 @@
 <p>The StackingCVRegressor, however, uses the concept of out-of-fold predictions: the dataset is split into k folds, and in k successive rounds, k-1 folds are used to fit the first level regressor. In each round, the first-level regressors are then applied to the remaining 1 subset that was not used for model fitting in each iteration. The resulting predictions are then stacked and provided – as input data – to the second-level regressor. After the training of the StackingCVRegressor, the first-level regressors are fit to the entire dataset for optimal predictions.</p>
 <p>Ref. <a href="http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/" class="uri">http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/</a></p>
 <p><img src="images/project5/paste-B7B477F1.png" width="421" /></p>
-<p>FIGURE 5.7: Staking Model</p>
+<p>FIGURE 5.7: Stacking Model</p>
 <p>TABLE 5.11: Results for Stacking CV Regressor with 5-Fold Cross-Validation.</p>
 <table>
 <thead>
@@ -745,13 +745,13 @@
 <tbody>
 <tr class="odd">
 <td align="center">Linear Regression</td>
-<td align="center">0.38291 ± 0.00506</td>
-<td align="center">0.37982</td>
+<td align="center">0.3829 ± 0.0051</td>
+<td align="center">0.3798</td>
 </tr>
 <tr class="even">
 <td align="center">Bayesian Ridge</td>
-<td align="center">0.3829 ± 0.0050</td>
-<td align="center">0.3797</td>
+<td align="center">0.4134 ± 0.0031</td>
+<td align="center">0.4145</td>
 </tr>
 <tr class="odd">
 <td align="center">Lasso</td>
@@ -774,7 +774,7 @@
 <td align="center">0.3427</td>
 </tr>
 <tr class="odd">
-<td align="center">Gradient Bossting</td>
+<td align="center">Gradient Boosting</td>
 <td align="center">0.3148 ± 0.0050</td>
 <td align="center">0.3128</td>
 </tr>
@@ -789,12 +789,12 @@
 <td align="center">0.3124</td>
 </tr>
 <tr class="even">
-<td align="center">Stacing CV</td>
+<td align="center">Stakcing CV</td>
 <td align="center">0.3112 ± 0.0048</td>
 <td align="center">0.3198</td>
 </tr>
 <tr class="odd">
-<td align="center">Bleding</td>
+<td align="center">Blending</td>
 <td align="center">0.2973</td>
 <td align="center">0.2923</td>
 </tr>

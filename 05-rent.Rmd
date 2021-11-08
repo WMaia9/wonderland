@@ -246,7 +246,7 @@ Before we can finalize any scaling technique let's check the skewness of our num
 
 -   skewness = 0 : normally distributed.
 
--   skewness \> 0 : more weight in the left tail of the distribution.
+-   skewness > 0 : more weight in the left tail of the distribution.
 
 -   skewness \< 0 : more weight in the right tail of the distribution.
 
@@ -408,7 +408,7 @@ Ref. <http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/>
 
 ![](images/project5/paste-B7B477F1.png){width="421"}
 
-FIGURE 5.7: Staking Model
+FIGURE 5.7: Stacking Model
 
 TABLE 5.11: Results for Stacking CV Regressor with 5-Fold Cross-Validation.
 
@@ -432,17 +432,17 @@ TABLE 5.13: Summary all models
 
 |         Model          | RMSLE on Training | RMSLE on Test |
 |:----------------------:|:-----------------:|:-------------:|
-|   Linear Regression    | 0.38291 ± 0.00506 |    0.37982    |
-|     Bayesian Ridge     |  0.3829 ± 0.0050  |    0.3797     |
+|   Linear Regression    |  0.3829 ± 0.0051  |    0.3798     |
+|     Bayesian Ridge     |  0.4134 ± 0.0031  |    0.4145     |
 |         Lasso          |  0.3831 ± 0.0050  |    0.3801     |
 |      Elastic Net       |  0.4064 ± 0.0031  |    0.4035     |
 |         Ridge          |  0.4064 ± 0.0031  |    0.4035     |
 | Support Vector Machine |  0.3461 ± 0.0064  |    0.3427     |
-|   Gradient Bossting    |  0.3148 ± 0.0050  |    0.3128     |
+|   Gradient Boosting    |  0.3148 ± 0.0050  |    0.3128     |
 |        LightGBM        |  0.3152 ± 0.0038  |    0.3198     |
 |         XGBoot         |  0.3164 ± 0.0040  |    0.3124     |
-|       Stacing CV       |  0.3112 ± 0.0048  |    0.3198     |
-|        Bleding         |      0.2973       |    0.2923     |
+|      Stakcing CV       |  0.3112 ± 0.0048  |    0.3198     |
+|        Blending        |      0.2973       |    0.2923     |
 
 ## Use Case of the Model
 
