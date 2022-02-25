@@ -36,15 +36,23 @@ Each line, or sample, consists of the following features:
 
 TABLE 2.1: Description of variables in the dataset.
 
++--------------+----------------------------------------------------------------------------------------------------+
 | **Variable** | **Description**                                                                                    |
-|--------------|----------------------------------------------------------------------------------------------------|
++==============+====================================================================================================+
 | age          | Age of primary beneficiary                                                                         |
++--------------+----------------------------------------------------------------------------------------------------+
 | sex          | Client's gender                                                                                    |
++--------------+----------------------------------------------------------------------------------------------------+
 | bmi          | Body mass index of the client. BMI is a measure of a person's weight with respect to their height. |
++--------------+----------------------------------------------------------------------------------------------------+
 | children     | Numbers of children depending on the client                                                        |
++--------------+----------------------------------------------------------------------------------------------------+
 | smoker       | smoker yes or no                                                                                   |
++--------------+----------------------------------------------------------------------------------------------------+
 | region       | Region of which the customer is a part                                                             |
++--------------+----------------------------------------------------------------------------------------------------+
 | charges      | Annual charge of how much the customer must pay                                                    |
++--------------+----------------------------------------------------------------------------------------------------+
 
 ## Exploring the Data
 
@@ -110,7 +118,7 @@ TABLE 2.3: Linear Regression Model adjusted for age variable using the python st
 
 The part that starts to be relevant to us of the Table presented is from **coef**. This section contains the estimated values for the parameters of the regression model. Its pattern, errors and other values are used to quantify the uncertainty in the estimates of the regression parameters.
 
-This adjusted model implies that when comparing two people of different ages in one year, the oldest person will have an average of 257. 72 units of charges larger than the youngest person. This difference is statistically significant, based on the p-value showing in the column labeled **'P\> \| t \|'**. This means that there is strong evidence that there is a real association between age and charges made by the customer.
+This adjusted model implies that when comparing two people of different ages in one year, the oldest person will have an average of 257. 72 units of charges larger than the youngest person. This difference is statistically significant, based on the p-value showing in the column labeled **'P> \| t \|'**. This means that there is strong evidence that there is a real association between age and charges made by the customer.
 
 To better understand the meaning of the regression parameter 257.7226, we can look at the standard deviation of charges.
 
