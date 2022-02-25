@@ -1,8 +1,14 @@
 ---
 title: "Data Science Portfolio"
+<<<<<<< HEAD
 subtitle: "A Showcase of my Projects and my abilities"
 author: "Wesley Maia"
 date: "`r Sys.Date()`"
+=======
+author: "Wesley Maia"
+date: "`r Sys.Date()`"
+subtitle: A Showcase of my Projects and my abilities
+>>>>>>> 195afc5581499a15472ae921e72b25e06e0875bf
 site: bookdown::bookdown_site
 ---
 
@@ -39,6 +45,13 @@ I'm passionate about technology and science. At all times I am always looking to
 During graduation, I participated in Scientific Initiation projects. The first one, Improvement of collimation systems for gamma-particle coincidence measurements, consisted of calculating Rutherford collisions utilizing programming in C language and whose objective was to understand the operation of the collimator of the accelerator Pelletron from the University of São Paulo. In the second one, the focus was on the High Energy Physics area at LHC at CERN with case studies.
 
 I worked for a while in the financial market, interning at the trading desk. After that, I dedicated myself for a few years to teaching Physics.
+<<<<<<< HEAD
 On this page, you will find some of the projects that I am currently working on. You can see my Linkedin [Here](https://www.linkedin.com/in/wesley-maia-62009612a/).\
 
 ![](images/eu.png "eu"){width="312"}
+=======
+
+On this page, you will find some of the projects that I am currently working on. You can see my Linkedin [Here](https://www.linkedin.com/in/wesley-maia-62009612a/).\
+
+![](images/eu2.png "eu"){width="336"}
+>>>>>>> 195afc5581499a15472ae921e72b25e06e0875bf

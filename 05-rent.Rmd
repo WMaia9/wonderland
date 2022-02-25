@@ -252,7 +252,11 @@ Before we can finalize any scaling technique let's check the skewness of our num
 
 #### **Target Variable Analysis and Transformation**
 
+<<<<<<< HEAD
 Price is our target variable. If we want to predict the target variables accurately then the first task is to understand the underlying behavior of our target variable. Note thatthe model can make more reliable predictions if our target variable is normally distributed. We will use both graphical and statistical methods to do a normality test of our target variable.
+=======
+Price is our target variable. If we want to predict the target variables accurately then the first task is to understand the underlying behavior of our target variable. Note that the model can make more reliable predictions if our target variable is normally distributed. We will use both graphical and statistical methods to do a normality test of our target variable.
+>>>>>>> 195afc5581499a15472ae921e72b25e06e0875bf
 
 **Statistical**
 
@@ -404,7 +408,11 @@ An ensemble-learning meta-regressor for stacking regression. Stacking is an ense
 
 The StackingCVRegressor, however, uses the concept of out-of-fold predictions: the dataset is split into k folds, and in k successive rounds, k-1 folds are used to fit the first level regressor. In each round, the first-level regressors are then applied to the remaining 1 subset that was not used for model fitting in each iteration. The resulting predictions are then stacked and provided -- as input data -- to the second-level regressor. After the training of the StackingCVRegressor, the first-level regressors are fit to the entire dataset for optimal predictions.
 
+<<<<<<< HEAD
 Ref. [\<http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/>](http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/){.uri}
+=======
+Ref. <http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/>
+>>>>>>> 195afc5581499a15472ae921e72b25e06e0875bf
 
 ![](images/project5/paste-B7B477F1.png){width="421"}
 
