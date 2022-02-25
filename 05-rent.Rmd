@@ -6,27 +6,27 @@ Web App: [sp-rent-predictions](https://share.streamlit.io/wmaia9/sprentweb/main/
 
 ## Introduction
 
-Everyone needs a place to live. It can be a house, a flat or an apartment. Everyone, at some point in life, is faced with the choice of buying or renting a house. On top of that, the following questions can be asked: Is buying a property worthwhile or staying in rent is the best alternative? In a society that values and idealizes the dream of home ownership, those who question themselves about the subject end up being seen as crazy.
+Everyone needs a place to live. It can be a house, a flat, or an apartment. Everyone, at some point in life, is faced with the choice of buying or renting a house. On top of that, the following questions can be asked: Is buying a property worthwhile or staying in rent is the best alternative? In a society that values and idealizes the dream of homeownership, those who question themselves about the subject end up being seen as crazy.
 
-After all, from an early age, we are led to believe that home ownership is a goal that everyone should have and strive to achieve. This, however, is not an absolute truth.
+After all, from an early age, we are led to believe that homeownership is a goal that everyone should have and strive to achieve. This, however, is not an absolute truth.
 
-Furthermore, having a home, for many, is synonymous with stability and security. But, is it really worth buying a house? Or can continuing to rent make more sense?
+Furthermore, having a home, for many, is synonymous with stability and security. But, is it worth buying a house? Or can continue to rent make more sense?
 
 Let's point out some of the reasons that it makes sense to rent and why this is such an attractive business:
 
 1.  **Renting is not synonymous with losing money**
 
-> Considering the fixed income, depending on how the interest rates are, for example, it is more worthwhile to continue renting and invest the money that was reserved for the home itself. Thus, it is possible to pay the lease with the proceeds and save the rest to, who knows, buy it later.
+> Considering the fixed income, depending on how the interest rates are, for example, it is more worthwhile to continue renting and invest the money that was reserved for the home itself. Thus, it is possible to pay the lease with the proceeds and save the rest too, who knows, buy it later.
 >
-> After all, the vast majority of people do not buy their house in cash and resort to financing. And this type of business is not advantageous, as the person ends up assuming a debt for years, and the amount to be paid for the property can even triple in comparison with the original value of the property.
+> After all, the vast majority of people do not buy their houses in cash and resort to financing. And this type of business is not advantageous, as the person ends up assuming debt for years, and the amount to be paid for the property can even triple in comparison with the original value of the property.
 >
 > In this way, it can be much more worthwhile to invest your money - making it work for you - and to continue renting, paying this expense (or part of it) with the income.
 
 2.  **Property is not an investment**
 
-> It is important to keep in mind that owning a home is only for the sake of the family and does not generate any profit. With this new acquisition, debts such as property tax and other taxes, maintenance expenses and a series of repairs that may appear will come.
+> It is important to keep in mind that owning a home is only for the sake of the family and does not generate any profit. With this new acquisition, debts such as property tax and other taxes, maintenance expenses, and a series of repairs that may appear will come.
 >
-> Certainly your money will be invested there, but it can both appreciate - with the appreciation of the good itself over the years - as well as devalue itself. Not to mention that the money is immobilized, causing you to lose liquidity.
+> Certainly, your money will be invested there, but it can both appreciate - with the appreciation of the good itself over the years - as well as devalue itself. Not to mention that the money is immobilized, causing you to lose liquidity.
 
 3.  **The property is not yours until it is paid off**
 
@@ -40,31 +40,31 @@ Let's point out some of the reasons that it makes sense to rent and why this is 
 
 In this work, we want to find an answer to these questions. This case study is intended to be a comprehensive use case of how to deal with a regression problem for Data Science. We will start with some questions that allow us to understand the problems related to the price of renting a property.
 
-The owner does not know how to increase the value of the property so that the investment is less than the added value. For example, building a swimming pool can increase the price and forming a bathroom is not worth it.
+The owner does not know how to increase the value of the property so that the investment is less than the added value. For example, building a swimming pool can increase the price, and forming a bathroom is not worth it.
 
 The owner does not know how much he is going to rent a property. He makes an offer on the portal and doesn't know if the price is right,
 
 The tenant does not know how much the property is worth.
 
-These are some of the questions that can be asked. As a definition of our problem, we define the property's valuation, and through explanations we try to get an answer depending on the position we choose.
+These are some of the questions that can be asked. As a definition of our problem, we define the property's valuation, and thorough explanations, we try to get an answer depending on the position we choose.
 
-Initially we will see how the literature says what the amount should be charged in a rent.
+Initially, we will see how the literature says what the amount should be charged in rent.
 
 According to, the basic rule most used to calculate rent is to apply a value between 0.5% and 1%, per month, on the market value of the property. This means that if the property is worth R\$ 100 thousand, the rent must be between R\$ 500 and R\$ 1,000 per month. Research shows that, on average, two- and three-bedroom houses and apartments, the rental price is 0.75%.
 
-But there are many variables that make up the rent calculation. The real estate market itself regulates itself and pricing the rental price of properties by supply and demand. Supply and demand is an important concept of the Liberal Economy.
+But many variables make up the rent calculation. The real estate market itself regulates itself and prices the rental price of properties by supply and demand. Supply and demand are important concepts of the Liberal Economy.
 
 The characteristics of the property itself are also decisive in the calculation of rent. Similar properties in the same region of the city, in general, have approximate values. That is why it is always important to observe the values ​​in force in the real estate market in the region in which you will invest or prospect your property for business.
 
 There are cases of similar properties in the same neighborhood that may have different rentals. This is justified by the commercial and transport structure available. Factors such as the total length of the property, leisure facilities, swimming pool, party room, condominium, concierge services, security, garage, number of rooms influence the calculation of rent
 
-An apartment or house, for example, close to bus or metro stations may have a higher rental price than a more remote one. The same goes for properties in regions with supermarkets, pharmacies and bakeries located next to a park.
+An apartment or house, for example, close to bus or metro stations may have a higher rental price than a more remote one. The same goes for properties in regions with supermarkets, pharmacies, and bakeries located next to a park.
 
 With this premise, we can now analyze the data.
 
 ## Data
 
-As a data source for information on property characteristics and prices, a set of data obtained from a web scraper on the Zap Imóveis website was used. Web Scraper is a tool with the purpose of extracting data from a HyperText Markup Language (HTML) website. The web scraper was developed by GeovRodri based on Beautiful Soup and made available through the link: [zapimoveis-scraper](https://pypi.org/project/zapimoveis-scraper/)
+As a data source for information on property characteristics and prices, a set of data obtained from a web scraper on the Zap Imóveis website was used. Web Scraper is a tool to extract data from a HyperText Markup Language (HTML) website. The web scraper was developed by GeovRodri based on Beautiful Soup and made available through the link: [zapimoveis-scraper](https://pypi.org/project/zapimoveis-scraper/)
 
 The set of data collected on the website is based on rental advertisements in the city of São Paulo containing more than 60 thousand data. The data set obtained contains the data according to TABLE 5.1.
 
@@ -81,25 +81,25 @@ TABLE 5.1.1: Description of variables in the dataset.
 | address       | property address                    |
 | link          | link of the property                |
 
-Another idea on how to enrich our solution was to add external data. Our hypothesis took into account the information given in the introduction of how a property is calculated, therefore, a location of the property can significantly affect the price. Therefore, we also take into account the distance to the nearest public transport (Metro and bus), distance to the nearest school, number of cultural variety within 1km and addition to the crime rate in the region.
+Another idea on how to enrich our solution was to add external data. Our hypothesis took into account the information given in the introduction of how a property is calculated, therefore, the location of the property can significantly affect the price. Therefore, we also take into account the distance to the nearest public transport (Metro and bus), distance to the nearest school, number of cultural variety within 1km, and addition to the crime rate in the region.
 
 ### Data Preparation
 
-Like all automatic data collection processes, the web scraper described above generated data with quality problems. To solve this problem, we apply some cleaning processes. The first filter was to remove instances that had null values (absent) for attributes considered fundamental for the analysis. To eliminate outliers that left the data inconsistent, such as, for example, rent with sale price of properties, places with more than 50 bathrooms and houses with areas the size of a city, conditions were added for the property to be considered consistent with reality.
+Like all automatic data collection processes, the web scraper described the above-generated data with quality problems. To solve this problem, we apply some cleaning processes. The first filter was to remove instances that had null values (absent) for attributes considered fundamental for the analysis. To eliminate outliers that left the data inconsistent, such as, for example, rent with the sale price of properties, places with more than 50 bathrooms, and houses with areas the size of a city, conditions were added for the property to be considered consistent with reality.
 
 ### External data
 
 External data has been added. We believe that many other variables describe the rental price. Geospatial information was missing. Why do some places tend to be more expensive? Perhaps it is because of the availability of public transport. That is why we decided to add, for example, a variable that describes the distance to the nearest bus or metro station.
 
-In the data described, we note that unfortunately there is no zip code and geolocation of the properties. To our happiness, the website provides address, and from that it was possible to use a geolocation tool called [Geopy](https://geopy.readthedocs.io/en/stable/) available for Python. With it it is possible to enter an address and automatically the library provides you with the longitude and latitude of the location.
+In the data described, we note that unfortunately there is no zip code and geolocation of the properties. To our happiness, the website provides an address, and from that, it was possible to use a geolocation tool called [Geopy](https://geopy.readthedocs.io/en/stable/) available for Python. With it, it is possible to enter an address and automatically the library provides you with the longitude and latitude of the location.
 
-After obtaining the geolocation values of the properties, a second cleaning was performed on the data. Many registrations and inconsistencies of Geopy cause some locations of the respective properties to be outside the city of São Paulo (curiously some even in the middle of the Atlantic Ocean). To solve this problem, we took the official data from the location of the city of São Paulo, made available by [IBGE](https://www.ibge.gov.br/) and with the help of [Geopandas](https://geopandas.org/), we applied the data so that all the properties in our database were within the region.
+fter obtaining the geolocation values of the properties, a second cleaning was performed on the data. Many registrations and inconsistencies of Geopy cause some locations of the respective properties to be outside the city of São Paulo (curiously some even in the middle of the Atlantic Ocean). To solve this problem, we took the official data from the location of the city of São Paulo, made available by [IBGE](https://www.ibge.gov.br/) and with the help of [Geopandas](https://geopandas.org/), we applied the data so that all the properties in our database were within the region.
 
-After another treatment of data, we added variables that describe the distances to the bus, subway station and school closest to the property. The data were obtained from the [GeoSampa](http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx) website provided by the city of São Paulo.
+After another treatment of data, we added variables that describe the distances to the bus, subway station, and school closest to the property. The data were obtained from the [GeoSampa](http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx) website provided by the city of São Paulo.
 
-Another reason we took into account for the price of renting the property was that they may be more expensive because of some interesting places around, such as museums, galleries, shopping centers or libraries. These places are not just stand-alone facilities, but are connected to other infrastructure, which is generally expected to increase the price. For this variable, we consider a radius of 700 meters chosen arbitrarily. The data were again obtained from the GeoSampa website.
+Another reason we took into account the price of renting the property was that they may be more expensive because of some interesting places around, such as museums, galleries, shopping centers, or libraries. These places are not just stand-alone facilities but are connected to other infrastructure, which is generally expected to increase the price. For this variable, we consider a radius of 700 meters chosen arbitrarily. The data were again obtained from the GeoSampa website.
 
-With the same situation in mind, we also added a variable called "food" to calculate the number of places to eat within a radius of 700 meters. We consider restaurants, bars, cafes, among others. To obtain the data, we use the [Overpass Turbo](https://overpass-turbo.eu/) site which is a web based data mining tool for [OpenStreetMap](https://www.openstreetmap.org/).
+With the same situation in mind, we also added a variable called "food" to calculate the number of places to eat within a radius of 700 meters. We consider restaurants, bars, cafes, among others. To obtain the data, we use the [Overpass Turbo](https://overpass-turbo.eu/) site which is a web-based data mining tool for [OpenStreetMap](https://www.openstreetmap.org/).
 
 Finally, we also decided to add a crime rate variable around real estate, as we believe that more violent places tend to have lower rent values. The data were obtained through the [Geospatial São Paulo Crime Database](https://www.kaggle.com/danlessa/geospatial-sao-paulo-crime-database) made available by Kaggle.
 
@@ -144,17 +144,17 @@ After doing this localization step, an id was created for the locations, noting 
 
 The last step was to divide the data into training and test samples at random with a 70/30 ratio to apply machine learning.
 
-The script to download, clean and process the data can be found on GitHub. For the analysis of spatial data, a small geofast script was made. The distances between 2 arbitrary points on the earth can be obtained in the Geopy package for Python. However, the general equation is very computationally expensive for the purpose of this work. Then an adjustment was made in our case without losing almost any precision. A simple equation of geospatial calculation was used that can be applied for short distances of a few hundred kilometers.
+The script to download, clean, and process the data can be found on GitHub. For the analysis of spatial data, a small geofast script was made. The distances between 2 arbitrary points on the earth can be obtained in the Geopy package for Python. However, the general equation is very computationally expensive for this work. Then an adjustment was made in our case without losing almost any precision. A simple equation of geospatial calculation was used that can be applied for short distances of a few hundred kilometers.
 
 ### Text Processing
 
 To extract information from the title and description, we followed the regular Natural Language Processing pipeline, which encompasses tokenization (splitting sentences into separate words), removal of common unhelpful words such as prepositions (stopwords removal), and lemmatization (reduction of words to their root forms).
 
-From the texts we add variables that we think are important for the price of the property. For example, if it is a townhouse, if it has a swimming pool, barbecue, if it is furnished and so on.
+From the texts, we add variables that we think are important for the price of the property. For example, if it is a townhouse, if it has a swimming pool, barbecue, if it is furnished, and so on.
 
 ## Model
 
-In this project, We will be using the linear model as a base model to finalize the data pre-processing steps. We will use outlier removal techniques, coding techniques, sizing / normalization techniques, resource engineering and different types of imputation combinations.
+In this project, We will be using the linear model as a base model to finalize the data pre-processing steps. We will use outlier removal techniques, coding techniques, sizing/normalization techniques, resource engineering, and different types of imputation combinations.
 
 We divided the modeling into five steps.
 
@@ -252,7 +252,7 @@ Before we can finalize any scaling technique let's check the skewness of our num
 
 #### **Target Variable Analysis and Transformation**
 
-Price is our target variable. If we want to predict the target variables accurately then the first task is to understand the underlying behavior of our target variable. Note that model can make more reliable predictions if our target variable is normally distributed. We will use both graphical and statistical methods to do a normality test of our target variable.
+Price is our target variable. If we want to predict the target variables accurately then the first task is to understand the underlying behavior of our target variable. Note that the model can make more reliable predictions if our target variable is normally distributed. We will use both graphical and statistical methods to do a normality test of our target variable.
 
 **Statistical**
 
@@ -446,14 +446,14 @@ TABLE 5.13: Summary all models
 
 ## Use Case of the Model
 
-Having the model trained, tested and explained, it is time for the use cases.
+Having the model trained, tested, and explained, it is time for the use cases.
 
-The first application can be someone who wants to rent a house and is looking for more attractive values. With the model it is possible to search for regions of interest and find out if the rental amount that the owner is charging is worth or not. In addition, it is possible to search for properties by price ranges.
+The first application can be someone who wants to rent a house and is looking for more attractive values. With the model, it is possible to search for regions of interest and find out if the rental amount that the owner is charging is worth it or not. In addition, it is possible to search for properties by price range.
 
 The second application is for the owner who wanted to rent his property. Knowing the value of the region he is in, he can make the value of his rent much more competitive against the competition of people who are also selected for renting. In addition, he can estimate with variables what is possible to add to his property or as options in the region to increase the value.
 
 ## Conclusion
 
-Predicting real estate rent prices from online advertisements in Brazil is a task which requires insight into the data combined with powerful ML algorithms. Many locations in the city of São Paulo do not have standards in the choice of price, which makes it very difficult for machine learning models. In this work, we applied 9 different methods for this task, and combined them into a final prediction. We provided a strong baseline to overcome, as our final ensemble hit a score of 0.2973 RMSLE showing how powerful the combined model methods are.
+Predicting real estate rent prices from online advertisements in Brazil is a task that requires insight into the data combined with powerful ML algorithms. Many locations in the city of São Paulo do not have standards in the choice of price, which makes it very difficult for machine learning models. In this work, we applied 9 different methods for this task and combined them into a final prediction. We provided a strong baseline to overcome, as our final ensemble hit a score of 0.2973 RMSLE showing how powerful the combined model methods are.
 
-For future work, we can make a web scraper again on the site, take images of the properties and apply a covolutional neural network, an aggression that could help in the accuracy of the model with real photos inside the properties.
+For future work, we can make a web scraper again on the site, take images of the properties and apply a convolutional neural network, aggression that could help in the accuracy of the model with real photos inside the properties.
