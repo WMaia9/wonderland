@@ -14,7 +14,7 @@ In this portfolio, you will find case studies covering the area of ​​Data Sc
 
 # Introduction {.unnumbered}
 
-The demand for skilled data science practitioners in industry, academia, and government is rapidly growing. This portfolio introduces concepts and skills that can help it tackle real-world data analysis challenges. It covers concepts from probability, statistical inference, linear regression, and machine learning.
+The demand for skilled data science practitioners in industry, academia, and the government is rapidly growing. This portfolio introduces concepts and skills that can help it tackle real-world data analysis challenges. It covers concepts from probability, statistical inference, linear regression, and machine learning.
 
 ## Case studies {.unnumbered}
 
@@ -32,14 +32,13 @@ All codes and projects in this portfolio can be found on my Github page: [GitHub
 
 # About Me {#author .unnumbered}
 
-I'm a data scientist and currently work at the Hand Talk company, which applies artificial intelligence for accessibility. I am graduated in Science Physics, at this moment am studding MBA course in Data Science and Analytics.
+I'm a data scientist and currently work at the Hand Talk company, which applies artificial intelligence for accessibility. I graduated in Science Physics and at this moment I'm studying an MBA course in Data Science and Analytics.
 
-I am passionate about technology and science. At all times I am always looking to learn new things. In free moments I like to play video games, watch movies and series.
+I'm passionate about technology and science. At all times I am always looking to learn new things.
 
-During graduation I participated in Scientific Initiation projects. The first one, Improvement of collimation systems for gamma-particle coincidence measurements, consisted of calculating Rutherford collisions by means of programming in C language and whose objective was to understand the operation of the collimator of the accelerator Pelletron from University of São Paulo. In the second one, the focus was on the High Energy Physics area at LHC at CERN with case studies.
+During graduation, I participated in Scientific Initiation projects. The first one, Improvement of collimation systems for gamma-particle coincidence measurements, consisted of calculating Rutherford collisions utilizing programming in C language and whose objective was to understand the operation of the collimator of the accelerator Pelletron from the University of São Paulo. In the second one, the focus was on the High Energy Physics area at LHC at CERN with case studies.
 
-I worked for a while in the financial market, interning at the trading desk. After that, I dedicated myself for a few years to teaching Physic.
+I worked for a while in the financial market, interning at the trading desk. After that, I dedicated myself for a few years to teaching Physics.
+On this page, you will find some of the projects that I am currently working on. You can see my Linkedin [Here](https://www.linkedin.com/in/wesley-maia-62009612a/).\
 
-On this page you will find some of the projects that I am currently working on. You can see my Linkedin [Here](https://www.linkedin.com/in/wesley-maia-62009612a/).\
-
-![](images/eu.jpg "eu"){width="402"}
+![](images/eu.png "eu"){width="312"}
