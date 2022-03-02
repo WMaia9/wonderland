@@ -103,3 +103,5 @@ model-blending
 summary
 use-case-of-the-model
 conclusion-4
+r-markdown
+including-plots
