@@ -6,11 +6,11 @@ Web App: [sp-rent-predictions](https://share.streamlit.io/wmaia9/sprentweb/main/
 
 ## Introduction
 
-Everyone needs a place to live. It can be a house, a flat, or an apartment. Everyone, at some point in life, is faced with the choice of buying or renting a house. On top of that, the following questions can be asked: Is buying a property worthwhile or staying in rent is the best alternative? In a society that values and idealizes the dream of homeownership, those who question themselves about the subject end up being seen as crazy.
+Everyone needs a place to live. It can be a house, a flat, or an apartment. At some point in life, everyone is faced with the choice of buying or renting a house. On top of that, the following questions can be asked: Is buying a property worthwhile or staying in rent is the best alternative? In a society that values and idealizes the dream of homeownership, those who question themselves about the subject end up being seen as crazy.
 
-After all, from an early age, we are led to believe that homeownership is a goal that everyone should have and strive to achieve. This, however, is not an absolute truth.
+After all, from an early age, we believe that homeownership is a goal that everyone should have and strive to achieve. This, however, is not an absolute truth.
 
-Furthermore, having a home, for many, is synonymous with stability and security. But, is it worth buying a house? Or can continue to rent make more sense?
+Furthermore, having a home, for many, is synonymous with stability and security. But, is it worth buying a house? Or can continuing to rent make more sense?
 
 Let's point out some of the reasons that it makes sense to rent and why this is such an attractive business:
 
@@ -38,27 +38,27 @@ Let's point out some of the reasons that it makes sense to rent and why this is 
 
 ### Analysis
 
-In this work, we want to find an answer to these questions. This case study is intended to be a comprehensive use case of how to deal with a regression problem for Data Science. We will start with some questions that allow us to understand the problems related to the price of renting a property.
+In this work, we want to find an answer to these questions. This case study is intended to be a comprehensive use case of dealing with a regression problem for Data Science. We will start with some questions that allow us to understand the issues related to renting a property.
 
-The owner does not know how to increase the value of the property so that the investment is less than the added value. For example, building a swimming pool can increase the price, and forming a bathroom is not worth it.
+The owner does not know how to increase the property's value so that the investment is less than the added value. For example, building a swimming pool can increase the price, and forming a bathroom is not worth it.
 
-The owner does not know how much he is going to rent a property. He makes an offer on the portal and doesn't know if the price is right,
+The owner does not know how much he will rent a property. He makes an offer on the portal and doesn't know if the price is right,
 
 The tenant does not know how much the property is worth.
 
 These are some of the questions that can be asked. As a definition of our problem, we define the property's valuation, and thorough explanations, we try to get an answer depending on the position we choose.
 
-Initially, we will see how the literature says what the amount should be charged in rent.
+Initially, we will see how the literature says the amount of rent should be charged.
 
-According to, the basic rule most used to calculate rent is to apply a value between 0.5% and 1%, per month, on the market value of the property. This means that if the property is worth R\$ 100 thousand, the rent must be between R\$ 500 and R\$ 1,000 per month. Research shows that, on average, two- and three-bedroom houses and apartments, the rental price is 0.75%.
+According to, the basic rule most used to calculate rent is to apply a value between 0.5% and 1%, per month, on the property's market value. This means that if the property is worth R\$ 100 thousand, the rent must be between R\$ 500 and R\$ 1,000 per month. Research shows that, on average, two- and three-bedroom houses and apartments, the rental price is 0.75%.
 
-But many variables make up the rent calculation. The real estate market itself regulates itself and prices the rental price of properties by supply and demand. Supply and demand are important concepts of the Liberal Economy.
+But many variables make up the rent calculation. The real estate market itself regulates itself and prices the rental price of properties by supply and demand. Supply and demand are essential concepts of the Liberal Economy.
 
-The characteristics of the property itself are also decisive in the calculation of rent. Similar properties in the same region of the city, in general, have approximate values. That is why it is always important to observe the values ​​in force in the real estate market in the region in which you will invest or prospect your property for business.
+The property's characteristics are also decisive in the calculation of rent. Similar properties in the same region of the city, in general, have approximate values. That is why it is always important to observe the values ​​in force in the real estate market in the region in which you will invest or prospect your property for business.
 
-There are cases of similar properties in the same neighborhood that may have different rentals. This is justified by the commercial and transport structure available. Factors such as the total length of the property, leisure facilities, swimming pool, party room, condominium, concierge services, security, garage, number of rooms influence the calculation of rent
+There are similar properties in the same neighborhood that may have different rentals. This is justified by the commercial and transport structure available. Factors such as the total length of the property, leisure facilities, swimming pool, party room, condominium, concierge services, security, garage, number of rooms influence the calculation of rent
 
-An apartment or house, for example, close to bus or metro stations may have a higher rental price than a more remote one. The same goes for properties in regions with supermarkets, pharmacies, and bakeries located next to a park.
+An apartment or house, for example, close to bus or metro stations, may have a higher rental price than a more remote one. The same goes for properties in regions with supermarkets, pharmacies, and bakeries located next to a park.
 
 With this premise, we can now analyze the data.
 
@@ -182,19 +182,19 @@ Model blending is the manual step, where we manually adjust the weight for each 
 
 Root Mean square is the standard deviation of the residuals. Now let's understand what Standard deviation and residuals are.
 
-**Standard deviation**: Standard deviation is a measure of how spread out numbers are. Its formula is the square root of the Variance. Variance is defined as the average of the squared differences from the Mean. In the below formula of standard deviation 'xi'= numbers, 'μ'= Mean of the numbers and 'N' = Total number of values
+**Standard deviation**: Standard deviation measures how to spread out numbers are. Its formula is the square root of the Variance. Variance is defined as the average of the squared differences from the mean. In the below formula of standard deviation 'xi'= numbers, 'μ'= Mean of the numbers, and 'N' = Total number of values.
 
-**Residuals**: Residuals are a measure of how far from the regression line data points are. Residuals are nothing but prediction error, we can find it by subtracting the predicted value from actual value.
+**Residuals**: Residuals measure how far from the regression line data points are. Residuals are nothing but prediction errors. We can find it by subtracting the predicted value from the actual value.
 
-In order to get RMSE we will use Standard deviation formula but instead of square root of variance we will calculate the square root of average of squared residuals.
+To get RMSE, we will use the Standard deviation formula, but instead of the square root of Variance, we will calculate the square root of the average of squared residuals.
 
-Standard deviation is used to measure the spread of data around the mean, while RMSE is used to measure distance between predicted and actual values.
+Standard deviation is used to measure the spread of data around the mean, while RMSE measures the distance between predicted and actual values.
 
 RMSE is a measure of how spread out these residuals are. In other words, it tells you how concentrated the data is around the line of best fit.
 
 ![](images/project5/eq.PNG){width="228"}
 
-Since the errors are squared before they are averaged, the RMSE gives a relatively high weight to large errors. This means the RMSE is most useful when large errors are particularly undesirable. Note that, as per competition rules submissions are evaluated on the logarithm of the predicted value and the logarithm of the observed sales price. Taking logs means that errors in predicting expensive houses and cheap houses will affect the result equally.
+Since the errors are squared before they are averaged, the RMSE gives a relatively high weight to significant errors. This means that the RMSE is most useful when significant errors are particularly undesirable. As per competition rules, submissions are evaluated on the logarithm of the predicted value and the logarithm of the observed sales price. Taking logs means that errors in predicting expensive houses and cheap houses will affect the result equally.
 
 -   **What does RMSE indicate?**:
 
@@ -206,11 +206,11 @@ Since the errors are squared before they are averaged, the RMSE gives a relative
 
 ### **Correlation Check**
 
-Correlation is a measure of the linear relationship of 2 or more variables. Through correlation, we can predict one variable from the other. The logic behind using correlation for feature selection is that the good variables are highly correlated with the target.
+Correlation is a measure of the linear relationship of 2 or more variables. Through correlation, we can predict one variable from the other. The logic behind using correlation for feature selection is that the suitable variables are highly correlated with the target.
 
 A correlation matrix is a table showing correlation coefficients between variables. Each cell in the table shows the correlation between two variables.
 
-We will use **Pearson's correlation**. It is utilized we you have two quantitative variables and you wish to see if there is a linear relationship between those variables.
+We will use Pearson's correlation. It is utilized we you have two quantitative variables, and you wish to see if there is a linear relationship between those variables.
 
 ![](images/project5/paste-9E889BA7.png)
 
@@ -226,7 +226,7 @@ In above correlation map:
 
 ### **Multicollinearity Analysis**
 
-Multicollinearity refers to a situation in which more than two explanatory variables in a multiple regression model are highly linearly related. Below are few of the multicollinear features based on correlation matrix.
+Multicollinearity refers to when more than two explanatory variables in a multiple regression model are highly linearly related. Below are a few of the multicollinear features based on the correlation matrix.
 
 ![](images/project5/paste-F8533030.png){width="938"}
 
@@ -240,9 +240,9 @@ FIGURE 5.5: Boxplot of correlation of Price vs numbers Bathrooms, Bedrooms and V
 
 #### **Numeric Feature Scaling**
 
-In order to give every feature the same importance we perform feature scaling. There are many techniques like Min-Max Scaler, Robust Scaler etc. to do feature scaling.
+To give every feature the same importance, we perform feature scaling. There are many techniques like Min-Max Scaler, Robust Scaler, etc., to do feature scaling.
 
-Before we can finalize any scaling technique let's check the skewness of our numeric features. Skewness is the measure of degree of asymmetry of a distribution:
+Before we can finalize any scaling technique, let's check the skewness of our numeric features. Skewness is the measure of the degree of asymmetry of a distribution:
 
 -   skewness = 0 : normally distributed.
 
@@ -252,7 +252,7 @@ Before we can finalize any scaling technique let's check the skewness of our num
 
 #### **Target Variable Analysis and Transformation**
 
-Price is our target variable. If we want to predict the target variables accurately then the first task is to understand the underlying behavior of our target variable. Note thatthe model can make more reliable predictions if our target variable is normally distributed. We will use both graphical and statistical methods to do a normality test of our target variable.
+Price is our target variable. If we want to predict the target variables accurately, then the first task is to understand the underlying behavior of our target variable. The model can make more reliable predictions if our target variable is normally distributed. We will use both graphical and statistical methods to test our target variable's normality.
 
 **Statistical**
 
@@ -276,7 +276,7 @@ We will use Skewness, Kurtosis and Shapiro-Wilk test for normality.
 
 FIGURE 5.6: Rent Price Normal Distribution
 
-From a normal distribution plot it's clear that the mean is greater than mode, similarly from the probability plot we can see that most of the observations fall on the lower end of the Y axis. So we can conclude that that the target variable 'Price' is right skewed. There are multiple transformation techniques to handle the skewed data. We use log transformation.
+From a standard distribution plot, it's clear that the mean is more significant than mode similarly from the probability plot, we can see that most of the observations fall on the lower end of the Y-axis. So we can conclude that the target variable 'Price' is right-skewed. There are multiple transformation techniques to handle the skewed data. We use log transformation.
 
 ![](images/project5/paste-E45C942A.png)
 
@@ -338,7 +338,7 @@ TABLE 5.5: Results for Elastic Net with 5-Fold Cross-Validation.
 
 #### Ridge
 
-Linear least squares with l2 regularization. This model solves a regression model where the loss function is the linear least squares function and regularization is given by the l2-norm. Also known as Ridge Regression or Tikhonov regularization. This estimator has built-in support for multi-variate regression (i.e., when y is a 2d-array of shape (n_samples, n_targets)).
+Linear least squares with l2 regularization. This model solves a regression model where the loss function is the linear least-squares function, and regularization is given by the l2-norm---also known as Ridge Regression or Tikhonov regularization. This estimator has built-in support for multi-variate regression (i.e., when y is a 2d-array of shape (n_samples, n_targets)).
 
 TABLE 5.6: Results for Ridge with 5-Fold Cross-Validation.
 
@@ -348,7 +348,7 @@ TABLE 5.6: Results for Ridge with 5-Fold Cross-Validation.
 
 #### **Support Vector Machines**
 
-Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection. The model produced by Support Vector Regression depends only on a subset of the training data, because the cost function ignores samples whose prediction is close to their target.
+Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression, and outliers detection. The model produced by Support Vector Regression depends only on a subset of the training data because the cost function ignores samples whose prediction is close to their target.
 
 TABLE 5.7: Results for Support Vector Machines with 5-Fold Cross-Validation.
 
@@ -358,17 +358,17 @@ TABLE 5.7: Results for Support Vector Machines with 5-Fold Cross-Validation.
 
 ### **Ensemble Methods**
 
-The goal of ensemble methods is to combine the predictions of several base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator.
+Ensemble methods aim to combine the predictions of several base estimators built with a given learning algorithm to improve generalizability/robustness over a single estimator.
 
 Two families of ensemble methods are usually distinguished:
 
-> In **averaging methods**, the driving principle is to build several estimators independently and then to average their predictions. On average, the combined estimator is usually better than any of the single base estimator because its variance is reduced. Examples: Bagging methods, Forests of randomized trees,etc
+> In averaging methods, the driving principle is to build several estimators independently and then to average their predictions. On average, the combined estimator is usually better than any single base estimator because its variance is reduced. Examples: Bagging methods, Forests of randomized trees, etc
 >
-> By contrast, in **boosting methods**, base estimators are built sequentially and one tries to reduce the bias of the combined estimator. The motivation is to combine several weak models to produce a powerful ensemble. Examples: AdaBoost, Gradient Tree Boosting, etc
+> By contrast, in boosting methods, base estimators are built sequentially, and one tries to reduce the bias of the combined estimator. The motivation is to combine several weak models to produce a powerful ensemble. Examples: AdaBoost, Gradient Tree Boosting, etc
 
 #### **Gradient Boosting Regressor**
 
-GBR supports a number of different loss functions for regression which can be specified via the argument loss; the default loss function for regression is least squares ('ls').
+GBR supports several different loss functions for regression which can be specified via the argument loss; the default loss function for regression is least squares ('ls').
 
 TABLE 5.8: Results for Gradient Boosting with 5-Fold Cross-Validation.
 
@@ -378,7 +378,7 @@ TABLE 5.8: Results for Gradient Boosting with 5-Fold Cross-Validation.
 
 #### **LightGBM Regressor (Light Gradient Boosting Machine)**
 
-LightGBM is a gradient boosting framework based on decision trees to increases the efficiency of the model and reduces memory usage. It uses two novel techniques: Gradient-based One Side Sampling and Exclusive Feature Bundling (EFB) which fulfills the limitations of histogram-based algorithm that is primarily used in all GBDT (Gradient Boosting Decision Tree) frameworks.
+LightGBM is a gradient boosting framework based on decision trees to increase the model's efficiency and reduce memory usage. It uses two novel techniques: Gradient-based One Side Sampling and Exclusive Feature Bundling (EFB), which fulfills the histogram-based algorithm's limitations that are primarily used in all GBDT (Gradient Boosting Decision Tree) frameworks.
 
 TABLE 5.9: Results for LightGBM with 5-Fold Cross-Validation.
 
@@ -388,7 +388,7 @@ TABLE 5.9: Results for LightGBM with 5-Fold Cross-Validation.
 
 #### **XGB Regressor**
 
-XGBoost is a decision-tree-based ensemble Machine Learning algorithm that uses a gradient boosting framework. XGBoost stands for "Extreme Gradient Boosting" We can use it to solve classification and regression problems. The XGBoost is a popular supervised machine learning model with characteristics like computation speed, parallelization, and performance.
+XGBoost is a decision-tree-based ensemble Machine Learning algorithm that uses a gradient boosting framework. XGBoost stands for "Extreme Gradient Boosting" We can use it to solve classification and regression problems. The XGBoost is a popular supervised machine learning model with computation speed, parallelization, and performance characteristics.
 
 TABLE 5.10: Results for XGBoost with 5-Fold Cross-Validation.
 
@@ -400,9 +400,9 @@ TABLE 5.10: Results for XGBoost with 5-Fold Cross-Validation.
 
 #### Stacking CV Regressor
 
-An ensemble-learning meta-regressor for stacking regression. Stacking is an ensemble learning technique to combine multiple regression models via a meta-regression. The StackingCVRegressor extends the standard stacking algorithm (implemented as StackingRegressor) using out-of-fold predictions to prepare the input data for the level-2 regressor. In the standard stacking procedure, the first-level regressors are fit to the same training set that is used to prepare the inputs for the second-level regressor, which may lead to overfitting.
+An ensemble-learning meta-regressor for stacking regression. Stacking is an ensemble learning technique to combine multiple regression models via a meta-regression. The StackingCVRegressor extends the standard stacking algorithm (implemented as StackingRegressor) using out-of-fold predictions to prepare the input data for the level-2 regressor. In the standard stacking procedure, the first-level regressors are fit to the same training set used to prepare the inputs for the second-level regressor, which may lead to overfitting.
 
-The StackingCVRegressor, however, uses the concept of out-of-fold predictions: the dataset is split into k folds, and in k successive rounds, k-1 folds are used to fit the first level regressor. In each round, the first-level regressors are then applied to the remaining 1 subset that was not used for model fitting in each iteration. The resulting predictions are then stacked and provided -- as input data -- to the second-level regressor. After the training of the StackingCVRegressor, the first-level regressors are fit to the entire dataset for optimal predictions.
+The StackingCVRegressor, however, uses the concept of out-of-fold predictions: the dataset is split into k folds, and in k successive rounds, k-1 folds are used to fit the first level regressor. In each round, the first-level regressors are then applied to the remaining subset that was not used for model fitting in each iteration. The resulting predictions are then stacked and provided -- as input data -- to the second-level regressor. After the training of the StackingCVRegressor, the first-level regressors are fit to the entire dataset for optimal predictions.
 
 Ref. [\<http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/>](http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/){.uri}
 
@@ -448,12 +448,12 @@ TABLE 5.13: Summary all models
 
 Having the model trained, tested, and explained, it is time for the use cases.
 
-The first application can be someone who wants to rent a house and is looking for more attractive values. With the model, it is possible to search for regions of interest and find out if the rental amount that the owner is charging is worth it or not. In addition, it is possible to search for properties by price range.
+The first application can be someone who wants to rent a house and looks for more attractive values. With the model, it is possible to search for regions of interest and find out if the rental amount that the owner is charging is worth it or not. In addition, it is possible to search for properties by price range.
 
-The second application is for the owner who wanted to rent his property. Knowing the value of the region he is in, he can make the value of his rent much more competitive against the competition of people who are also selected for renting. In addition, he can estimate with variables what is possible to add to his property or as options in the region to increase the value.
+The second application is for the owner who wanted to rent his property. Knowing the region's value, he can make his rent much more competitive against the competition of people who are also selected for renting. In addition, he can estimate with variables what is possible to add to his property or as options in the region to increase the value.
 
 ## Conclusion
 
-Predicting real estate rent prices from online advertisements in Brazil is a task that requires insight into the data combined with powerful ML algorithms. Many locations in the city of São Paulo do not have standards in the choice of price, which makes it very difficult for machine learning models. In this work, we applied 9 different methods for this task and combined them into a final prediction. We provided a strong baseline to overcome, as our final ensemble hit a score of 0.2973 RMSLE showing how powerful the combined model methods are.
+Predicting real estate rent prices from online advertisements in Brazil is a task that requires insight into the data combined with powerful ML algorithms. Many locations in the city of São Paulo do not have standards in the choice of price, which makes it very difficult for machine learning models. In this work, we applied nine different methods for this task and combined them into a final prediction. We provided a solid baseline to overcome, as our final ensemble hit a score of 0.2973 RMSLE showing how powerful the mixed model methods are.
 
-For future work, we can make a web scraper again on the site, take images of the properties and apply a convolutional neural network, aggression that could help in the accuracy of the model with real photos inside the properties.
+For future work, we can make a web scraper again on the site, take images of the properties and apply a convolutional neural network, aggression, that could help the model's accuracy with real photos inside the properties.
