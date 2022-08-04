@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Project 2 Medical Insurance Costs | Data Science Portfolio</title>
   <meta name="description" content="Project 2 Medical Insurance Costs | Data Science Portfolio" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Project 2 Medical Insurance Costs | Data Science Portfolio" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Wesley Maia" />
 
 
-<meta name="date" content="2022-03-11" />
+<meta name="date" content="2022-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="gpd-and-energy-supply.html"/>
 <link rel="next" href="quantium-retail-strategy-and-analytics.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -190,6 +189,24 @@
 <li class="chapter" data-level="5.5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#use-case-of-the-model"><i class="fa fa-check"></i><b>5.5</b> Use Case of the Model</a></li>
 <li class="chapter" data-level="5.6" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#conclusion-4"><i class="fa fa-check"></i><b>5.6</b> Conclusion</a></li>
 </ul></li>
+<li class="chapter" data-level="6" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html"><i class="fa fa-check"></i><b>6</b> Hotmart Sales Analytics</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#introdução"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#dados"><i class="fa fa-check"></i><b>6.2</b> Dados</a></li>
+<li class="chapter" data-level="6.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#exploratory-data-analysis-eda"><i class="fa fa-check"></i><b>6.3</b> Exploratory Data Analysis (EDA)</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-contínuas"><i class="fa fa-check"></i><b>6.3.1</b> Variáveis Contínuas</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-descretas"><i class="fa fa-check"></i><b>6.3.2</b> Variáveis Descretas</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-de-vendas-por-produto"><i class="fa fa-check"></i><b>6.3.3</b> Segmentação De Vendas Por Produto</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-das-vendas-por-produtor-de-conteúdo"><i class="fa fa-check"></i><b>6.3.4</b> Segmentação Das Vendas Por Produtor de Conteúdo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-séries-temporais"><i class="fa fa-check"></i><b>6.4</b> Análise de Séries Temporais</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#há-épocas-do-ano-em-que-uma-determinada-categoria-ou-nicho-de-produto-vende-mais"><i class="fa fa-check"></i><b>6.4.1</b> Há épocas do ano em que uma determinada categoria ou nicho de produto vende mais?</a></li>
+<li class="chapter" data-level="6.4.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#a-que-horas-devemos-exibir-anúncios-para-maximizar-a-probabilidade-de-compra-do-produto-pelo-cliente"><i class="fa fa-check"></i><b>6.4.2</b> A que horas devemos exibir anúncios para maximizar a probabilidade de compra do produto pelo cliente?</a></li>
+<li class="chapter" data-level="6.4.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-predições"><i class="fa fa-check"></i><b>6.4.3</b> Análise de Predições</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -210,32 +227,32 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="medical-insurance-costs" class="section level1" number="2">
-<h1><span class="header-section-number">Project 2</span> Medical Insurance Costs</h1>
+<div id="medical-insurance-costs" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Project 2</span> Medical Insurance Costs<a href="medical-insurance-costs.html#medical-insurance-costs" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Code: <a href="https://github.com/WMaia9/U.S.-Medical-Insurance-Costs">GitHub</a></p>
-<div id="introduction-2" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Introduction</h2>
-<p>There is no doubt that health-related benefits are among the most important that a company can offer its employees. After all, they help to significantly reduce medical expenses and guarantee the necessary support in times of difficulty. All of this reflects on the collective well-being and brings positive results for the company.</p>
-<p>Among the great advantages of hiring health insurance in organizations, we can mention the greater engagement of the team. This is because employees who have access to quality medical care work with more attention, tranquility and disposition, achieving their best performance during working hours.</p>
-<p>Because Medical insurance is a much desired benefit, its offer also helps in attracting and retaining the best professionals in the market. And with great talents working in the company, it tends to become a benchmark for quality in what it does.</p>
-<p>In this project we analyses data from US Medical Insurance Costs. Recently many people are looking for this type of insurance and prices can vary widely according to the user’s data. The main question of this analysis is to answer the final price that users need to pay.</p>
+<div id="introduction-2" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Introduction<a href="medical-insurance-costs.html#introduction-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There is no doubt that health-related benefits are among the most important that a company can offer its employees. After all, they help significantly reduce medical expenses and guarantee the necessary support in times of difficulty. All of this reflects on the collective well-being and brings positive results.</p>
+<p>Among the significant advantages of hiring health insurance in organizations, we can mention the greater engagement of the team. This is because employees who access quality medical care work with more attention, tranquility, and disposition, achieving their best performance during working hours.</p>
+<p>Because Medical insurance is a much-desired benefit, its offer also helps attract and retain the best professionals in the market. Moreover, with great talents working in the company, it tends to become a benchmark for quality in what it does.</p>
+<p>In this project, we analyze data from US Medical Insurance Costs. Recently, many people have been looking for this type of insurance, and prices vary widely according to the user’s data. The main question of this analysis is to answer the final price that users need to pay.</p>
 <p>The dataset <code>insurance.csv</code> was provided by Kaggle.com: <a href="https://www.kaggle.com/mirichoi0218/insurance">Medical Cost Personal Datasets</a></p>
-<div id="project-goals" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Project Goals</h3>
-<p>In this project are make a case study using the linear regression method on Medical Insurance Costs dataset provided by the kaggle</p>
+<div id="project-goals" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Project Goals<a href="medical-insurance-costs.html#project-goals" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This project is making a case study using the linear regression method on the Medical Insurance Costs dataset provided by the Kaggle.</p>
 </div>
-<div id="analysis" class="section level3" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Analysis</h3>
+<div id="analysis" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Analysis<a href="medical-insurance-costs.html#analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This solution uses descriptive and inferential statistics and data visualization to find key figures in understanding the distribution, count, and relationship between variables.</p>
 </div>
-<div id="evaluation" class="section level3" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> Evaluation</h3>
-<p>The project concludes with the evaluation of a linear model. A simple case study is done for one variable and then for multiple variables. After that is focused on visualizing the adjusted models then look at the residual plots and the error band.</p>
+<div id="evaluation" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Evaluation<a href="medical-insurance-costs.html#evaluation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The project concludes with the Evaluation of a linear model. A simple case study is done for one variable, and multiple variables are focused on visualizing the adjusted models then looking at the residual plots and the error band.</p>
 </div>
 </div>
-<div id="data-1" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Data</h2>
-<p>The project has one dataset provided by Kaggle called <code>insurance.csv</code>. In the data, each row represents an user and the columns are the responses to their user profiles which include data about them.</p>
+<div id="data-1" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Data<a href="medical-insurance-costs.html#data-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The project has one dataset provided by Kaggle called <code>insurance.csv</code>. Each row represents a user in the data, and the columns are the responses to their user profiles, including data about them.</p>
 <p><code>insurance</code> has 1,338 rows and 7 columns, this is a good amount of data to analyze.</p>
 <p>Each line, or sample, consists of the following features:</p>
 <p>TABLE 2.1: Description of variables in the dataset.</p>
@@ -282,9 +299,9 @@
 </tbody>
 </table>
 </div>
-<div id="exploring-the-data" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Exploring the Data</h2>
-<p>Now let’s take a look at the first 5 lines of the Data Frame that we want to analyze.</p>
+<div id="exploring-the-data" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Exploring the Data<a href="medical-insurance-costs.html#exploring-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now let us look at the first five lines of the Data Frame that we want to analyze.</p>
 <p>TABLE 2.2: The 5 first lines of the Data Frame Insurance.</p>
 <table>
 <thead>
@@ -346,75 +363,75 @@
 </tr>
 </tbody>
 </table>
-<p>Before doing a deeper analysis on the data we can see some of the data and how it is distributed from graphs.</p>
+<p>Before doing a deeper analysis of the data, we can see some of the data and how it is distributed from graphs.</p>
 <p>We started by looking at the Age Histogram.</p>
 <p><img src="images/Project2/1.png" width="600" /></p>
 <p>FIGURE 2.1: The distribution of the Age Histogram.</p>
-<p>Then, we can take a look at the scatter graph in the age variable x charge and separated between smokers and non-smokers, as we believe it has a great impact on the value of the final price charged.</p>
+<p>Then, we can look at the scatter graph in the age variable x charge and separate between smokers and non-smokers, as we believe it has a significant impact on the value of the final price charged.</p>
 <p><img src="images/Project2/2.png" width="700" /></p>
 <p>FIGURE 2.2: Scatter plot of chargers vs age between smokers and non-smokers. No-Smoker = 0 and Smoker = 1</p>
 <p>As can be seen in FIGURE 2.2, we have a leap in value when we analyze the graphs between smokers and non-smokers. Furthermore, we can see that there is a linear growth between age and the amount charged.</p>
-<p>Next, let’s look at the BMI distribution:</p>
+<p>Next, let us look at the BMI distribution:</p>
 <p><img src="images/Project2/3.png" width="600" /></p>
 <p>FIGURE 2.3: The BMI distribution.</p>
-<p>The BMI values are all well distributed in Gaussian. We see that there are no outliers to be lipated.</p>
-<p>Knowing that BMI has a well-behaved distribution, we will take a look at how BMI is influenced between the processed value between treatment and untreated.</p>
+<p>The BMI values are all well distributed in Gaussian. We see that there are no outliers to be limited.</p>
+<p>Knowing that BMI has a well-behaved distribution, we will look at how BMI is influenced by the processed value between treatment and untreated.</p>
 <p><img src="images/Project2/4.png" width="700" /></p>
-<p>FIGURE 2.4: Scatter plot of charges vs BMI between smokers and non-smokers.</p>
-<p>Analyzing FIGURE 2.1, we can see that there is a linear growth between BMI and the amount charged when they are smokers, which is not the case for non-smokers.</p>
-<p>Taking a first look at the data provided and some plotted graphs, we can see that there are probably relationships between some variables provided and the charge amount. Next we will investigate it.</p>
+<p>FFIGURE 2.4: Scatter plot of charges vs. BMI between smokers and non-smokers.</p>
+<p>Analyzing FIGURE 2.1, we can see a linear growth between BMI and the amount charged when smokers, which is not the case for non-smokers.</p>
+<p>Taking a first look at the data provided and some plotted graphs, we can see that there are probably relationships between some variables provided and the charge amount. Next, we will investigate it.</p>
 </div>
-<div id="linear-regression" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Linear Regression</h2>
+<div id="linear-regression" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Linear Regression<a href="medical-insurance-costs.html#linear-regression" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We initially focus on regression models where the amount charged is the dependent variable. That is, we predict the amount charged based on other variables.</p>
 <p>Since the feature charge is a quantitative variable, we model it using linear regression.</p>
-<div id="interpreting-regression-parameters-in-a-basic-model" class="section level3" number="2.4.1">
-<h3><span class="header-section-number">2.4.1</span> Interpreting regression parameters in a basic model</h3>
-<p>We start with a simple linear regression model with only one covariable, age, to predict the charge. The model that is adjusted expresses the amount charged as a linear function of age.</p>
+<div id="interpreting-regression-parameters-in-a-basic-model" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Interpreting regression parameters in a basic model<a href="medical-insurance-costs.html#interpreting-regression-parameters-in-a-basic-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We start with a simple linear regression model with only one covariable, age, to predict the charge. The adjusted model expresses the amount charged as a linear function of age.</p>
 <p>TABLE 2.3: Linear Regression Model adjusted for age variable using the python statsmodels library.</p>
 <p><img src="images/Project2/tabela2.PNG" width="658" /></p>
-<p>The part that starts to be relevant to us of the Table presented is from <strong>coef</strong>. This section contains the estimated values for the parameters of the regression model. Its pattern, errors and other values are used to quantify the uncertainty in the estimates of the regression parameters.</p>
-<p>This adjusted model implies that when comparing two people of different ages in one year, the oldest person will have an average of 257. 72 units of charges larger than the youngest person. This difference is statistically significant, based on the p-value showing in the column labeled <strong>‘P&gt; | t |’</strong>. This means that there is strong evidence that there is a real association between age and charges made by the customer.</p>
+<p>The part that starts to be relevant to the Table presented is from coef. This section contains the estimated values for the parameters of the regression model. Its pattern, errors, and other values are used to quantify the uncertainty in the estimates of the regression parameters.</p>
+<p>This adjusted model implies that when comparing two people of different ages in one year, the oldest person will have an average of 257.72 units of charges larger than the youngest person. This difference is statistically significant, based on the p-value shown in the column labeled. <strong>‘P&gt; | t |’</strong>. This means that there is strong evidence that there is a natural association between age and charges made by the customer.</p>
 <p>To better understand the meaning of the regression parameter 257.7226, we can look at the standard deviation of charges.</p>
-<p>The standard deviation of around $ 12,110 is large compared to the slope of the 258 regression. However, the slope of the regression corresponds to the average change in collection for a single year of age, and this effect accumulates with age. Comparing a 40 year old person with a 60 year old person, there is a 20 year difference, which translates into ’20 * 258 = 5,160 ’unit difference in the average value charged between these two people. This difference is about less than half a standard deviation, and is generally considered to be an important and significant change.</p>
+<p>The standard deviation of around $ 12,110 is significant compared to the slope of the 258 regression. However, the regression slope corresponds to the average change in collection for a single year of age, and this effect accumulates with age. Comparing a 40 year old person with a 60 year old person, there is a 20-year difference, which translates into ’20 * 258 = 5,160 ’unit difference in the average value charged between these two people. This difference is about less than half a standard deviation and is generally considered to be a significant change.</p>
 </div>
-<div id="r-square" class="section level3" number="2.4.2">
-<h3><span class="header-section-number">2.4.2</span> R-square</h3>
-<p>In the case of regression with a single independent variable, as we have here, there is a very close correspondence between the regression analysis and Pearson’s correlation analysis. The R-square is a statistical measure of how close the data is to the adjusted regression line. The value obtained was 0.09, which means that 9% of the variation in the amount charged is explained by the age of the customers.</p>
+<div id="r-square" class="section level3 hasAnchor" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> R-square<a href="medical-insurance-costs.html#r-square" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In the case of regression with a single independent variable, as we have here, there is a very close correspondence between the regression analysis and Pearson’s correlation analysis. The R-square is a statistical measure of how close the data is to the adjusted regression line. The value obtained was 0.09, which means that the age of the customers explains 9% of the variation in the amount charged.</p>
 </div>
-<div id="adding-more-variables-to-the-model" class="section level3" number="2.4.3">
-<h3><span class="header-section-number">2.4.3</span> Adding more variables to the model</h3>
-<p>After analyzing a simple linear regression model with only one covariant (age), we use all the variables. The real power of regression happens when we have more than one covariant to predict an output.</p>
+<div id="adding-more-variables-to-the-model" class="section level3 hasAnchor" number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span> Adding more variables to the model<a href="medical-insurance-costs.html#adding-more-variables-to-the-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We use all the variables after analyzing a simple linear regression model with only one covariant (age). The real power of regression happens when we have more than one covariant to predict an output.</p>
 <p>TABLE 2.4: Linear Regression Model adjusted for all variables using the python statsmodels library.</p>
 <p><img src="images/Project2/tabela3.PNG" width="666" /></p>
-<p>The model that was adjusted in TABLE 2.4 uses all parameters to explain the variation in the amount charged. We can see how interesting the value of R-square is. If we look at the table, we see a value of 0.75, that is, we have a linear regression model that 75% of the variation in the amount charged is probably explained by the variables provided.</p>
-<p>Looking at the age coefficient, which we studied earlier, there were no changes even adding many other variables. Thus, we can notice that the age variable has no relation with the other variables provided in the model. It is possible to confirm this result by looking at the value of the correlations between the variables and noting that there is almost no relationship between age and the rest of the other variables.</p>
+<p>The model adjusted in TABLE 2.4 uses all parameters to explain the variation in the amount charged. We can see how attractive the value of R-square is. If we look at the table, we see a value of 0.75. That is, we have a linear regression model that 75% of the variation in the amount charged is probably explained by the variables provided.</p>
+<p>Looking at the age coefficient, which we studied earlier, there were no changes, even adding many other variables. Thus, we can notice that the age variable has no relation with the other variables provided in the model. It is possible to confirm this result by looking at the value of the correlations between the variables and noting that there is almost no relationship between age and other variables.</p>
 <p><img src="images/Project2/grid.png" width="450" /></p>
 <p>FIGURE 2.5: Correlation between variables</p>
 </div>
 </div>
-<div id="visualization-of-the-fitted-models" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Visualization of the fitted models</h2>
-<p>In this section we demonstrate some graphing techniques that can be used to gain a better understanding of a regression model that has been fit to data.</p>
-<p>We start with plots that allow us to visualize the fitted regression function, that is, the mean charges expressed as a function of the covariates. These plots help to show the estimated role of one variable when the other variables are held fixed. We will also plot 95% <em>simultaneous confidence bands</em> around these fitted lines. Although the estimated mean curve is never exact based on a finite sample of data, we can be 95% confident that the true mean curve falls somewhere within the shaded regions of the plots below.</p>
-<p>This type of plot requires us to fix the values of all variables other than the independent variable (Charges here), and one independent variable that we call the <em>focus variable</em> (which is age here). Below we fix the gender as “female” and the BMI as 25. Thus, the graphs below show the relationship between expected Charges and age for women with BMI equal to 25.</p>
-<p>The plot analyzed for the number of children is shown below. Age is 50 with the other parameters the same.</p>
+<div id="visualization-of-the-fitted-models" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Visualization of the fitted models<a href="medical-insurance-costs.html#visualization-of-the-fitted-models" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this section, we demonstrate some graphing techniques that can be used to understand better a regression model that has been fit to data.</p>
+<p>We start with plots that allow us to visualize the fitted regression function: the mean charges expressed as a function of the covariates. These plots help to show the estimated role of one variable when the other variables are held fixed. We will also plot 95% simultaneous confidence bands around these fitted lines. Although the estimated mean curve is never exact based on a finite sample of data, we can be 95% confident that the true mean curve falls somewhere within the shaded regions of the plots below.</p>
+<p>This type of plot requires us to fix the values of all variables other than the independent variable (Charges here) and one independent variable that we call the focus variable (which is age here). Below we fix the gender as “female” and the BMI as 25. Thus, the graphs below show the relationship between expected Charges and age for women with BMI equal to 25.</p>
+<p>The plot analyzed for the number of children is shown below. Age is 50, with the other parameters the same.</p>
 <p><img src="images/Project2/6.png" width="600" /></p>
 <p>FIGURE 2.6: Fitted regression function charge vs age.</p>
-<p>The analogous plot for Number of Children is shown next. Here we fix the gender as “female” and the age at 50, so we are looking at the relationship between expected charge and age for women of age 50.</p>
+<p>The analogous plot for Number of Children is shown next. Here we fix the gender as “female” and the age at 50, so we are looking at the relationship between common charge and age for women of 50.</p>
 <p><img src="images/Project2/7.png" width="600" /></p>
 <p>FIGURE 2.7: Fitted regression function charge vs number of children.</p>
-<p>The error band for the number of children is noticeably greater than the error band for the age, indicating that there is less certainty in relation to children and charge compared to age and charge.</p>
-<p>The discussion so far has primarily focused on the mean structure of the population, that is, the model for the average change of a person with a given age, gender, BMI, smoker, region and children. A regression model can also be used to assess the <em>variance structure</em> of the population, that is, how much and in what manner the observations deviate from their mean. We will focus on informal, graphical methods for assessing this.</p>
-<p>To begin with, we plot the residuals against the fitted values. Recall that the fitted values are the estimated means for each observation, and the residuals are the difference between an observation and its fitted mean. For example, the model may estimate that a 50 year old female will have on average an charge of 32, 000 $. But a specific 50 year old female may have a blood pressure of 110 or 150, for example. The fitted values for both of these women are 32, 000, and their residuals are -10,000, and 10,000, respectively.</p>
-<p>The simplest variance pattern that we can see in a linear regression occurs when the points are scattered around the mean, with the same degree of scatter throughout the range of the covariates. When there are multiple covariates, it is hard to assess whether the variance is uniform throughout this range, but we can easily check for a “mean/variance relationship”, in which there is a systematic relationship between the variance and the mean, i.e. the variance either increases or decreases systematically with the mean. The plot of residuals on fitted values is used to assess whether such a mean/variance relationship is present.</p>
+<p>The error band for the number of children is noticeably more significant than the error band for the age, indicating less certainty about children and charge than age and charge.</p>
+<p>The discussion has primarily focused on the mean structure of the population, that is, the model for the average change of a person with a given age, gender, BMI, smoker, region, and children. A regression model can also be used to assess the variance structure of the population, that is, how much and in what manner the observations deviate from their mean. We will focus on informal, graphical methods for assessing this.</p>
+<p>To begin with, we plot the residuals against the fitted values. Recall that the fitted values are the estimated means for each observation, and the residuals are the difference between an observation and its fitted mean. For example, the model may estimate that a 50-year-old female will have, on average, a charge of 32,000 $. However, a specific 50-year-old female may have a blood pressure of 110 or 150, for example. The fitted values for these women are 32,000, and their residuals are -10,000 and 10,000, respectively.</p>
+<p>The most straightforward variance pattern that we can see in a linear regression occurs when the points are scattered around the mean, with the same degree of scattering throughout the range of the covariates. When there are multiple covariates, it is hard to assess whether the variance is uniform throughout this range. However, we can quickly check for a “mean/variance relationship,” in which there is a systematic relationship between the variance and the mean, i.e., the variance either increases or decreases systematically with the mean. The plot of residuals on fitted values is used to assess whether such a mean/variance relationship is present.</p>
 <p><img src="images/Project2/8.png" width="600" /></p>
 <p>FIGURE 2.8: Fitted values vs Residuals.</p>
 <p>Above we show the plot of residuals on fitted values for the Insurance data. It appears that we have a modestly increasing mean/variance relationship.</p>
 </div>
-<div id="conclusion-1" class="section level2" number="2.6">
-<h2><span class="header-section-number">2.6</span> Conclusion</h2>
-<p>As can be seen, the linear regression model is a very powerful tool for analyzing model predictions if more than one variable is used. Using the python statsmodels library, we saw how easy and very useful it is to analyze statistical models.</p>
+<div id="conclusion-1" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Conclusion<a href="medical-insurance-costs.html#conclusion-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As can be seen, the linear regression model is a potent tool for analyzing model predictions if more than one variable is used. Using the python statsmodels library, we saw how easy and beneficial it is to analyze statistical models.</p>
 
 </div>
 </div>

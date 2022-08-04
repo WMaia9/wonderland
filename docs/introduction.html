@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Introduction | Data Science Portfolio</title>
   <meta name="description" content="Introduction | Data Science Portfolio" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Introduction | Data Science Portfolio" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Wesley Maia" />
 
 
-<meta name="date" content="2022-03-11" />
+<meta name="date" content="2022-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="author.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -190,6 +189,24 @@
 <li class="chapter" data-level="5.5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#use-case-of-the-model"><i class="fa fa-check"></i><b>5.5</b> Use Case of the Model</a></li>
 <li class="chapter" data-level="5.6" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#conclusion-4"><i class="fa fa-check"></i><b>5.6</b> Conclusion</a></li>
 </ul></li>
+<li class="chapter" data-level="6" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html"><i class="fa fa-check"></i><b>6</b> Hotmart Sales Analytics</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#introdução"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#dados"><i class="fa fa-check"></i><b>6.2</b> Dados</a></li>
+<li class="chapter" data-level="6.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#exploratory-data-analysis-eda"><i class="fa fa-check"></i><b>6.3</b> Exploratory Data Analysis (EDA)</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-contínuas"><i class="fa fa-check"></i><b>6.3.1</b> Variáveis Contínuas</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-descretas"><i class="fa fa-check"></i><b>6.3.2</b> Variáveis Descretas</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-de-vendas-por-produto"><i class="fa fa-check"></i><b>6.3.3</b> Segmentação De Vendas Por Produto</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-das-vendas-por-produtor-de-conteúdo"><i class="fa fa-check"></i><b>6.3.4</b> Segmentação Das Vendas Por Produtor de Conteúdo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-séries-temporais"><i class="fa fa-check"></i><b>6.4</b> Análise de Séries Temporais</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#há-épocas-do-ano-em-que-uma-determinada-categoria-ou-nicho-de-produto-vende-mais"><i class="fa fa-check"></i><b>6.4.1</b> Há épocas do ano em que uma determinada categoria ou nicho de produto vende mais?</a></li>
+<li class="chapter" data-level="6.4.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#a-que-horas-devemos-exibir-anúncios-para-maximizar-a-probabilidade-de-compra-do-produto-pelo-cliente"><i class="fa fa-check"></i><b>6.4.2</b> A que horas devemos exibir anúncios para maximizar a probabilidade de compra do produto pelo cliente?</a></li>
+<li class="chapter" data-level="6.4.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-predições"><i class="fa fa-check"></i><b>6.4.3</b> Análise de Predições</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -210,13 +227,17 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introduction" class="section level1 unnumbered">
-<h1>Introduction</h1>
+<div id="introduction" class="section level1 unnumbered hasAnchor">
+<h1>Introduction<a href="introduction.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The demand for skilled data science practitioners in industry, academia, and the government is rapidly growing. This portfolio introduces concepts and skills that can help it tackle real-world data analysis challenges. It covers probability, statistical inference, linear regression, and machine learning concepts.</p>
-<div id="case-studies" class="section level2 unnumbered">
-<h2>Case studies</h2>
+<div id="case-studies" class="section level2 unnumbered hasAnchor">
+<h2>Case studies<a href="introduction.html#case-studies" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Throughout the portfolio, we use motivating case studies. We try to realistically mimic a data scientist’s experience in each case study. We start by asking specific questions and answering these through data analysis for each of the concepts covered. We learn the ideas as a means to answer the questions. Case studies included in the portfolio are:</p>
 <table>
+<colgroup>
+<col width="47%" />
+<col width="52%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th><strong>Case Study</strong></th>

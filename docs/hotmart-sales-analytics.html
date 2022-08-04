@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science Portfolio</title>
-  <meta name="description" content="Data Science Portfolio" />
+  <title>Project 6 Hotmart Sales Analytics | Data Science Portfolio</title>
+  <meta name="description" content="Project 6 Hotmart Sales Analytics | Data Science Portfolio" />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science Portfolio" />
+  <meta property="og:title" content="Project 6 Hotmart Sales Analytics | Data Science Portfolio" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science Portfolio" />
+  <meta name="twitter:title" content="Project 6 Hotmart Sales Analytics | Data Science Portfolio" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="real-estate-são-paulo-rent-prediction.html"/>
 
-<link rel="next" href="introduction.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -227,24 +227,267 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science Portfolio</h1>
-<h2 class="subtitle"><em>A Showcase of my Projects and my abilities</em></h2>
-<p class="author"><em>Wesley Maia</em></p>
-<p class="date"><em>2022-08-04</em></p>
+<div id="hotmart-sales-analytics" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Project 6</span> Hotmart Sales Analytics<a href="hotmart-sales-analytics.html#hotmart-sales-analytics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Code: <a href="https://github.com/WMaia9/hotmart">GitHub</a></p>
+<div id="introdução" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Introdução<a href="hotmart-sales-analytics.html#introdução" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Esse trabalho é parte de um desafio proposto pela empresa Hotmart.</p>
+<p>Hotmart é uma empresa global de tecnologia e educação, com uma plataforma online para distribuição e venda de produtos digitais.</p>
+<p>A análise deste trabalho é baseada em uma amostra de compras feita na Hotmart no ano de 2016. Tratam-se de 1,5 milhão de registros de compras realizados na plataforma.</p>
 </div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this portfolio, you will find case studies covering the area of ​​Data Science.</p>
-<p><img src="images/Data-Science-Project-Life-Cycle-Data-Science-Project-Edureka1-1.png" title="Data Science" width="556" /></p>
+<div id="dados" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Dados<a href="hotmart-sales-analytics.html#dados" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O primeiro passo em qualquer análise é entender os dados. Vamos dar uma olhada no dataset disponibilizado.</p>
+<p>Os dados são disponibilizados pela Hotmart e se trata de uma amostra de compras feita pela Hotmart em 2016. Vamos começar carregando os dados e conferindo cada um deles e seu tipo.</p>
+<p>Podemos ver que o dataset tem 1599829 amostras e 14 colunas. De acordo com a Hotmart, cada campo significa:</p>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variáveis</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>purchase_id</td>
+<td>Identificação da compra na Hotmart</td>
+</tr>
+<tr class="even">
+<td>product_id</td>
+<td>Identificação do produto na Hotmart;</td>
+</tr>
+<tr class="odd">
+<td>affiliate_id</td>
+<td>Identificação do afiliado na Hotmart;</td>
+</tr>
+<tr class="even">
+<td>producer_id</td>
+<td>Identificação do produtor na Hotmart;</td>
+</tr>
+<tr class="odd">
+<td>buyer_id</td>
+<td>Identificação do comprador na Hotmart;</td>
+</tr>
+<tr class="even">
+<td>purchase_date</td>
+<td>Data e hora em que a compra foi realizada;</td>
+</tr>
+<tr class="odd">
+<td>product_creation_date</td>
+<td>Data e hora em que o produto foi criado na Hotmart;</td>
+</tr>
+<tr class="even">
+<td>product_category</td>
+<td>categoria do produto na Hotmart. Exemplo: e-book, software, curso online, e-tickets, etc.;</td>
+</tr>
+<tr class="odd">
+<td>product_niche</td>
+<td>nicho de mercado que o produto faz parte. Exemplo: educação, saúde e bem-estar, sexualidade, etc.;</td>
+</tr>
+<tr class="even">
+<td>purchase_value</td>
+<td>valor da compra. Esse dado, assim como nicho e categoria foi codificado para manter a confidencialidade. O valor apresentado no dataset é o z-score do valor real;</td>
+</tr>
+<tr class="odd">
+<td>affiliate_commission_percentual</td>
+<td>percentual de comissão que o afiliado receberá da compra</td>
+</tr>
+<tr class="even">
+<td>purchase_device:</td>
+<td>tipo de dispositivo utilizado no momento da compra, como: Desktop, Mobile, Tablet, ou Outros;</td>
+</tr>
+<tr class="odd">
+<td>purchase_origin</td>
+<td>endereço do site do qual a pessoa veio antes da compra. Por exemplo, se uma pessoa veio do Facebook, Youtube, ou até mesmo de outra página no site oficial do produto</td>
+</tr>
+<tr class="even">
+<td>is_origin_page_social_network</td>
+<td>informa se essa compra veio de uma URL do Facebook, Youtube, Instagram, Pinterest, ou Twitter.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="exploratory-data-analysis-eda" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Exploratory Data Analysis (EDA)<a href="hotmart-sales-analytics.html#exploratory-data-analysis-eda" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vamos olhadar agora as primeiras 5 linhas do dataset:</p>
+<p><img src="images/project6/tabela2.png" width="755" /></p>
+<p>Podemos ver que na primeira linha existem valores NaN, o que é um problema para as análises que serão feitas. Vamos então conferir quantas linhas do dataset existem esse com esse tipo de dados.</p>
+<pre><code>purchase_id                        0
+product_id                         1
+affiliate_id                       1
+producer_id                        1
+buyer_id                           1
+purchase_date                      1
+product_creation_date              1
+product_category                   1
+product_niche                      1
+purchase_value                     1
+affiliate_commission_percentual    1
+purchase_device                    1
+purchase_origin                    1
+is_origin_page_social_network      0</code></pre>
+<p>Podemos ver que existe somente uma linha de dados com dados do tipo NaN, que como já vimos, trata-se da primeira linha do dados. Vamos então remove-los.</p>
+<div id="variáveis-contínuas" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Variáveis Contínuas<a href="hotmart-sales-analytics.html#variáveis-contínuas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="purchase_value" class="section level4 hasAnchor" number="6.3.1.1">
+<h4><span class="header-section-number">6.3.1.1</span> purchase_value<a href="hotmart-sales-analytics.html#purchase_value" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Agora podemos dar uma olhada geral nos dados numéricos. Da tabela abaixo vemos que a variável purchase_value tem valores negativos, o que não faz sentido para um valor de compra. No entanto, pela descrição, sabemos que ela foi codificada em termos de z score, que nada mais é do que o número de desvios padrões em relação a média de um ponto de informação.</p>
+<p><img src="images/project6/tabela1.png" /></p>
+<p><img src="images/project6/1.png" /></p>
+<p>Olhando graficamente existe uma variação entre -0.5 e 1. Podemos utilizar a técnica de normalização MinMaxScaler e assim transformar o intervalo entre 0 e 1 e dessa forma teremos percentualmente o faturamento.</p>
+<p><img src="images/project6/2.png" /></p>
+</div>
+</div>
+<div id="variáveis-descretas" class="section level3 hasAnchor" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Variáveis Descretas<a href="hotmart-sales-analytics.html#variáveis-descretas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Nessa seção, iremos dar uma olhada nas variáveis discretas para procurar por tendências.</p>
+<div id="product_category" class="section level4 hasAnchor" number="6.3.2.1">
+<h4><span class="header-section-number">6.3.2.1</span> product_category<a href="hotmart-sales-analytics.html#product_category" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/project6/3.png" /></p>
+<p>Analisando o gráfico de categoria de produtos, vemos que a maior concentração de vendas na plataforma Hotmart no ano de 2016 foi em livros físicos, representando quase 80% dos casos. Seguidos por Podcast perto dos 20% e Workshop quase todo o resto.</p>
+</div>
+<div id="product_niche" class="section level4 hasAnchor" number="6.3.2.2">
+<h4><span class="header-section-number">6.3.2.2</span> product_niche<a href="hotmart-sales-analytics.html#product_niche" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/project6/4.png" /></p>
+<p>Analisando o gráfico de nichos, vemos que as maiores concentrações de vendas na plataforma Hotmart no ano de 2016 estavam em na categoria de negociação, gerenciamento de ansiedade (autocontrole), que juntos representam quase 30% dos casos. Seguidos por finança pessoal e habilidade de apresentações que somados representam quase 20%.</p>
+</div>
+<div id="purchase_device" class="section level4 hasAnchor" number="6.3.2.3">
+<h4><span class="header-section-number">6.3.2.3</span> purchase_device<a href="hotmart-sales-analytics.html#purchase_device" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/project6/5.png" /></p>
+<p>Analisando o gráfico de dispositivos onde são feitas as compras, vemos que a maior concentração de vendas na plataforma Hotmart no ano de 2016 foi em eReaders, representando 40% dos casos. Seguidos por Desktop na casa dos 35% e Smart TV com 20%.</p>
+</div>
+<div id="is_origin_page_social_network" class="section level4 hasAnchor" number="6.3.2.4">
+<h4><span class="header-section-number">6.3.2.4</span> is_origin_page_social_network<a href="hotmart-sales-analytics.html#is_origin_page_social_network" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="images/project6/6.png" /></p>
+<p>Por último, o gráfico se a compra tem origem de rede sociais, vemos que quase a totalidade está com 0. Sobre esta categoria não ficou claro se 0 representa “Sim” ou “Não”</p>
+</div>
+</div>
+<div id="segmentação-de-vendas-por-produto" class="section level3 hasAnchor" number="6.3.3">
+<h3><span class="header-section-number">6.3.3</span> Segmentação De Vendas Por Produto<a href="hotmart-sales-analytics.html#segmentação-de-vendas-por-produto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Agora que conhecemos as variáveis discretas e contínuas, vamos analisar as vendas segmentadas por produto.</p>
+<p><img src="images/project6/tabela3.png" /></p>
+<p>Da tabela gerada, vemos que os produtos mais vendidos foram livros físicos, como era de se esperar, visto que representam quase 80% de vendas na plataforma, focado no nicho de imigração, criação de conteúdo por Youtubers, e finanças. A maioria das compras vieram de eReaders e Smart TV.</p>
+<p><img src="images/project6/tabela4.png" /></p>
+<p>Na tabela acima é possível ver que no quesito de faturamento, o top 10 são todos livros físicos focados no mesmo nicho. O curioso é que as compras foram feitas na maior parte nos eReaders, o que fica o questionamento se a categoria de produtos está realmente correta.</p>
+<p><img src="images/project6/tabela5.png" /></p>
+<p>Por último, temos que 4 dos 10 produtos mais vendidos na plataforma também são os produtos que mais geraram receitas.</p>
+<p>Agora vamos analisar a relevância de vendas dos produtos na Hotmart.</p>
+<pre><code>top 1 Sales  2.58 %
+top 10 Sales  14.31 %
+top 50 Sales  28.36 %
+top 100 Sales  37.28 %
+top 500 Sales  61.94 %
+top 1000 Sales  73.54 %
+
+top 1 Revenue  1.53 %
+top 10 Revenue  9.93 %
+top 50 Revenue  27.66 %
+top 100 Revenue  38.51 %
+top 500 Revenue  67.08 %
+top 1000 Revenue  79.07 %</code></pre>
+<p>Dos resultados, podemos ver que os 10 produtos que mais deram lucros para a Hormat no ano de 2016 também foram responsáveis por quase 10% de todo o lucro da empresa. Vemos também que 50% dos produtos mais vendidos, são responsáveis por quase 30% de todo o faturamento. No quesito de quantidade de vendas, vemos que o padrão é muito parecido com a quantidade de lucro da empresa.</p>
+</div>
+<div id="segmentação-das-vendas-por-produtor-de-conteúdo" class="section level3 hasAnchor" number="6.3.4">
+<h3><span class="header-section-number">6.3.4</span> Segmentação Das Vendas Por Produtor de Conteúdo<a href="hotmart-sales-analytics.html#segmentação-das-vendas-por-produtor-de-conteúdo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Iremos fazer a mesma análise de seção anterior, mas focado no produtor de conteúdo.</p>
+<p><img src="images/project6/tabela6.png" /></p>
+<p><img src="images/project6/tabela7.png" /></p>
+<p><img src="images/project6/tabela8.png" /></p>
+<p>Temos que 2 dos 10 produtores que mais vebdem na plataforma também são os produtos que mais geraram receitas.</p>
+<p>Agora vamos analisar a relevância de vendas dos produtores de conteúdo na Hotmart.</p>
+<pre><code>top 1 Sales  2.58 %
+top 10 Sales  17.61 %
+top 50 Sales  36.58 %
+top 100 Sales  48.55 %
+top 500 Sales  79.79 %
+top 1000 Sales  89.94 %
+
+top 1 Revenue  2.18 %
+top 10 Revenue  15.77 %
+top 50 Revenue  42.69 %
+top 100 Revenue  57.56 %
+top 500 Revenue  87.11 %
+top 1000 Revenue  94.43 %</code></pre>
+<p>Dos resultados, podemos ver que os 10 dos produtores de conteúdo que mais deram lucros para a Hormat no ano de 2016 foram responsáveis por quase 15% de todo o lucro da empresa. Vemos também que 100 dos produtores de conteúdo que mais deram lucros, são responsáveis por quase 50% de todo o faturamento daquele ano. No quesito de quantidade de vendas, vemos que o padrão é muito parecido com a quantidade de lucro da empresa.</p>
+<p>Podemos concluir que o Hotmart depende dos maiores produtores da plataforma.</p>
+</div>
+</div>
+<div id="análise-de-séries-temporais" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Análise de Séries Temporais<a href="hotmart-sales-analytics.html#análise-de-séries-temporais" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Uma série temporal é uma sequência de pontos de dados obtidos em pontos sucessivos e igualmente espaçados no tempo que podem ser usados para prever o futuro. Um modelo de análise de séries temporais envolve o uso de dados históricos para prever o futuro. Ele procura no conjunto de dados recursos como tendências, flutuações cíclicas, sazonalidade e padrões comportamentais.</p>
+<div id="há-épocas-do-ano-em-que-uma-determinada-categoria-ou-nicho-de-produto-vende-mais" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Há épocas do ano em que uma determinada categoria ou nicho de produto vende mais?<a href="hotmart-sales-analytics.html#há-épocas-do-ano-em-que-uma-determinada-categoria-ou-nicho-de-produto-vende-mais" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project6/7.png" /></p>
+<p>Do gráfico, podemos ver que o mês que tiveram venda na plataforma foi no mês de maio.</p>
+<p><img src="images/project6/8.png" /></p>
+<p><img src="images/project6/9.png" width="1451" /></p>
+</div>
+<div id="a-que-horas-devemos-exibir-anúncios-para-maximizar-a-probabilidade-de-compra-do-produto-pelo-cliente" class="section level3 hasAnchor" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> A que horas devemos exibir anúncios para maximizar a probabilidade de compra do produto pelo cliente?<a href="hotmart-sales-analytics.html#a-que-horas-devemos-exibir-anúncios-para-maximizar-a-probabilidade-de-compra-do-produto-pelo-cliente" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project6/10.png" /></p>
+<p>Como você pode ver na Figura, existem aproximadamente 2 picos nos dados. São das 10h às 11h e um menor às 21h . Faz sentido, já que a maioria das pessoas faz compras durante o dia. A partir desses dados, podemos sugerir ao nosso parceiro comercial que anuncie seu produto antes das 12h e/ou 19h. Pode ser 9h30 e/ou 20h30.</p>
+</div>
+<div id="análise-de-predições" class="section level3 hasAnchor" number="6.4.3">
+<h3><span class="header-section-number">6.4.3</span> Análise de Predições<a href="hotmart-sales-analytics.html#análise-de-predições" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As três principais ideias gerais que são fundamentais a serem consideradas para a predições de séries temporais, ao lidar com um problema de previsão de vendas abordado a partir de uma perspectiva de série temporal, são:</p>
+<ul>
+<li>Padrões de repetição</li>
+<li>Padrões estáticos</li>
+<li>Tendências</li>
+</ul>
+<div id="padrões-de-repetição" class="section level4 hasAnchor" number="6.4.3.1">
+<h4><span class="header-section-number">6.4.3.1</span> Padrões de Repetição<a href="hotmart-sales-analytics.html#padrões-de-repetição" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Vamos começar analisando a série temporal por quantidade de vendas e lucros e procurar se existem padrões de repetição.</p>
+<p><img src="images/project6/11.png" /></p>
+<p>Da tabela e do gráfico podemos ver que o dia que mais teve movimentação foi no dia 2 de maio com quase o dobro das próximas datas do top 10. Olhando somente os dados fornecidos não há muito de especial para explicar esse fato. Olhando o top 10 de maiores transações na plataforma, notamos que outras datas em maio também tiveram grande volume de vendas.</p>
+<p>Analisando o gráfico de autocorrelação, vemos alguns pontos de correlação relativamente alta em lag 2 e 7. A falta de uma estrutura bem definida é resultado das contingências de vendas: dado o número de fatos que entram na previsão de vendas, não devemos esperar que os dados tenham correlações perfeitamente claras como em um conjunto de dados meteorológicos, por exemplo. No entanto, é interessante observar picos de correlação que podem estar associados a fatores relacionados ao tipo de produto envolvido.</p>
+<p><img src="images/project6/12.png" /></p>
+<p>Já em relação ao lucro, podemos ver da tabela e gráfico que os maiores lucros ocorreram no mês de março e junho. Podemos ver também que o gráfico de autocorrelação tem um padrão muito parecido com o de quantidade de vendas.</p>
+<pre><code>Resultados de vendas:
+ADF = -3.0875884164950738
+p-value = 0.02748544055310883
+Resultados de Lucros:
+ ADF = -3.6274761082029476
+p-value = 0.005256955239645174</code></pre>
+<p>Podemos ver dos testes que o valor p indica uma confiança não significativa de que os dados seriam estacionários</p>
+</div>
+<div id="média-móvel" class="section level4 hasAnchor" number="6.4.3.2">
+<h4><span class="header-section-number">6.4.3.2</span> Média móvel<a href="hotmart-sales-analytics.html#média-móvel" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Este modelo assume que a próxima observação é a média de todas as observações anteriores e pode ser usado para identificar tendências interessantes nos dados. Podemos definir uma janela para aplicar o modelo de média móvel para suavizar a série temporal e destacar diferentes tendências.</p>
+<p><img src="images/project6/13.png" /></p>
+<p>Para o conjunto de dados de vendas, o ajuste não parece tão promissor. Além disso, o parâmetro de janela que define o tamanho de nossa média tem um grande efeito em nosso desempenho geral e não foi feito nenhum ajuste de hiperparâmetro adicional. Aqui, o que devemos levar em consideração é que conjuntos de dados de vendas complexos exigirão mais informações do que uma simples série temporal unidimensional pode fornecer.</p>
+</div>
+<div id="arima" class="section level4 hasAnchor" number="6.4.3.3">
+<h4><span class="header-section-number">6.4.3.3</span> Arima<a href="hotmart-sales-analytics.html#arima" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>ARIMA ou Auto-regressive Integrated Moving Average é um modelo de séries temporais que visa descrever as autocorrelações nos dados de séries temporais. Funciona bem para previsões de curto prazo e pode ser útil para fornecer valores previstos para períodos especificados pelo usuário, mostrando bons resultados para demanda, vendas, planejamento e produção.</p>
+<p>Os parâmetros do modelo ARIMA são definidos da seguinte forma:</p>
+<ul>
+<li>p: O número de observações de atraso incluídas no modelo</li>
+<li>d: O número de vezes que as observações brutas são diferenciadas</li>
+<li>q: O tamanho da janela de média móvel</li>
+</ul>
+<!-- -->
+<pre><code>MSE error: 7473419.795985948</code></pre>
+<p><img src="images/project6/14.png" /></p>
+<p>Podemos ver que tivemos um resultado muito ruim com o MSE bem alto. Vamos apenas lembrar que os resultados aqui são apenas para mostrar os modelos e não representam uma estimativa precisa. Os conjuntos de dados são limitados (o conjunto de dados de vendas após a soma é menor que 200 pontos de dados) e não foi realizado nenhum ajuste de hiperparâmetro complexo. O objetivo aqui foi apenas demonstrar como esses modelos funcionam e como eles podem ser implementados. Podemos verificar que o conjunto de dados de vendas parece apresentar desafios que os modelos tradicionais não conseguem superar.</p>
+<p>Podemos ver que, para conjuntos de dados que possuem um padrão claro, os modelos tradicionais funcionam bem. No entanto, na ausência de tal estrutura, esses modelos não parecem apresentar flexibilidade para se adaptar, pois dependem de fortes suposições sobre a dinâmica da série temporal alvo.</p>
+
+</div>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="real-estate-são-paulo-rent-prediction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

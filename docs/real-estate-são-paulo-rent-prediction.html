@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Project 5 Real Estate São Paulo Rent Prediction | Data Science Portfolio</title>
   <meta name="description" content="Project 5 Real Estate São Paulo Rent Prediction | Data Science Portfolio" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Project 5 Real Estate São Paulo Rent Prediction | Data Science Portfolio" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Wesley Maia" />
 
 
-<meta name="date" content="2022-03-11" />
+<meta name="date" content="2022-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +31,7 @@
   
   
 <link rel="prev" href="ok-cupid.html"/>
-
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<link rel="next" href="hotmart-sales-analytics.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -190,6 +189,24 @@
 <li class="chapter" data-level="5.5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#use-case-of-the-model"><i class="fa fa-check"></i><b>5.5</b> Use Case of the Model</a></li>
 <li class="chapter" data-level="5.6" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#conclusion-4"><i class="fa fa-check"></i><b>5.6</b> Conclusion</a></li>
 </ul></li>
+<li class="chapter" data-level="6" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html"><i class="fa fa-check"></i><b>6</b> Hotmart Sales Analytics</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#introdução"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#dados"><i class="fa fa-check"></i><b>6.2</b> Dados</a></li>
+<li class="chapter" data-level="6.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#exploratory-data-analysis-eda"><i class="fa fa-check"></i><b>6.3</b> Exploratory Data Analysis (EDA)</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-contínuas"><i class="fa fa-check"></i><b>6.3.1</b> Variáveis Contínuas</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-descretas"><i class="fa fa-check"></i><b>6.3.2</b> Variáveis Descretas</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-de-vendas-por-produto"><i class="fa fa-check"></i><b>6.3.3</b> Segmentação De Vendas Por Produto</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-das-vendas-por-produtor-de-conteúdo"><i class="fa fa-check"></i><b>6.3.4</b> Segmentação Das Vendas Por Produtor de Conteúdo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-séries-temporais"><i class="fa fa-check"></i><b>6.4</b> Análise de Séries Temporais</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#há-épocas-do-ano-em-que-uma-determinada-categoria-ou-nicho-de-produto-vende-mais"><i class="fa fa-check"></i><b>6.4.1</b> Há épocas do ano em que uma determinada categoria ou nicho de produto vende mais?</a></li>
+<li class="chapter" data-level="6.4.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#a-que-horas-devemos-exibir-anúncios-para-maximizar-a-probabilidade-de-compra-do-produto-pelo-cliente"><i class="fa fa-check"></i><b>6.4.2</b> A que horas devemos exibir anúncios para maximizar a probabilidade de compra do produto pelo cliente?</a></li>
+<li class="chapter" data-level="6.4.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-predições"><i class="fa fa-check"></i><b>6.4.3</b> Análise de Predições</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -210,12 +227,12 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="real-estate-são-paulo-rent-prediction" class="section level1" number="5">
-<h1><span class="header-section-number">Project 5</span> Real Estate São Paulo Rent Prediction</h1>
+<div id="real-estate-são-paulo-rent-prediction" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Project 5</span> Real Estate São Paulo Rent Prediction<a href="real-estate-são-paulo-rent-prediction.html#real-estate-são-paulo-rent-prediction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Code: <a href="https://github.com/WMaia9/rent-prediction">GitHub</a></p>
 <p>Web App: <a href="https://share.streamlit.io/wmaia9/sprentweb/main/sprent.py">sp-rent-predictions</a></p>
-<div id="introduction-5" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Introduction</h2>
+<div id="introduction-5" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Introduction<a href="real-estate-são-paulo-rent-prediction.html#introduction-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Everyone needs a place to live. It can be a house, a flat, or an apartment. At some point in life, everyone is faced with the choice of buying or renting a house. On top of that, the following questions can be asked: Is buying a property worthwhile or staying in rent is the best alternative? In a society that values and idealizes the dream of homeownership, those who question themselves about the subject end up being seen as crazy.</p>
 <p>After all, from an early age, we believe that homeownership is a goal that everyone should have and strive to achieve. This, however, is not an absolute truth.</p>
 <p>Furthermore, having a home, for many, is synonymous with stability and security. But, is it worth buying a house? Or can continuing to rent make more sense?</p>
@@ -243,8 +260,8 @@
 <p>In addition to the reasons mentioned above, São Paulo is a very busy city and many people go to it to work or study for a while, and renting makes a lot more sense than buying.</p>
 <p>Regardless of the reasons for renting, the sides need to agree on a price. It is always good to know how much a property is worth, what the expected transaction price is.</p>
 </blockquote>
-<div id="analysis-2" class="section level3" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> Analysis</h3>
+<div id="analysis-2" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Analysis<a href="real-estate-são-paulo-rent-prediction.html#analysis-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In this work, we want to find an answer to these questions. This case study is intended to be a comprehensive use case of dealing with a regression problem for Data Science. We will start with some questions that allow us to understand the issues related to renting a property.</p>
 <p>The owner does not know how to increase the property’s value so that the investment is less than the added value. For example, building a swimming pool can increase the price, and forming a bathroom is not worth it.</p>
 <p>The owner does not know how much he will rent a property. He makes an offer on the portal and doesn’t know if the price is right,</p>
@@ -259,8 +276,8 @@
 <p>With this premise, we can now analyze the data.</p>
 </div>
 </div>
-<div id="data-4" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Data</h2>
+<div id="data-4" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Data<a href="real-estate-são-paulo-rent-prediction.html#data-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>As a data source for information on property characteristics and prices, a set of data obtained from a web scraper on the Zap Imóveis website was used. Web Scraper is a tool to extract data from a HyperText Markup Language (HTML) website. The web scraper was developed by GeovRodri based on Beautiful Soup and made available through the link: <a href="https://pypi.org/project/zapimoveis-scraper/">zapimoveis-scraper</a></p>
 <p>The set of data collected on the website is based on rental advertisements in the city of São Paulo containing more than 60 thousand data. The data set obtained contains the data according to TABLE 5.1.</p>
 <p>TABLE 5.1.1: Description of variables in the dataset.</p>
@@ -307,12 +324,12 @@
 </tbody>
 </table>
 <p>Another idea on how to enrich our solution was to add external data. Our hypothesis took into account the information given in the introduction of how a property is calculated, therefore, the location of the property can significantly affect the price. Therefore, we also take into account the distance to the nearest public transport (Metro and bus), distance to the nearest school, number of cultural variety within 1km, and addition to the crime rate in the region.</p>
-<div id="data-preparation-1" class="section level3" number="5.2.1">
-<h3><span class="header-section-number">5.2.1</span> Data Preparation</h3>
+<div id="data-preparation-1" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Data Preparation<a href="real-estate-são-paulo-rent-prediction.html#data-preparation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Like all automatic data collection processes, the web scraper described the above-generated data with quality problems. To solve this problem, we apply some cleaning processes. The first filter was to remove instances that had null values (absent) for attributes considered fundamental for the analysis. To eliminate outliers that left the data inconsistent, such as, for example, rent with the sale price of properties, places with more than 50 bathrooms, and houses with areas the size of a city, conditions were added for the property to be considered consistent with reality.</p>
 </div>
-<div id="external-data" class="section level3" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> External data</h3>
+<div id="external-data" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> External data<a href="real-estate-são-paulo-rent-prediction.html#external-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>External data has been added. We believe that many other variables describe the rental price. Geospatial information was missing. Why do some places tend to be more expensive? Perhaps it is because of the availability of public transport. That is why we decided to add, for example, a variable that describes the distance to the nearest bus or metro station.</p>
 <p>In the data described, we note that unfortunately there is no zip code and geolocation of the properties. To our happiness, the website provides an address, and from that, it was possible to use a geolocation tool called <a href="https://geopy.readthedocs.io/en/stable/">Geopy</a> available for Python. With it, it is possible to enter an address and automatically the library provides you with the longitude and latitude of the location.</p>
 <p>fter obtaining the geolocation values of the properties, a second cleaning was performed on the data. Many registrations and inconsistencies of Geopy cause some locations of the respective properties to be outside the city of São Paulo (curiously some even in the middle of the Atlantic Ocean). To solve this problem, we took the official data from the location of the city of São Paulo, made available by <a href="https://www.ibge.gov.br/">IBGE</a> and with the help of <a href="https://geopandas.org/">Geopandas</a>, we applied the data so that all the properties in our database were within the region.</p>
@@ -393,14 +410,14 @@
 <p>The last step was to divide the data into training and test samples at random with a 70/30 ratio to apply machine learning.</p>
 <p>The script to download, clean, and process the data can be found on GitHub. For the analysis of spatial data, a small geofast script was made. The distances between 2 arbitrary points on the earth can be obtained in the Geopy package for Python. However, the general equation is very computationally expensive for this work. Then an adjustment was made in our case without losing almost any precision. A simple equation of geospatial calculation was used that can be applied for short distances of a few hundred kilometers.</p>
 </div>
-<div id="text-processing" class="section level3" number="5.2.3">
-<h3><span class="header-section-number">5.2.3</span> Text Processing</h3>
+<div id="text-processing" class="section level3 hasAnchor" number="5.2.3">
+<h3><span class="header-section-number">5.2.3</span> Text Processing<a href="real-estate-são-paulo-rent-prediction.html#text-processing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To extract information from the title and description, we followed the regular Natural Language Processing pipeline, which encompasses tokenization (splitting sentences into separate words), removal of common unhelpful words such as prepositions (stopwords removal), and lemmatization (reduction of words to their root forms).</p>
 <p>From the texts, we add variables that we think are important for the price of the property. For example, if it is a townhouse, if it has a swimming pool, barbecue, if it is furnished, and so on.</p>
 </div>
 </div>
-<div id="model" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> Model</h2>
+<div id="model" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Model<a href="real-estate-são-paulo-rent-prediction.html#model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this project, We will be using the linear model as a base model to finalize the data pre-processing steps. We will use outlier removal techniques, coding techniques, sizing/normalization techniques, resource engineering, and different types of imputation combinations.</p>
 <p>We divided the modeling into five steps.</p>
 <p><strong>Step1: Linear Models</strong></p>
@@ -413,8 +430,8 @@
 <p>Stacking is an ensemble learning technique to combine multiple regression models via a meta-regressor. At this stage we have good mix of multiple models, now is the best time to use StackingCVRegressor to combine all above models to improve the score even further. As expected this model resulted in best possible score!</p>
 <p><strong>Step5: Model Blending</strong></p>
 <p>Model blending is the manual step, where we manually adjust the weight for each model in order to ensemble the predictions to improve the score. Thumb rle is to give highest weights to best performing model and lowest to least performing model. After few trial and and error I could settle on the weights and manage to top my model stacking score!</p>
-<div id="root-mean-square-error-rmse" class="section level3" number="5.3.1">
-<h3><span class="header-section-number">5.3.1</span> <strong>Root Mean Square Error (RMSE)</strong></h3>
+<div id="root-mean-square-error-rmse" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> <strong>Root Mean Square Error (RMSE)</strong><a href="real-estate-são-paulo-rent-prediction.html#root-mean-square-error-rmse" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Root Mean square is the standard deviation of the residuals. Now let’s understand what Standard deviation and residuals are.</p>
 <p><strong>Standard deviation</strong>: Standard deviation measures how to spread out numbers are. Its formula is the square root of the Variance. Variance is defined as the average of the squared differences from the mean. In the below formula of standard deviation ‘xi’= numbers, ‘μ’= Mean of the numbers, and ‘N’ = Total number of values.</p>
 <p><strong>Residuals</strong>: Residuals measure how far from the regression line data points are. Residuals are nothing but prediction errors. We can find it by subtracting the predicted value from the actual value.</p>
@@ -432,8 +449,8 @@
 </ul></li>
 </ul>
 </div>
-<div id="correlation-check" class="section level3" number="5.3.2">
-<h3><span class="header-section-number">5.3.2</span> <strong>Correlation Check</strong></h3>
+<div id="correlation-check" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> <strong>Correlation Check</strong><a href="real-estate-são-paulo-rent-prediction.html#correlation-check" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Correlation is a measure of the linear relationship of 2 or more variables. Through correlation, we can predict one variable from the other. The logic behind using correlation for feature selection is that the suitable variables are highly correlated with the target.</p>
 <p>A correlation matrix is a table showing correlation coefficients between variables. Each cell in the table shows the correlation between two variables.</p>
 <p>We will use Pearson’s correlation. It is utilized we you have two quantitative variables, and you wish to see if there is a linear relationship between those variables.</p>
@@ -444,18 +461,18 @@
 <p>0 indicates no linear correlation between two variables.</p>
 <p>1 indicates a perfectly positive linear correlation between two variables.</p>
 </div>
-<div id="multicollinearity-analysis" class="section level3" number="5.3.3">
-<h3><span class="header-section-number">5.3.3</span> <strong>Multicollinearity Analysis</strong></h3>
+<div id="multicollinearity-analysis" class="section level3 hasAnchor" number="5.3.3">
+<h3><span class="header-section-number">5.3.3</span> <strong>Multicollinearity Analysis</strong><a href="real-estate-são-paulo-rent-prediction.html#multicollinearity-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Multicollinearity refers to when more than two explanatory variables in a multiple regression model are highly linearly related. Below are a few of the multicollinear features based on the correlation matrix.</p>
 <p><img src="images/project5/paste-F8533030.png" width="938" /></p>
 <p>FIGURE 5.5: Correlation of Price vs dist subway, dist bus, dist school and live area.</p>
 <p><img src="images/project5/paste-70DCB12A.png" /></p>
 <p>FIGURE 5.5: Boxplot of correlation of Price vs numbers Bathrooms, Bedrooms and Vacancies</p>
 </div>
-<div id="feature-engineering" class="section level3" number="5.3.4">
-<h3><span class="header-section-number">5.3.4</span> <strong>Feature Engineering</strong></h3>
-<div id="numeric-feature-scaling" class="section level4" number="5.3.4.1">
-<h4><span class="header-section-number">5.3.4.1</span> <strong>Numeric Feature Scaling</strong></h4>
+<div id="feature-engineering" class="section level3 hasAnchor" number="5.3.4">
+<h3><span class="header-section-number">5.3.4</span> <strong>Feature Engineering</strong><a href="real-estate-são-paulo-rent-prediction.html#feature-engineering" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="numeric-feature-scaling" class="section level4 hasAnchor" number="5.3.4.1">
+<h4><span class="header-section-number">5.3.4.1</span> <strong>Numeric Feature Scaling</strong><a href="real-estate-são-paulo-rent-prediction.html#numeric-feature-scaling" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>To give every feature the same importance, we perform feature scaling. There are many techniques like Min-Max Scaler, Robust Scaler, etc., to do feature scaling.</p>
 <p>Before we can finalize any scaling technique, let’s check the skewness of our numeric features. Skewness is the measure of the degree of asymmetry of a distribution:</p>
 <ul>
@@ -464,8 +481,8 @@
 <li><p>skewness &lt; 0 : more weight in the right tail of the distribution.</p></li>
 </ul>
 </div>
-<div id="target-variable-analysis-and-transformation" class="section level4" number="5.3.4.2">
-<h4><span class="header-section-number">5.3.4.2</span> <strong>Target Variable Analysis and Transformation</strong></h4>
+<div id="target-variable-analysis-and-transformation" class="section level4 hasAnchor" number="5.3.4.2">
+<h4><span class="header-section-number">5.3.4.2</span> <strong>Target Variable Analysis and Transformation</strong><a href="real-estate-são-paulo-rent-prediction.html#target-variable-analysis-and-transformation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Price is our target variable. If we want to predict the target variables accurately, then the first task is to understand the underlying behavior of our target variable. The model can make more reliable predictions if our target variable is normally distributed. We will use both graphical and statistical methods to test our target variable’s normality.</p>
 <p><strong>Statistical</strong></p>
 <p>We will use Skewness, Kurtosis and Shapiro-Wilk test for normality.</p>
@@ -490,12 +507,12 @@
 </div>
 </div>
 </div>
-<div id="prediction-1" class="section level2" number="5.4">
-<h2><span class="header-section-number">5.4</span> Prediction</h2>
-<div id="linear-models" class="section level3" number="5.4.1">
-<h3><span class="header-section-number">5.4.1</span> <strong>Linear Models</strong></h3>
-<div id="linear-regression-1" class="section level4" number="5.4.1.1">
-<h4><span class="header-section-number">5.4.1.1</span> <strong>Linear Regression</strong></h4>
+<div id="prediction-1" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Prediction<a href="real-estate-são-paulo-rent-prediction.html#prediction-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="linear-models" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> <strong>Linear Models</strong><a href="real-estate-são-paulo-rent-prediction.html#linear-models" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="linear-regression-1" class="section level4 hasAnchor" number="5.4.1.1">
+<h4><span class="header-section-number">5.4.1.1</span> <strong>Linear Regression</strong><a href="real-estate-são-paulo-rent-prediction.html#linear-regression-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Linear Regression fits a linear model with coefficients w = (w1, …, wp) to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.</p>
 <p>TABLE 5.2: Results for Random Forest with 5-Fold Cross-Validation.</p>
 <table>
@@ -513,8 +530,8 @@
 </tbody>
 </table>
 </div>
-<div id="bayesian-ridge-regression" class="section level4" number="5.4.1.2">
-<h4><span class="header-section-number">5.4.1.2</span> <strong>Bayesian Ridge Regression</strong></h4>
+<div id="bayesian-ridge-regression" class="section level4 hasAnchor" number="5.4.1.2">
+<h4><span class="header-section-number">5.4.1.2</span> <strong>Bayesian Ridge Regression</strong><a href="real-estate-são-paulo-rent-prediction.html#bayesian-ridge-regression" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Bayesian Ridge estimates a probabilistic model of the regression. Bayesian regression techniques can be used to include regularization parameters in the estimation procedure: the regularization parameter is not set in a hard sense but tuned to the data at hand.</p>
 <ul>
 <li><p>The advantages of Bayesian Regression are:</p>
@@ -543,8 +560,8 @@
 </tbody>
 </table>
 </div>
-<div id="lasso" class="section level4" number="5.4.1.3">
-<h4><span class="header-section-number">5.4.1.3</span> <strong>Lasso</strong></h4>
+<div id="lasso" class="section level4 hasAnchor" number="5.4.1.3">
+<h4><span class="header-section-number">5.4.1.3</span> <strong>Lasso</strong><a href="real-estate-são-paulo-rent-prediction.html#lasso" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Linear Model trained with L1 prior as regularizer.</p>
 <p>TABLE 5.4: Results for Lasso with 5-Fold Cross-Validation.</p>
 <table>
@@ -562,8 +579,8 @@
 </tbody>
 </table>
 </div>
-<div id="elastic-net" class="section level4" number="5.4.1.4">
-<h4><span class="header-section-number">5.4.1.4</span> <strong>Elastic Net</strong></h4>
+<div id="elastic-net" class="section level4 hasAnchor" number="5.4.1.4">
+<h4><span class="header-section-number">5.4.1.4</span> <strong>Elastic Net</strong><a href="real-estate-são-paulo-rent-prediction.html#elastic-net" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Linear regression with combined L1 and L2 priors as regularizer.</p>
 <p>TABLE 5.5: Results for Elastic Net with 5-Fold Cross-Validation.</p>
 <table>
@@ -581,8 +598,8 @@
 </tbody>
 </table>
 </div>
-<div id="ridge" class="section level4" number="5.4.1.5">
-<h4><span class="header-section-number">5.4.1.5</span> Ridge</h4>
+<div id="ridge" class="section level4 hasAnchor" number="5.4.1.5">
+<h4><span class="header-section-number">5.4.1.5</span> Ridge<a href="real-estate-são-paulo-rent-prediction.html#ridge" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Linear least squares with l2 regularization. This model solves a regression model where the loss function is the linear least-squares function, and regularization is given by the l2-norm—also known as Ridge Regression or Tikhonov regularization. This estimator has built-in support for multi-variate regression (i.e., when y is a 2d-array of shape (n_samples, n_targets)).</p>
 <p>TABLE 5.6: Results for Ridge with 5-Fold Cross-Validation.</p>
 <table>
@@ -600,8 +617,8 @@
 </tbody>
 </table>
 </div>
-<div id="support-vector-machines" class="section level4" number="5.4.1.6">
-<h4><span class="header-section-number">5.4.1.6</span> <strong>Support Vector Machines</strong></h4>
+<div id="support-vector-machines" class="section level4 hasAnchor" number="5.4.1.6">
+<h4><span class="header-section-number">5.4.1.6</span> <strong>Support Vector Machines</strong><a href="real-estate-são-paulo-rent-prediction.html#support-vector-machines" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression, and outliers detection. The model produced by Support Vector Regression depends only on a subset of the training data because the cost function ignores samples whose prediction is close to their target.</p>
 <p>TABLE 5.7: Results for Support Vector Machines with 5-Fold Cross-Validation.</p>
 <table>
@@ -620,16 +637,16 @@
 </table>
 </div>
 </div>
-<div id="ensemble-methods" class="section level3" number="5.4.2">
-<h3><span class="header-section-number">5.4.2</span> <strong>Ensemble Methods</strong></h3>
+<div id="ensemble-methods" class="section level3 hasAnchor" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> <strong>Ensemble Methods</strong><a href="real-estate-são-paulo-rent-prediction.html#ensemble-methods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Ensemble methods aim to combine the predictions of several base estimators built with a given learning algorithm to improve generalizability/robustness over a single estimator.</p>
 <p>Two families of ensemble methods are usually distinguished:</p>
 <blockquote>
 <p>In averaging methods, the driving principle is to build several estimators independently and then to average their predictions. On average, the combined estimator is usually better than any single base estimator because its variance is reduced. Examples: Bagging methods, Forests of randomized trees, etc</p>
 <p>By contrast, in boosting methods, base estimators are built sequentially, and one tries to reduce the bias of the combined estimator. The motivation is to combine several weak models to produce a powerful ensemble. Examples: AdaBoost, Gradient Tree Boosting, etc</p>
 </blockquote>
-<div id="gradient-boosting-regressor" class="section level4" number="5.4.2.1">
-<h4><span class="header-section-number">5.4.2.1</span> <strong>Gradient Boosting Regressor</strong></h4>
+<div id="gradient-boosting-regressor" class="section level4 hasAnchor" number="5.4.2.1">
+<h4><span class="header-section-number">5.4.2.1</span> <strong>Gradient Boosting Regressor</strong><a href="real-estate-são-paulo-rent-prediction.html#gradient-boosting-regressor" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>GBR supports several different loss functions for regression which can be specified via the argument loss; the default loss function for regression is least squares (‘ls’).</p>
 <p>TABLE 5.8: Results for Gradient Boosting with 5-Fold Cross-Validation.</p>
 <table>
@@ -647,8 +664,8 @@
 </tbody>
 </table>
 </div>
-<div id="lightgbm-regressor-light-gradient-boosting-machine" class="section level4" number="5.4.2.2">
-<h4><span class="header-section-number">5.4.2.2</span> <strong>LightGBM Regressor (Light Gradient Boosting Machine)</strong></h4>
+<div id="lightgbm-regressor-light-gradient-boosting-machine" class="section level4 hasAnchor" number="5.4.2.2">
+<h4><span class="header-section-number">5.4.2.2</span> <strong>LightGBM Regressor (Light Gradient Boosting Machine)</strong><a href="real-estate-são-paulo-rent-prediction.html#lightgbm-regressor-light-gradient-boosting-machine" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>LightGBM is a gradient boosting framework based on decision trees to increase the model’s efficiency and reduce memory usage. It uses two novel techniques: Gradient-based One Side Sampling and Exclusive Feature Bundling (EFB), which fulfills the histogram-based algorithm’s limitations that are primarily used in all GBDT (Gradient Boosting Decision Tree) frameworks.</p>
 <p>TABLE 5.9: Results for LightGBM with 5-Fold Cross-Validation.</p>
 <table>
@@ -666,8 +683,8 @@
 </tbody>
 </table>
 </div>
-<div id="xgb-regressor" class="section level4" number="5.4.2.3">
-<h4><span class="header-section-number">5.4.2.3</span> <strong>XGB Regressor</strong></h4>
+<div id="xgb-regressor" class="section level4 hasAnchor" number="5.4.2.3">
+<h4><span class="header-section-number">5.4.2.3</span> <strong>XGB Regressor</strong><a href="real-estate-são-paulo-rent-prediction.html#xgb-regressor" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>XGBoost is a decision-tree-based ensemble Machine Learning algorithm that uses a gradient boosting framework. XGBoost stands for “Extreme Gradient Boosting” We can use it to solve classification and regression problems. The XGBoost is a popular supervised machine learning model with computation speed, parallelization, and performance characteristics.</p>
 <p>TABLE 5.10: Results for XGBoost with 5-Fold Cross-Validation.</p>
 <table>
@@ -686,10 +703,10 @@
 </table>
 </div>
 </div>
-<div id="model-stacking" class="section level3" number="5.4.3">
-<h3><span class="header-section-number">5.4.3</span> <strong>Model Stacking</strong></h3>
-<div id="stacking-cv-regressor" class="section level4" number="5.4.3.1">
-<h4><span class="header-section-number">5.4.3.1</span> Stacking CV Regressor</h4>
+<div id="model-stacking" class="section level3 hasAnchor" number="5.4.3">
+<h3><span class="header-section-number">5.4.3</span> <strong>Model Stacking</strong><a href="real-estate-são-paulo-rent-prediction.html#model-stacking" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="stacking-cv-regressor" class="section level4 hasAnchor" number="5.4.3.1">
+<h4><span class="header-section-number">5.4.3.1</span> Stacking CV Regressor<a href="real-estate-são-paulo-rent-prediction.html#stacking-cv-regressor" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>An ensemble-learning meta-regressor for stacking regression. Stacking is an ensemble learning technique to combine multiple regression models via a meta-regression. The StackingCVRegressor extends the standard stacking algorithm (implemented as StackingRegressor) using out-of-fold predictions to prepare the input data for the level-2 regressor. In the standard stacking procedure, the first-level regressors are fit to the same training set used to prepare the inputs for the second-level regressor, which may lead to overfitting.</p>
 <p>The StackingCVRegressor, however, uses the concept of out-of-fold predictions: the dataset is split into k folds, and in k successive rounds, k-1 folds are used to fit the first level regressor. In each round, the first-level regressors are then applied to the remaining subset that was not used for model fitting in each iteration. The resulting predictions are then stacked and provided – as input data – to the second-level regressor. After the training of the StackingCVRegressor, the first-level regressors are fit to the entire dataset for optimal predictions.</p>
 <p>Ref. <a href="http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/" class="uri">&lt;http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/&gt;</a></p>
@@ -711,8 +728,8 @@
 </tbody>
 </table>
 </div>
-<div id="model-blending" class="section level4" number="5.4.3.2">
-<h4><span class="header-section-number">5.4.3.2</span> <strong>Model Blending</strong></h4>
+<div id="model-blending" class="section level4 hasAnchor" number="5.4.3.2">
+<h4><span class="header-section-number">5.4.3.2</span> <strong>Model Blending</strong><a href="real-estate-são-paulo-rent-prediction.html#model-blending" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>And finally We use Model Blending to combine all models together.</p>
 <p>TABLE 5.12: Results for Model Blending with 5-Fold Cross-Validation.</p>
 <table>
@@ -731,8 +748,8 @@
 </table>
 </div>
 </div>
-<div id="summary" class="section level3" number="5.4.4">
-<h3><span class="header-section-number">5.4.4</span> Summary</h3>
+<div id="summary" class="section level3 hasAnchor" number="5.4.4">
+<h3><span class="header-section-number">5.4.4</span> Summary<a href="real-estate-são-paulo-rent-prediction.html#summary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>TABLE 5.13: Summary all models</p>
 <table>
 <thead>
@@ -802,14 +819,14 @@
 </table>
 </div>
 </div>
-<div id="use-case-of-the-model" class="section level2" number="5.5">
-<h2><span class="header-section-number">5.5</span> Use Case of the Model</h2>
+<div id="use-case-of-the-model" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Use Case of the Model<a href="real-estate-são-paulo-rent-prediction.html#use-case-of-the-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Having the model trained, tested, and explained, it is time for the use cases.</p>
 <p>The first application can be someone who wants to rent a house and looks for more attractive values. With the model, it is possible to search for regions of interest and find out if the rental amount that the owner is charging is worth it or not. In addition, it is possible to search for properties by price range.</p>
 <p>The second application is for the owner who wanted to rent his property. Knowing the region’s value, he can make his rent much more competitive against the competition of people who are also selected for renting. In addition, he can estimate with variables what is possible to add to his property or as options in the region to increase the value.</p>
 </div>
-<div id="conclusion-4" class="section level2" number="5.6">
-<h2><span class="header-section-number">5.6</span> Conclusion</h2>
+<div id="conclusion-4" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Conclusion<a href="real-estate-são-paulo-rent-prediction.html#conclusion-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Predicting real estate rent prices from online advertisements in Brazil is a task that requires insight into the data combined with powerful ML algorithms. Many locations in the city of São Paulo do not have standards in the choice of price, which makes it very difficult for machine learning models. In this work, we applied nine different methods for this task and combined them into a final prediction. We provided a solid baseline to overcome, as our final ensemble hit a score of 0.2973 RMSLE showing how powerful the mixed model methods are.</p>
 <p>For future work, we can make a web scraper again on the site, take images of the properties and apply a convolutional neural network, aggression, that could help the model’s accuracy with real photos inside the properties.</p>
 
@@ -820,8 +837,8 @@
           </div>
         </div>
       </div>
-<a href="ok-cupid.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="ok-cupid.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hotmart-sales-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

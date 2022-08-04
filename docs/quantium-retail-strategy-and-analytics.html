@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Project 3 Quantium Retail Strategy and Analytics | Data Science Portfolio</title>
   <meta name="description" content="Project 3 Quantium Retail Strategy and Analytics | Data Science Portfolio" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Project 3 Quantium Retail Strategy and Analytics | Data Science Portfolio" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Wesley Maia" />
 
 
-<meta name="date" content="2022-03-11" />
+<meta name="date" content="2022-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="medical-insurance-costs.html"/>
 <link rel="next" href="ok-cupid.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -190,6 +189,24 @@
 <li class="chapter" data-level="5.5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#use-case-of-the-model"><i class="fa fa-check"></i><b>5.5</b> Use Case of the Model</a></li>
 <li class="chapter" data-level="5.6" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#conclusion-4"><i class="fa fa-check"></i><b>5.6</b> Conclusion</a></li>
 </ul></li>
+<li class="chapter" data-level="6" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html"><i class="fa fa-check"></i><b>6</b> Hotmart Sales Analytics</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#introdução"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#dados"><i class="fa fa-check"></i><b>6.2</b> Dados</a></li>
+<li class="chapter" data-level="6.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#exploratory-data-analysis-eda"><i class="fa fa-check"></i><b>6.3</b> Exploratory Data Analysis (EDA)</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-contínuas"><i class="fa fa-check"></i><b>6.3.1</b> Variáveis Contínuas</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-descretas"><i class="fa fa-check"></i><b>6.3.2</b> Variáveis Descretas</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-de-vendas-por-produto"><i class="fa fa-check"></i><b>6.3.3</b> Segmentação De Vendas Por Produto</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-das-vendas-por-produtor-de-conteúdo"><i class="fa fa-check"></i><b>6.3.4</b> Segmentação Das Vendas Por Produtor de Conteúdo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-séries-temporais"><i class="fa fa-check"></i><b>6.4</b> Análise de Séries Temporais</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#há-épocas-do-ano-em-que-uma-determinada-categoria-ou-nicho-de-produto-vende-mais"><i class="fa fa-check"></i><b>6.4.1</b> Há épocas do ano em que uma determinada categoria ou nicho de produto vende mais?</a></li>
+<li class="chapter" data-level="6.4.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#a-que-horas-devemos-exibir-anúncios-para-maximizar-a-probabilidade-de-compra-do-produto-pelo-cliente"><i class="fa fa-check"></i><b>6.4.2</b> A que horas devemos exibir anúncios para maximizar a probabilidade de compra do produto pelo cliente?</a></li>
+<li class="chapter" data-level="6.4.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-predições"><i class="fa fa-check"></i><b>6.4.3</b> Análise de Predições</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -210,27 +227,37 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="quantium-retail-strategy-and-analytics" class="section level1" number="3">
-<h1><span class="header-section-number">Project 3</span> Quantium Retail Strategy and Analytics</h1>
+<div id="quantium-retail-strategy-and-analytics" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Project 3</span> Quantium Retail Strategy and Analytics<a href="quantium-retail-strategy-and-analytics.html#quantium-retail-strategy-and-analytics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Code: <a href="https://github.com/WMaia9/Quantium-Retail-Strategy-and-Analytics">GitHub</a></p>
-<div id="introduction-3" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Introduction</h2>
+<div id="introduction-3" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Introduction<a href="quantium-retail-strategy-and-analytics.html#introduction-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This work is part of the virtual internship program of the company Quantium.</p>
 <p>Quantium is a Data Science company that helps companies with insights and models looking to improve their performance.</p>
 <p>Quantium has had a data partnership with a major supermarket brand in recent years, which provides transactional and customer data.</p>
 <p>The analysis is based on Quantium chip data to better understand the types of customers who buy chips and their buying behavior in the region.</p>
 <p>The analysis insights serve to feed the supermarket’s strategic plan for the chip category.</p>
 </div>
-<div id="data-2" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Data</h2>
+<div id="data-2" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Data<a href="quantium-retail-strategy-and-analytics.html#data-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The first step in any analysis is to first understand the data. Let’s take a look at each of the datasets provided.</p>
 </div>
-<div id="exploring-the-data-1" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Exploring the Data</h2>
+<div id="exploring-the-data-1" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Exploring the Data<a href="quantium-retail-strategy-and-analytics.html#exploring-the-data-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Starting with the analysis of the dataset transaction, let’s look at the first few lines.</p>
-<div id="examining-transaction-data" class="section level3" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> Examining transaction data</h3>
+<div id="examining-transaction-data" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Examining transaction data<a href="quantium-retail-strategy-and-analytics.html#examining-transaction-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table>
+<colgroup>
+<col width="7%" />
+<col width="7%" />
+<col width="12%" />
+<col width="8%" />
+<col width="6%" />
+<col width="42%" />
+<col width="5%" />
+<col width="11%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="center">DATE</th>
@@ -370,6 +397,17 @@
 </table>
 <p>There are no nulls in the columns but product quantity appears to have an outlier which we should investigate further. Let’s investigate further the case where 200 packets of chips are bought in one transactions.</p>
 <table>
+<colgroup>
+<col width="12%" />
+<col width="7%" />
+<col width="12%" />
+<col width="8%" />
+<col width="6%" />
+<col width="25%" />
+<col width="5%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">DATE</th>
@@ -410,6 +448,17 @@
 </table>
 <p>There are two transactions where 200 packets of chips are bought in one transaction and both of these transactions were by the same customer. Let’s see if the customer has had other transactions</p>
 <table>
+<colgroup>
+<col width="11%" />
+<col width="6%" />
+<col width="11%" />
+<col width="7%" />
+<col width="5%" />
+<col width="24%" />
+<col width="9%" />
+<col width="10%" />
+<col width="10%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">DATE</th>
@@ -530,8 +579,8 @@
 <p>figure3</p>
 <p><img src="images/project3/3.png" width="900" /></p>
 </div>
-<div id="examining-customer-data" class="section level3" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Examining customer data</h3>
+<div id="examining-customer-data" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Examining customer data<a href="quantium-retail-strategy-and-analytics.html#examining-customer-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Now that we are happy with the transaction dataset, let’s have a look at the customer dataset.</p>
 <table>
 <thead>
@@ -663,8 +712,8 @@
 <p>As the number of rows in ‘result’ is the same as that of ‘transactionData’, we can be sure that no duplicates were created. This is because we created ‘result’ by setting a left join which means take all the rows in ‘transactionData’ and find rows with matching values in shared columns and then join the details in these rows to the ‘x’ or the first mentioned table.</p>
 </div>
 </div>
-<div id="data-analysis-on-customer-segments" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Data analysis on customer segments</h2>
+<div id="data-analysis-on-customer-segments" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Data analysis on customer segments<a href="quantium-retail-strategy-and-analytics.html#data-analysis-on-customer-segments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now that the data is ready for analysis, we can define some metrics of interest to the client: - Who spends the most on chips (total sales), describing customers by lifestage and how premium their general purchasing behaviour is - How many customers are in each segment - How many chips are bought per customer by segment - What’s the average chip price by customer segment</p>
 <p>Let’s start with calculating total sales by LIFESTAGE and PREMIUM_CUSTOMER and plotting the split by these segments to describe which customer segment contributes most to chip sales.</p>
 <pre><code>                                          TOT_SALES
@@ -727,8 +776,8 @@ Premium          MIDAGE SINGLES/COUPLES   58432.65
 <p>As the difference in average price per unit isn’t large, we can check if this difference is statistically different.</p>
 <p>The t-test results &lt; 2.2e-16, i.e. the unit price for mainstream, young and mid-age singles and couples are significantly higher than that of budget or premium, young and mid age singles and couples.</p>
 </div>
-<div id="deep-dive-into-specific-customer-segments-for-insights" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Deep dive into specific customer segments for insights</h2>
+<div id="deep-dive-into-specific-customer-segments-for-insights" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Deep dive into specific customer segments for insights<a href="quantium-retail-strategy-and-analytics.html#deep-dive-into-specific-customer-segments-for-insights" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We have found quite a few interesting insights that we can dive deeper into. We might want to target customer segments that contribute the most to sales to retain them or further increase sales. Let’s look at Mainstream - young singles/couples. For instance, let’s find out if they tend to buy a particular brand of chips.</p>
 <pre><code>MIDAGE SINGLES/COUPLES
 smiths crinkle chips salt   vinegar     194
@@ -760,8 +809,8 @@ MIDAGE SINGLES/COUPLES
 170.0     882</code></pre>
 <p>Both the segment buy 175g, 150g and 134g packets mostly</p>
 </div>
-<div id="conclusion-2" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> Conclusion</h2>
+<div id="conclusion-2" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Conclusion<a href="quantium-retail-strategy-and-analytics.html#conclusion-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Sales have mainly been due to Budget - older families, Mainstream - young singles/couples, and Mainstream - retirees shoppers. We found that the high spend in chips for mainstream young singles/couples and retirees is due to there being more of them than other buyers. Mainstream, midage and young singles and couples are also more likely to pay more per packet of chips. This is indicative of impulse buying behavior.</p>
 <p>We’ve also found that Mainstream young singles and couples are 23% more likely to purchase Tyrrells chips compared to the rest of the population. The Category Manager may want to increase the category’s performance by off-locating some Tyrrells and smaller packs of chips in discretionary space near segments where young singles and couples frequent more often to increase visibility and impulse behavior.</p>
 <p>Quantium can help the Category Manager with recommendations of where these segments are and further help them with measuring the impact of the changed placement. We’ll work on measuring the impact of trials in the next task and putting all these together in the third task.</p>

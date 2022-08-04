@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Project 1 GPD And Energy Supply | Data Science Portfolio</title>
   <meta name="description" content="Project 1 GPD And Energy Supply | Data Science Portfolio" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Project 1 GPD And Energy Supply | Data Science Portfolio" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Wesley Maia" />
 
 
-<meta name="date" content="2022-03-11" />
+<meta name="date" content="2022-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="author.html"/>
 <link rel="next" href="medical-insurance-costs.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -190,6 +189,24 @@
 <li class="chapter" data-level="5.5" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#use-case-of-the-model"><i class="fa fa-check"></i><b>5.5</b> Use Case of the Model</a></li>
 <li class="chapter" data-level="5.6" data-path="real-estate-são-paulo-rent-prediction.html"><a href="real-estate-são-paulo-rent-prediction.html#conclusion-4"><i class="fa fa-check"></i><b>5.6</b> Conclusion</a></li>
 </ul></li>
+<li class="chapter" data-level="6" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html"><i class="fa fa-check"></i><b>6</b> Hotmart Sales Analytics</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#introdução"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#dados"><i class="fa fa-check"></i><b>6.2</b> Dados</a></li>
+<li class="chapter" data-level="6.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#exploratory-data-analysis-eda"><i class="fa fa-check"></i><b>6.3</b> Exploratory Data Analysis (EDA)</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-contínuas"><i class="fa fa-check"></i><b>6.3.1</b> Variáveis Contínuas</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#variáveis-descretas"><i class="fa fa-check"></i><b>6.3.2</b> Variáveis Descretas</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-de-vendas-por-produto"><i class="fa fa-check"></i><b>6.3.3</b> Segmentação De Vendas Por Produto</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#segmentação-das-vendas-por-produtor-de-conteúdo"><i class="fa fa-check"></i><b>6.3.4</b> Segmentação Das Vendas Por Produtor de Conteúdo</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-séries-temporais"><i class="fa fa-check"></i><b>6.4</b> Análise de Séries Temporais</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#há-épocas-do-ano-em-que-uma-determinada-categoria-ou-nicho-de-produto-vende-mais"><i class="fa fa-check"></i><b>6.4.1</b> Há épocas do ano em que uma determinada categoria ou nicho de produto vende mais?</a></li>
+<li class="chapter" data-level="6.4.2" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#a-que-horas-devemos-exibir-anúncios-para-maximizar-a-probabilidade-de-compra-do-produto-pelo-cliente"><i class="fa fa-check"></i><b>6.4.2</b> A que horas devemos exibir anúncios para maximizar a probabilidade de compra do produto pelo cliente?</a></li>
+<li class="chapter" data-level="6.4.3" data-path="hotmart-sales-analytics.html"><a href="hotmart-sales-analytics.html#análise-de-predições"><i class="fa fa-check"></i><b>6.4.3</b> Análise de Predições</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -210,11 +227,11 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="gpd-and-energy-supply" class="section level1" number="1">
-<h1><span class="header-section-number">Project 1</span> GPD And Energy Supply</h1>
+<div id="gpd-and-energy-supply" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Project 1</span> GPD And Energy Supply<a href="gpd-and-energy-supply.html#gpd-and-energy-supply" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Code: <a href="https://github.com/WMaia9/PIB-e-Energy-Supply">GitHub</a></p>
-<div id="introduction-1" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Introduction</h2>
+<div id="introduction-1" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Introduction<a href="gpd-and-energy-supply.html#introduction-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>GDP is an acronym that means “Gross Domestic Product” and it is something extremely important for nations, because it consists of the sum of a country’s monetary values.</p>
 <p>In this way, this means that all goods and other types of services that are produced in a given region are added together over a period of time to know whether they are growing or not.</p>
 <p>Thus, GDP is one of the most used indicators in the market economy, always aiming to carry out research on how all the economic activity of a country is doing.</p>
@@ -223,10 +240,10 @@
 <p>Thinking about the great importance that energy indicators and their research impact on GDP and the great world movements that are happening in the search for clean and renewable energy, it seems interesting to make a case study on this content.</p>
 <p>In this case study, some indicators of the last 10 years of the 15 largest economies in the world are analyzed. To do this, 3 datasets are used. A greater focus will be given to the analysis of Brazil in relation to other countries. The analysis is done using python with Jupyter Notebook.</p>
 </div>
-<div id="data" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Data</h2>
-<div id="energy-indicators" class="section level3" number="1.2.1">
-<h3><span class="header-section-number">1.2.1</span> Energy Indicators</h3>
+<div id="data" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Data<a href="gpd-and-energy-supply.html#data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="energy-indicators" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Energy Indicators<a href="gpd-and-energy-supply.html#energy-indicators" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>Energy_Indicators.xls</code> is a list of United Nations energy supply and renewable electricity production indicators for the year 2015 with the last update in 2017. <a href="https://datacatalog.worldbank.org/dataset/mena-energy-indicators-2017" class="uri">Energy Indicators</a></p>
 <p>TABLE 1.1: Description of variables in the Energy Indicators dataset.</p>
 <table>
@@ -260,8 +277,8 @@
 </tbody>
 </table>
 </div>
-<div id="country-gdp" class="section level3" number="1.2.2">
-<h3><span class="header-section-number">1.2.2</span> Country GDP</h3>
+<div id="country-gdp" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Country GDP<a href="gpd-and-energy-supply.html#country-gdp" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>world_bank.csv</code> is a GDP data for countries between 1960 and 2019 (last updated) provided by the <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" class="uri">World Bank</a></p>
 <p>TABLE 1.2: Description of variables in the GDP dataset.</p>
 <table>
@@ -283,8 +300,8 @@
 </tbody>
 </table>
 </div>
-<div id="energy-technology" class="section level3" number="1.2.3">
-<h3><span class="header-section-number">1.2.3</span> Energy Technology</h3>
+<div id="energy-technology" class="section level3 hasAnchor" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Energy Technology<a href="gpd-and-energy-supply.html#energy-technology" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>scimagojr-3.xlsx</code> is a Engineering and Energy Technology data made available by the Scimago Journal &amp; Country Rank that are made available to the public and include journals and scientific indicators from developed countries based on the information contained in the Scopus database and that measure the impact and the influence of scientific publications, with the latest update being made available in 2019. <a href="https://www.scimagojr.com/countryrank.php?category=2102" class="uri">Engineering and Energy Technology</a></p>
 <p>TABLE 1.3: Description of variables in the Country Rank data for Energy Engineering and Power Technology dataset.</p>
 <table>
@@ -337,6 +354,12 @@
 <p>We start by looking at the first 5 lines of Energy Indicators</p>
 <p>TABLE 1.4: first 5 line of Energy Indicators.</p>
 <table>
+<colgroup>
+<col width="22%" />
+<col width="21%" />
+<col width="36%" />
+<col width="19%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="center">Country</th>
@@ -382,6 +405,15 @@
 <p>Next, we’ll look at the GDP indicators</p>
 <p>TABLE 1.5: first 5 line of GDP Indicators.</p>
 <table>
+<colgroup>
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="15%" />
+<col width="6%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="center">Country</th>
@@ -530,6 +562,16 @@
 <p>After clearing all the data and renaming the country names so as not to duplicate the lines, we can immerse the data according to the first 15 placed in the ranking provided by Scimago Journal. We can see this table below.</p>
 <p>TABLE 1.7: All top Rank 15 Scimago Journal Countries.</p>
 <table>
+<colgroup>
+<col width="21%" />
+<col width="6%" />
+<col width="11%" />
+<col width="11%" />
+<col width="15%" />
+<col width="14%" />
+<col width="5%" />
+<col width="13%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="center">Country</th>
@@ -698,19 +740,19 @@
 <p>After immersing the data, a 15-row, 20-column Data Frame was created. We can see the columns partially due to the limitation of the page, it can be seen in full how the immersion process was done and with all the data on the GitHub page</p>
 </div>
 </div>
-<div id="data-analysis" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Data Analysis</h2>
+<div id="data-analysis" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Data Analysis<a href="gpd-and-energy-supply.html#data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now that we have cleaned up and merged the data, we can make inferences.</p>
-<div id="what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years" class="section level3" number="1.3.1">
-<h3><span class="header-section-number">1.3.1</span> What are the top 15 countries for average GDP over the past 10 years?</h3>
+<div id="what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> What are the top 15 countries for average GDP over the past 10 years?<a href="gpd-and-energy-supply.html#what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p align="center">
 <p><img src="images/project1/1.PNG" width="600" /></p>
 </p>
 <p>FIGURE 1.1: The distribution of the top 15 GDP country.</p>
 <p>As can be seen in the graph, in the average GDP of the last 10 years there is a sovereignty of the USA still in relation to the other countries with China and Japan just behind the top 3. Brazil is the 8th best GDP average among the 15 largest.</p>
 </div>
-<div id="how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil" class="section level3" number="1.3.2">
-<h3><span class="header-section-number">1.3.2</span> How much did the average GDP vary over the 10-year period for Brazil?</h3>
+<div id="how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> How much did the average GDP vary over the 10-year period for Brazil?<a href="gpd-and-energy-supply.html#how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>GDP has changed by -369.0 billion dollars over the past 10 years</p>
 <p align="center">
 <p><img src="images/project1/2.PNG" width="600" /></p>
@@ -718,20 +760,20 @@
 <p>FIGURE 1.2: Distribution of the variation in Brazil GPD over the last 10 years.</p>
 <p>As can be seen in the information above, Brazil over the past 10 years has had a negative change in GDP. The graph above shows that the biggest drop occurred between 2015 and 2016, which can be explained by the national political-economic crisis, where sets of economic measures, in addition to certain external factors and certain internal political events, which occurred during the Dilma Rousseff Government, which, added , resulted in a drop in activity. In 2020 another recession is expected due to the global financial crisis caused by the Covid-19 pandemic.</p>
 </div>
-<div id="what-is-the-average-energy-supply-per-capita" class="section level3" number="1.3.3">
-<h3><span class="header-section-number">1.3.3</span> What is the average energy supply per capita?</h3>
+<div id="what-is-the-average-energy-supply-per-capita" class="section level3 hasAnchor" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> What is the average energy supply per capita?<a href="gpd-and-energy-supply.html#what-is-the-average-energy-supply-per-capita" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The average energy supply is 157.6 Petajoules</p>
 </div>
-<div id="what-percentage-do-countries-use-of-renewable-energy" class="section level3" number="1.3.4">
-<h3><span class="header-section-number">1.3.4</span> What percentage do countries use of Renewable Energy?</h3>
+<div id="what-percentage-do-countries-use-of-renewable-energy" class="section level3 hasAnchor" number="1.3.4">
+<h3><span class="header-section-number">1.3.4</span> What percentage do countries use of Renewable Energy?<a href="gpd-and-energy-supply.html#what-percentage-do-countries-use-of-renewable-energy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p align="center">
 <p><img src="images/project1/3.PNG" width="600" /></p>
 </p>
 <p>FIGURE 1.3: The distribution of the percentage fo countries use Renewable Energy.</p>
 <p>Analyzing the chart above, we see that Brazil is the country that has the highest percentage of use of renewable energy. According to the International Energy Agency, Brazil is the third largest renewable energy generator in the world and according to the Energy Research Company (EPE), the country has a predominant renewable energy electrical matrix, “with emphasis on the hydraulic generation which accounts for 68.1% of the domestic supply”and is one of the great Brazilian forces when it comes to renewable energy, thus justifying this high percentage.</p>
 </div>
-<div id="what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita" class="section level3" number="1.3.5">
-<h3><span class="header-section-number">1.3.5</span> What is the estimated population size using Energy Supply and Energy Supply per capita?</h3>
+<div id="what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita" class="section level3 hasAnchor" number="1.3.5">
+<h3><span class="header-section-number">1.3.5</span> What is the estimated population size using Energy Supply and Energy Supply per capita?<a href="gpd-and-energy-supply.html#what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p align="center">
 <p><img src="images/project1/4.PNG" width="600" /></p>
 </p>
@@ -740,8 +782,8 @@
 </p>
 <p>As the data were not available due to the size of the population, a simple way is to use the Energy Supply and Energy Supply values per capita to make an estimate. Doing a quick search on the internet is easy to see that the figures are very close to the real estimate of the population of these countries. We see that China has almost 1.4 billion people, followed by India with 1.3 billion and then the USA with approximately 300 million.</p>
 </div>
-<div id="what-is-the-proportion-of-self-citations-to-the-total-citations" class="section level3" number="1.3.6">
-<h3><span class="header-section-number">1.3.6</span> What is the proportion of self-citations to the total citations?</h3>
+<div id="what-is-the-proportion-of-self-citations-to-the-total-citations" class="section level3 hasAnchor" number="1.3.6">
+<h3><span class="header-section-number">1.3.6</span> What is the proportion of self-citations to the total citations?<a href="gpd-and-energy-supply.html#what-is-the-proportion-of-self-citations-to-the-total-citations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p align="center">
 <p><img src="images/project1/5.PNG" width="600" /></p>
 </p>
@@ -749,13 +791,13 @@
 <p>Analyzing now more data related to Scimago Journal Rank, which is a measure of the scientific influence of academic journals that accounts for the number of citations received for a period and the importance or prestige of the journals from which these situations come, we see that China is the country which has a higher proportion of self-quotes on Energy and Telecommunications articles showing how interested China has been in this area in recent years.</p>
 <p>In Latin America, this impact is very visible with the recent revolution in the electricity transmission and distribution sector with the arrival of the Chinese state conglomerates State Grid and Three Gorges in the markets of Chile and Peru and which continue to expand their business in Brazil.</p>
 </div>
-<div id="what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita" class="section level3" number="1.3.7">
-<h3><span class="header-section-number">1.3.7</span> What is the correlation between the number of documents cited per capita and the supply of energy per capita?</h3>
+<div id="what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita" class="section level3 hasAnchor" number="1.3.7">
+<h3><span class="header-section-number">1.3.7</span> What is the correlation between the number of documents cited per capita and the supply of energy per capita?<a href="gpd-and-energy-supply.html#what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>An interesting analysis that can be seen with the data provided is whether there is a correlation between the number of documents cited per capita and the energy supply and we can see that there is a great relationship between these aspects what it is 0.75. We see then that the greater the interest of a country in studies related to Energy, the greater is also the energy supply of that same country.</p>
 </div>
 </div>
-<div id="conclusion" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Conclusion</h2>
+<div id="conclusion" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Conclusion<a href="gpd-and-energy-supply.html#conclusion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>After analyzing the dataset separately, we were able to use one of the great advantages of python to analyze data is the joining of data. With Datasets together we were able to make interesting inferences about the data. From GPDs at home in two countries to the correlation that there is energy supply and the number of citations visualizing graphs and data, showing the great power that the Python language has in data analysis and proving to be a great tool for Data Science.</p>
 
 </div>
