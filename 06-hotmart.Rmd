@@ -1,3 +1,7 @@
+---
+---
+---
+
 # Hotmart Sales Analytics
 
 Code: [GitHub](https://github.com/WMaia9/hotmart)
