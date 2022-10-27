@@ -171,7 +171,7 @@ The average energy supply is 157.6 Petajoules
 
 FIGURE 1.3: The distribution of the percentage fo countries use Renewable Energy.
 
-Analyzing the chart above, we see that Brazil is the country that has the highest percentage of use of renewable energy. According to the International Energy Agency, Brazil is the third largest renewable energy generator in the world and according to the Energy Research Company (EPE), the country has a predominant renewable energy electrical matrix, "with emphasis on the hydraulic generation which accounts for 68.1% of the domestic supply "and is one of the great Brazilian forces when it comes to renewable energy, thus justifying this high percentage.
+Analyzing the chart above, we see that Brazil is the country that has the highest percentage of use of renewable energy. According to the International Energy Agency, Brazil is the third largest renewable energy generator in the world and according to the Energy Research Company (EPE), the country has a predominant renewable energy electrical matrix, "with emphasis on the hydraulic generation which accounts for 68.1% of the domestic supply"and is one of the great Brazilian forces when it comes to renewable energy, thus justifying this high percentage.
 
 ### What is the estimated population size using Energy Supply and Energy Supply per capita?
 

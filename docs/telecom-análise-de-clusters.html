@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Project 1 GPD And Energy Supply | Data Science Portfolio</title>
-  <meta name="description" content="Project 1 GPD And Energy Supply | Data Science Portfolio" />
+  <title>Project 7 Telecom Análise de Clusters | Data Science Portfolio</title>
+  <meta name="description" content="Project 7 Telecom Análise de Clusters | Data Science Portfolio" />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Project 1 GPD And Energy Supply | Data Science Portfolio" />
+  <meta property="og:title" content="Project 7 Telecom Análise de Clusters | Data Science Portfolio" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Project 1 GPD And Energy Supply | Data Science Portfolio" />
+  <meta name="twitter:title" content="Project 7 Telecom Análise de Clusters | Data Science Portfolio" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="medical-insurance-costs.html"/>
+<link rel="prev" href="hotmart-sales-analytics.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -54,6 +54,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -252,578 +316,211 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="gpd-and-energy-supply" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Project 1</span> GPD And Energy Supply<a href="gpd-and-energy-supply.html#gpd-and-energy-supply" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Code: <a href="https://github.com/WMaia9/PIB-e-Energy-Supply">GitHub</a></p>
-<div id="introduction" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Introduction<a href="gpd-and-energy-supply.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>GDP is an acronym that means “Gross Domestic Product” and it is something extremely important for nations, because it consists of the sum of a country’s monetary values.</p>
-<p>In this way, this means that all goods and other types of services that are produced in a given region are added together over a period of time to know whether they are growing or not.</p>
-<p>Thus, GDP is one of the most used indicators in the market economy, always aiming to carry out research on how all the economic activity of a country is doing.</p>
-<p>Equally important, measuring sustainability indicators allows plants to assess the positive impacts of power generation, as well as the economic, social and environmental gains provided by the project.</p>
-<p>Experts say combating climate change should be one of the pillars for post-pandemic economic recovery. This is due to the fact that sustainable investments can generate higher returns for the economy. In this sense, stimulating the generation of renewable energy in the plants is essential, both to reduce impacts on the environment and also for the plant to remain competitive even in challenging scenarios. And to assess this, it becomes even more important to monitor sustainability indicators on a daily basis.</p>
-<p>Thinking about the great importance that energy indicators and their research impact on GDP and the great world movements that are happening in the search for clean and renewable energy, it seems interesting to make a case study on this content.</p>
-<p>In this case study, some indicators of the last 10 years of the 15 largest economies in the world are analyzed. To do this, 3 datasets are used. A greater focus will be given to the analysis of Brazil in relation to other countries. The analysis is done using python with Jupyter Notebook.</p>
+<div id="telecom-análise-de-clusters" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Project 7</span> Telecom Análise de Clusters<a href="telecom-análise-de-clusters.html#telecom-análise-de-clusters" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="análise-exploratória-dos-dados" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Análise Exploratória dos Dados<a href="telecom-análise-de-clusters.html#análise-exploratória-dos-dados" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A clusterização pode ser usada para agrupar clientes com base em semelhanças. A segmentação de clientes pode ser usada para criar estratégia de marketing apropriada para o segmento. Nesta atividade iremos analisar a clusterização k-means utilizando o dataset de uma operadora de Telecom. O dataset é composto por 1500 clientes e iremos analisar as variáveis de tempo médio usado em chamadas de longa distância, local e internacional para fazer a clusterização.</p>
+<p>Vamos iniciar explorando os dados:</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre><code>##     longdist        internat         local       
+##  Min.   : 0.00   Min.   : 0.00   Min.   :  8.19  
+##  1st Qu.:20.17   1st Qu.: 0.00   1st Qu.: 49.57  
+##  Median :25.98   Median : 1.84   Median : 59.83  
+##  Mean   :27.40   Mean   : 5.45   Mean   : 65.61  
+##  3rd Qu.:35.66   3rd Qu.:10.16   3rd Qu.: 70.08  
+##  Max.   :62.47   Max.   :29.02   Max.   :134.76</code></pre>
+<p>Dos dados, vemos que as 3 variáveis apresem outliers sendo que a variável local é a que mais tem outliers. Além disso, o valor mínimo de longdist e internat é 0, o que faz sentido já que estamos analisando o tempo médio e variação dos dados é grande. Vamos padronizar e olhar os histograma das variáveis</p>
+<pre><code>##      Zlongdist.V1        Zinternat.V1          Zlocal.V1      
+##  Min.   :-1.7031825   Min.   :-0.801535   Min.   :-1.6854918  
+##  1st Qu.:-0.4495639   1st Qu.:-0.801535   1st Qu.:-0.4708472  
+##  Median :-0.0884570   Median :-0.530931   Median :-0.1696811  
+##  Mean   : 0.0000000   Mean   : 0.000000   Mean   : 0.0000000  
+##  3rd Qu.: 0.5131805   3rd Qu.: 0.692667   3rd Qu.: 0.1311915  
+##  Max.   : 2.1794926   Max.   : 3.466352   Max.   : 2.0297709</code></pre>
+<p><img src="images/project7/1.png" /></p>
+<p><img src="images/project7/2.png" /></p>
+<p><img src="images/project7/3.png" /></p>
+<p>Do histograma podemos ver que a variável longist é que mais se aproxima de uma distribuição normal, já a variável internat temos uma distribuição skew à esquerda.</p>
+<div id="estatística-de-hopkins" class="section level3 hasAnchor" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> Estatística de Hopkins<a href="telecom-análise-de-clusters.html#estatística-de-hopkins" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Uma primeira análise que podemos começar é avaliar se existe estrutura nos dados para a formação de clusters, pois sabemos que sempre existirá formação de clusters nos dados. Para fazer essa análise podemos utilizar a estatística de Hopkins (H) que tenta analisar se de fato existe uma estrutura de clusters nos dados.</p>
+<p>O que o algoritmo faz é gerar pontos aleatórios fora da amostra e selecionar pontos dentro da amostra e calcular a distância entre os pontos que foram pegos na amostra até o ponto mais próximo. Se o valor <span class="math inline">\(\mathbf{H}\)</span> for maior que 0.75, então existe uma tendência de clusterizações nos dados com 90% de confiança.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="telecom-análise-de-clusters.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Análise Preliminar dos Dados</span></span>
+<span id="cb3-2"><a href="telecom-análise-de-clusters.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hopkins</span>(exemplo7[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>], <span class="at">m=</span><span class="fu">nrow</span>(exemplo7)<span class="sc">*</span><span class="fl">0.15</span>)</span></code></pre></div>
+<pre><code>## [1] 0.9990238</code></pre>
+<p>Do resultado nos nossos dados, obtemos um valor <span class="math inline">\(\mathbf{H} = 0.99\)</span>, o que mostra que o nosso dataset tem sim dados clusterizados.</p>
 </div>
-<div id="data" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Data<a href="gpd-and-energy-supply.html#data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="energy-indicators" class="section level3 hasAnchor" number="1.2.1">
-<h3><span class="header-section-number">1.2.1</span> Energy Indicators<a href="gpd-and-energy-supply.html#energy-indicators" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><code>Energy_Indicators.xls</code> is a list of United Nations energy supply and renewable electricity production indicators for the year 2015 with the last update in 2017. <a href="https://datacatalog.worldbank.org/dataset/mena-energy-indicators-2017" class="uri">Energy Indicators</a></p>
-<p>TABLE 1.1: Description of variables in the Energy Indicators dataset.</p>
-<table>
-<colgroup>
-<col width="48%" />
-<col width="51%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"><strong>Variable</strong></th>
-<th align="left"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Country</td>
-<td align="left">List of country</td>
-</tr>
-<tr class="even">
-<td align="left">Energy Supply (Petajoules)</td>
-<td align="left">Energy supply in each country</td>
-</tr>
-<tr class="odd">
-<td align="left">Energy Supply per Capita (Gigajoules)</td>
-<td align="left">Energy supply per capita in each country</td>
-</tr>
-<tr class="even">
-<td align="left">% Renewable (%)</td>
-<td align="left">Rate of renewable energy in the country</td>
-</tr>
-</tbody>
-</table>
+<div id="heatmap" class="section level3 hasAnchor" number="7.1.2">
+<h3><span class="header-section-number">7.1.2</span> Heatmap<a href="telecom-análise-de-clusters.html#heatmap" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Vamos ver o heatmap do dendrograma do dataset. Um dendrograma é um diagrama de árvores que agrupa as entidades que estão mais próximas umas das outras.</p>
+<p><img src="images/project7/4.png" /></p>
+<p>Conforme mostrado acima, o dendrograma reordena as observações com base na proximidade entre os dados usando alguma métrica de distância (neste caso a euclidiana). A árvore à esquerda do dendrograma representa a distância relativa entre nós. Podemos ver do dendrograma internat se juntando com longdist para depois se juntarem com local. No gráfico hierárquico na esquerda não está muito claro quantos grupos podemos ter, mas aparentemente desta análise inicial parece convergir para 3 grupos.</p>
+<p>Vamos agora dar uma olhada na Matriz de Dissimilaridade</p>
+<p><img src="images/project7/5.png" /></p>
+<p>Da Matriz de Dissimilaridade é possível ver um grande grupo seguidos de um grupo médio e de 2 grupos menores.</p>
 </div>
-<div id="country-gdp" class="section level3 hasAnchor" number="1.2.2">
-<h3><span class="header-section-number">1.2.2</span> Country GDP<a href="gpd-and-energy-supply.html#country-gdp" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><code>world_bank.csv</code> is a GDP data for countries between 1960 and 2019 (last updated) provided by the <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" class="uri">World Bank</a></p>
-<p>TABLE 1.2: Description of variables in the GDP dataset.</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Variable</strong></th>
-<th align="left"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Country</td>
-<td align="left">List of country</td>
-</tr>
-<tr class="even">
-<td align="left">Year (1960 until 2019)</td>
-<td align="left">GDP</td>
-</tr>
-</tbody>
-</table>
+<div id="visualização-3d" class="section level3 hasAnchor" number="7.1.3">
+<h3><span class="header-section-number">7.1.3</span> Visualização 3d<a href="telecom-análise-de-clusters.html#visualização-3d" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project7/6.png" /></p>
+<p>Da visualização 3d podemos ver novamente 3 grupos assim como quando fizemos a análise do heatmap e um quarto grupo no eixo da variável local. Sabemos dos gráficos de boxplot que esses dados são possivelmente outlier, além disso, do gráfico de dissimilaridade vimos um pequeno grupo no quanto superior direito do gráfico que pode ser explicado por esses dados.</p>
 </div>
-<div id="energy-technology" class="section level3 hasAnchor" number="1.2.3">
-<h3><span class="header-section-number">1.2.3</span> Energy Technology<a href="gpd-and-energy-supply.html#energy-technology" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><code>scimagojr-3.xlsx</code> is a Engineering and Energy Technology data made available by the Scimago Journal &amp; Country Rank that are made available to the public and include journals and scientific indicators from developed countries based on the information contained in the Scopus database and that measure the impact and the influence of scientific publications, with the latest update being made available in 2019. <a href="https://www.scimagojr.com/countryrank.php?category=2102" class="uri">Engineering and Energy Technology</a></p>
-<p>TABLE 1.3: Description of variables in the Country Rank data for Energy Engineering and Power Technology dataset.</p>
-<table>
-<colgroup>
-<col width="16%" />
-<col width="83%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Variable</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Rank</td>
-<td>Rank of the country who have more citations</td>
-</tr>
-<tr class="even">
-<td>Country</td>
-<td>Countries</td>
-</tr>
-<tr class="odd">
-<td>Country Documents</td>
-<td>Document numbers</td>
-</tr>
-<tr class="even">
-<td>Citable documents</td>
-<td>Number of citable documents published by a journal in the three previous years.</td>
-</tr>
-<tr class="odd">
-<td>Citations</td>
-<td>Number of citations received in the selected year by a journal to the documents published in the three previous years.</td>
-</tr>
-<tr class="even">
-<td>Self-citations</td>
-<td>Number of journal’s self-citations in the selected year to its own documents published in the three previous years.</td>
-</tr>
-<tr class="odd">
-<td>Citations per document</td>
-<td>Average citations per document in a 2 year period.</td>
-</tr>
-<tr class="even">
-<td>H index</td>
-<td>journal’s number of articles (<em>h</em>) that have received at least h citations.</td>
-</tr>
-</tbody>
-</table>
-<p>Knowing which dataset we are going to work with, we can now look at them to get a better idea of how to proceed with the data.</p>
-<p>We start by looking at the first 5 lines of Energy Indicators</p>
-<p>TABLE 1.4: first 5 line of Energy Indicators.</p>
-<table>
-<colgroup>
-<col width="22%" />
-<col width="21%" />
-<col width="36%" />
-<col width="19%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Country</th>
-<th align="center">Energy Supply</th>
-<th align="center">Energy Supply per Capita</th>
-<th align="center">% Renewable</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">Afghanistan</td>
-<td align="center">3.21e+08</td>
-<td align="center">10</td>
-<td align="center">78.6693</td>
-</tr>
-<tr class="even">
-<td align="center">Albania</td>
-<td align="center">1.02e+08</td>
-<td align="center">35</td>
-<td align="center">100</td>
-</tr>
-<tr class="odd">
-<td align="center">Algeria</td>
-<td align="center">1.959e+09</td>
-<td align="center">51</td>
-<td align="center">0.55101</td>
-</tr>
-<tr class="even">
-<td align="center">American Samoa</td>
-<td align="center">nan</td>
-<td align="center">…</td>
-<td align="center">0.641026</td>
-</tr>
-<tr class="odd">
-<td align="center">Andorra</td>
-<td align="center">9e+06</td>
-<td align="center">121</td>
-<td align="center">88.6957</td>
-</tr>
-</tbody>
-</table>
-<p>We can see that there is data that needs to be cleaned up. In these first lines, it is noted that Afghanistan and Andorra use a very high percentage of renewable energy.</p>
-<p>Next, we’ll look at the GDP indicators</p>
-<p>TABLE 1.5: first 5 line of GDP Indicators.</p>
-<table>
-<colgroup>
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="6%" />
-<col width="15%" />
-<col width="15%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Country</th>
-<th align="center">2010</th>
-<th align="center">2011</th>
-<th align="center">2012</th>
-<th align="center">…</th>
-<th align="center">2018</th>
-<th align="center">2019</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">Aruba</td>
-<td align="center">2.3905e+09</td>
-<td align="center">2.54972e+09</td>
-<td align="center">2.53464e+09</td>
-<td align="center">…</td>
-<td align="center">nan</td>
-<td align="center">nan</td>
-</tr>
-<tr class="even">
-<td align="center">Afghanistan</td>
-<td align="center">1.58566e+10</td>
-<td align="center">1.78043e+10</td>
-<td align="center">2.00016e+10</td>
-<td align="center">…</td>
-<td align="center">1.83539e+10</td>
-<td align="center">1.92911e+10</td>
-</tr>
-<tr class="odd">
-<td align="center">Angola</td>
-<td align="center">8.37995e+10</td>
-<td align="center">1.1179e+11</td>
-<td align="center">1.28053e+11</td>
-<td align="center">…</td>
-<td align="center">1.01353e+11</td>
-<td align="center">8.88157e+10</td>
-</tr>
-<tr class="even">
-<td align="center">Albania</td>
-<td align="center">1.19269e+10</td>
-<td align="center">1.28908e+10</td>
-<td align="center">1.23198e+10</td>
-<td align="center">…</td>
-<td align="center">1.5147e+10</td>
-<td align="center">1.52792e+10</td>
-</tr>
-<tr class="odd">
-<td align="center">Andorra</td>
-<td align="center">3.44997e+09</td>
-<td align="center">3.6292e+09</td>
-<td align="center">3.18881e+09</td>
-<td align="center">…</td>
-<td align="center">3.21832e+09</td>
-<td align="center">3.15406e+09</td>
-</tr>
-</tbody>
-</table>
-<p>Again we see some countries with values that are missing. I believe that it will not be a problem when the data was merged.</p>
-<p>Now let’s analyze the data from the Scimago Journal and Country Rank data for Energy Engineering and Power Technology</p>
-<p>TABLE 1.6: first 5 line of the Country Rank data for Energy Engineering and Power Technology.</p>
-<table style="width:100%;">
-<colgroup>
-<col width="4%" />
-<col width="12%" />
-<col width="13%" />
-<col width="8%" />
-<col width="14%" />
-<col width="8%" />
-<col width="12%" />
-<col width="18%" />
-<col width="6%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Rank</th>
-<th align="center">Country</th>
-<th align="center">Region</th>
-<th align="center">Documents</th>
-<th align="center">Citable documents</th>
-<th align="center">Citations</th>
-<th align="center">Self-citations</th>
-<th align="center">Citations per document</th>
-<th align="center">H index</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">1</td>
-<td align="center">China</td>
-<td align="center">Asiatic Region</td>
-<td align="center">235126</td>
-<td align="center">233883</td>
-<td align="center">1909601</td>
-<td align="center">1306438</td>
-<td align="center">8.12</td>
-<td align="center">224</td>
-</tr>
-<tr class="even">
-<td align="center">2</td>
-<td align="center">United States</td>
-<td align="center">Northern America</td>
-<td align="center">157811</td>
-<td align="center">154288</td>
-<td align="center">1940563</td>
-<td align="center">639345</td>
-<td align="center">12.3</td>
-<td align="center">333</td>
-</tr>
-<tr class="odd">
-<td align="center">3</td>
-<td align="center">Japan</td>
-<td align="center">Asiatic Region</td>
-<td align="center">46032</td>
-<td align="center">45559</td>
-<td align="center">436961</td>
-<td align="center">109968</td>
-<td align="center">9.49</td>
-<td align="center">181</td>
-</tr>
-<tr class="even">
-<td align="center">4</td>
-<td align="center">India</td>
-<td align="center">Asiatic Region</td>
-<td align="center">39893</td>
-<td align="center">38848</td>
-<td align="center">368175</td>
-<td align="center">123446</td>
-<td align="center">9.23</td>
-<td align="center">171</td>
-</tr>
-<tr class="odd">
-<td align="center">5</td>
-<td align="center">United Kingdom</td>
-<td align="center">Western Europe</td>
-<td align="center">38873</td>
-<td align="center">37780</td>
-<td align="center">536378</td>
-<td align="center">100038</td>
-<td align="center">13.8</td>
-<td align="center">208</td>
-</tr>
-</tbody>
-</table>
-<p>After clearing all the data and renaming the country names so as not to duplicate the lines, we can immerse the data according to the first 15 placed in the ranking provided by Scimago Journal. We can see this table below.</p>
-<p>TABLE 1.7: All top Rank 15 Scimago Journal Countries.</p>
-<table>
-<colgroup>
-<col width="21%" />
-<col width="6%" />
-<col width="11%" />
-<col width="11%" />
-<col width="15%" />
-<col width="14%" />
-<col width="5%" />
-<col width="13%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="center">Country</th>
-<th align="center">Rank</th>
-<th align="center">Documents</th>
-<th align="center">Citations</th>
-<th align="center">Energy Supply</th>
-<th align="center">% Renewable</th>
-<th align="center">…</th>
-<th align="center">2019</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">China</td>
-<td align="center">1</td>
-<td align="center">235126</td>
-<td align="center">1909601</td>
-<td align="center">1.27191e+11</td>
-<td align="center">19.7549</td>
-<td align="center">…</td>
-<td align="center">1.43429e+13</td>
-</tr>
-<tr class="even">
-<td align="center">United States</td>
-<td align="center">2</td>
-<td align="center">157811</td>
-<td align="center">1940563</td>
-<td align="center">9.0838e+10</td>
-<td align="center">11.571</td>
-<td align="center">…</td>
-<td align="center">2.14332e+13</td>
-</tr>
-<tr class="odd">
-<td align="center">Japan</td>
-<td align="center">3</td>
-<td align="center">46032</td>
-<td align="center">436961</td>
-<td align="center">1.8984e+10</td>
-<td align="center">10.2328</td>
-<td align="center">…</td>
-<td align="center">5.08177e+12</td>
-</tr>
-<tr class="even">
-<td align="center">India</td>
-<td align="center">4</td>
-<td align="center">39893</td>
-<td align="center">368175</td>
-<td align="center">3.3195e+10</td>
-<td align="center">14.9691</td>
-<td align="center">…</td>
-<td align="center">2.86893e+12</td>
-</tr>
-<tr class="odd">
-<td align="center">United Kingdom</td>
-<td align="center">5</td>
-<td align="center">38873</td>
-<td align="center">536378</td>
-<td align="center">7.92e+09</td>
-<td align="center">10.6005</td>
-<td align="center">…</td>
-<td align="center">2.82911e+12</td>
-</tr>
-<tr class="even">
-<td align="center">Germany</td>
-<td align="center">6</td>
-<td align="center">32935</td>
-<td align="center">367356</td>
-<td align="center">1.3261e+10</td>
-<td align="center">17.9015</td>
-<td align="center">…</td>
-<td align="center">3.86112e+12</td>
-</tr>
-<tr class="odd">
-<td align="center">Russian Federation</td>
-<td align="center">7</td>
-<td align="center">31880</td>
-<td align="center">91906</td>
-<td align="center">3.0709e+10</td>
-<td align="center">17.2887</td>
-<td align="center">…</td>
-<td align="center">1.69988e+12</td>
-</tr>
-<tr class="even">
-<td align="center">Canada</td>
-<td align="center">8</td>
-<td align="center">29633</td>
-<td align="center">491467</td>
-<td align="center">1.0431e+10</td>
-<td align="center">61.9454</td>
-<td align="center">…</td>
-<td align="center">1.73643e+12</td>
-</tr>
-<tr class="odd">
-<td align="center">Italy</td>
-<td align="center">9</td>
-<td align="center">23725</td>
-<td align="center">312631</td>
-<td align="center">6.53e+09</td>
-<td align="center">33.6672</td>
-<td align="center">…</td>
-<td align="center">2.00358e+12</td>
-</tr>
-<tr class="even">
-<td align="center">South Korea</td>
-<td align="center">10</td>
-<td align="center">23451</td>
-<td align="center">279709</td>
-<td align="center">1.1007e+10</td>
-<td align="center">2.27935</td>
-<td align="center">…</td>
-<td align="center">1.64674e+12</td>
-</tr>
-<tr class="odd">
-<td align="center">France</td>
-<td align="center">11</td>
-<td align="center">22429</td>
-<td align="center">300015</td>
-<td align="center">1.0597e+10</td>
-<td align="center">17.0203</td>
-<td align="center">…</td>
-<td align="center">2.71552e+12</td>
-</tr>
-<tr class="even">
-<td align="center">Iran</td>
-<td align="center">12</td>
-<td align="center">19371</td>
-<td align="center">242250</td>
-<td align="center">9.172e+09</td>
-<td align="center">5.70772</td>
-<td align="center">…</td>
-<td align="center">nan</td>
-</tr>
-<tr class="odd">
-<td align="center">Spain</td>
-<td align="center">13</td>
-<td align="center">18882</td>
-<td align="center">312632</td>
-<td align="center">4.923e+09</td>
-<td align="center">37.9686</td>
-<td align="center">…</td>
-<td align="center">1.39349e+12</td>
-</tr>
-<tr class="even">
-<td align="center">Australia</td>
-<td align="center">14</td>
-<td align="center">18077</td>
-<td align="center">263733</td>
-<td align="center">5.386e+09</td>
-<td align="center">11.8108</td>
-<td align="center">…</td>
-<td align="center">1.39657e+12</td>
-</tr>
-<tr class="odd">
-<td align="center">Brazil</td>
-<td align="center">15</td>
-<td align="center">18024</td>
-<td align="center">152380</td>
-<td align="center">1.2149e+10</td>
-<td align="center">69.648</td>
-<td align="center">…</td>
-<td align="center">1.83976e+12</td>
-</tr>
-</tbody>
-</table>
-<p>After immersing the data, a 15-row, 20-column Data Frame was created. We can see the columns partially due to the limitation of the page, it can be seen in full how the immersion process was done and with all the data on the GitHub page</p>
+<div id="análise-de-multicolinearidade" class="section level3 hasAnchor" number="7.1.4">
+<h3><span class="header-section-number">7.1.4</span> Análise de Multicolinearidade<a href="telecom-análise-de-clusters.html#análise-de-multicolinearidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Vamos ver agora como esta a multicolinearidade</p>
+<pre><code>## Zlongdist Zinternat    Zlocal 
+##  5.941898  2.049105  5.222342</code></pre>
+<p>Do resultado, podemos ver que as variáveis não são redundantes, tendo assim uma colinearidade baixa. Podemos então utilizar as 3 variáveis com segurança para fazer os clusters.</p>
 </div>
 </div>
-<div id="data-analysis" class="section level2 hasAnchor" number="1.3">
-<h2><span class="header-section-number">1.3</span> Data Analysis<a href="gpd-and-energy-supply.html#data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Now that we have cleaned up and merged the data, we can make inferences.</p>
-<div id="what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years" class="section level3 hasAnchor" number="1.3.1">
-<h3><span class="header-section-number">1.3.1</span> What are the top 15 countries for average GDP over the past 10 years?<a href="gpd-and-energy-supply.html#what-are-the-top-15-countries-for-average-gdp-over-the-past-10-years" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p align="center">
-<p><img src="images/project1/1.PNG" width="600" /></p>
-</p>
-<p>FIGURE 1.1: The distribution of the top 15 GDP country.</p>
-<p>As can be seen in the graph, in the average GDP of the last 10 years there is a sovereignty of the USA still in relation to the other countries with China and Japan just behind the top 3. Brazil is the 8th best GDP average among the 15 largest.</p>
+<div id="análise-de-clusters" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Análise de Clusters<a href="telecom-análise-de-clusters.html#análise-de-clusters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Feito uma exploração inicial nos dados podemos agora de fato trabalhar na análise de Clusters.</p>
+<p><strong>Definição da Medida de Similaridade:</strong> Como as variáveis tem métricas em escalas diferentes, será utilizado a distância euclidiana com padronização.</p>
+<p><strong>Pressupostos:</strong></p>
+<ol style="list-style-type: decimal">
+<li>A amostra é considerada como representativa dos grupos de clientes da empresa</li>
+<li>Não existe problema de colinearidade</li>
+</ol>
+<p>Para a análise de clusters será utilizado uma combinações entre os métodos hierárquicos e não-hierárquicos. O método hierárquico será utilizado para especificar os centroides e o não-hierárquico (k-means) será utilizado para realizar a clusterizaçao.</p>
+<p>Vamos começar a análise dos clusters comparando 3 alternativas (Ward, Average, Centroids) pois são menos sensíveis a outliers.</p>
+<p><img src="images/project7/7.png" /></p>
+<p><img src="images/project7/8.png" /></p>
+<p><img src="images/project7/9.png" /></p>
+<p>Dos dendrogramas gerados, o Ward aparenta ter o melhor comportamentos para os nossos dados apresentando clusters bem definidos. O método Average e Centroids acabaram gerando muita confusão na clusterização.</p>
+<div id="definição-da-quantidade-de-clusters" class="section level3 hasAnchor" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Definição da Quantidade de Clusters<a href="telecom-análise-de-clusters.html#definição-da-quantidade-de-clusters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Próxima etapa é olhar a quantidade ideal de clusters utilizando o método do cotovelo.</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Do gráfico acima acima, vemos que o ideal número de clusters está entre 2 e 4, que é exatamente o número de clusters que as análises inicias indicavam. Vamos então analisar com essa quantidade de clusters.</p>
+<p><img src="images/project7/10.png" /></p>
+<p><img src="images/project7/11.png" /></p>
+<p><img src="images/project7/12.png" /></p>
+<p>As 3 soluções parecem ser boas para utilizar na clusterizações de clientes. Por isso vamos fazer o perfil e interpretação para todas elas.</p>
 </div>
-<div id="how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil" class="section level3 hasAnchor" number="1.3.2">
-<h3><span class="header-section-number">1.3.2</span> How much did the average GDP vary over the 10-year period for Brazil?<a href="gpd-and-energy-supply.html#how-much-did-the-average-gdp-vary-over-the-10-year-period-for-brazil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>GDP has changed by -369.0 billion dollars over the past 10 years</p>
-<p align="center">
-<p><img src="images/project1/2.PNG" width="600" /></p>
-</p>
-<p>FIGURE 1.2: Distribution of the variation in Brazil GPD over the last 10 years.</p>
-<p>As can be seen in the information above, Brazil over the past 10 years has had a negative change in GDP. The graph above shows that the biggest drop occurred between 2015 and 2016, which can be explained by the national political-economic crisis, where sets of economic measures, in addition to certain external factors and certain internal political events, which occurred during the Dilma Rousseff Government, which, added , resulted in a drop in activity. In 2020 another recession is expected due to the global financial crisis caused by the Covid-19 pandemic.</p>
+<div id="perfil-e-interpretação-da-solução-de-2-clusters" class="section level3 hasAnchor" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> Perfil e Interpretação da Solução de 2 clusters<a href="telecom-análise-de-clusters.html#perfil-e-interpretação-da-solução-de-2-clusters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project7/13.png" /></p>
+<p>Analisando os grupos pelo bloxplot, vemos que no cluster1 a mediana das 3 variáveis são bem próximas e está entre 1 e 2. No cluster2 a mediana entre longdist e local continuam parecidas com mediana centrado em 0, já a internat fica menor.</p>
+<pre><code>##               Df Sum Sq Mean Sq F value Pr(&gt;F)    
+## hcw_2          1  938.8   938.8    2578 &lt;2e-16 ***
+## Residuals   1475  537.2     0.4                   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre><code>##               Df Sum Sq Mean Sq F value Pr(&gt;F)    
+## hcw_2          1  907.7   907.7    2356 &lt;2e-16 ***
+## Residuals   1475  568.3     0.4                   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre><code>##               Df Sum Sq Mean Sq F value Pr(&gt;F)    
+## hcw_2          1 1164.6  1164.6    5517 &lt;2e-16 ***
+## Residuals   1475  311.4     0.2                   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Todos os grupos tem uma diferença estatística.</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>Quando dividimos em dois grupos vemos que são dois grupos distintos sem que exista mistura entre eles. No grupo da esquerda observamos uma agrupamentos de dados do lado esquerdo. Iremos ver mais adiante o que acontece quando aumentarmos o número de clusters.</p>
+<p><img src="images/project7/14.png" /></p>
+<p>Da análise das componentes principais, utilizando 2 grupos podemos ver o grupo rosa parece ser segmentando em 3 grupos, indicando que talvez uma solução com 4 clusters seja mais indicado.</p>
 </div>
-<div id="what-is-the-average-energy-supply-per-capita" class="section level3 hasAnchor" number="1.3.3">
-<h3><span class="header-section-number">1.3.3</span> What is the average energy supply per capita?<a href="gpd-and-energy-supply.html#what-is-the-average-energy-supply-per-capita" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The average energy supply is 157.6 Petajoules</p>
+<div id="perfil-e-interpretação-da-solução-de-3-clusters" class="section level3 hasAnchor" number="7.2.3">
+<h3><span class="header-section-number">7.2.3</span> Perfil e Interpretação da Solução de 3 clusters<a href="telecom-análise-de-clusters.html#perfil-e-interpretação-da-solução-de-3-clusters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project7/15.png" /></p>
+<p>Analisando os grupos pelo bloxplot, vemos que no cluster1 a mediana das 3 variáveis são bem próximas e está entre 1 e 2. No cluster2 a mediana entre chamadas de longa distância e local continuam parecidas com mediana centrado em 0, já a chamada internacional fica menor igual vimos na análise com 2 clusters. Para o clusters 3, somente chamadas locais tem valores, o que era esperado pelo que comentamos no início e podemos existir grupo de pessoas que somente fazem chamadas locais.</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="images/project7/16.png" /></p>
 </div>
-<div id="what-percentage-do-countries-use-of-renewable-energy" class="section level3 hasAnchor" number="1.3.4">
-<h3><span class="header-section-number">1.3.4</span> What percentage do countries use of Renewable Energy?<a href="gpd-and-energy-supply.html#what-percentage-do-countries-use-of-renewable-energy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p align="center">
-<p><img src="images/project1/3.PNG" width="600" /></p>
-</p>
-<p>FIGURE 1.3: The distribution of the percentage fo countries use Renewable Energy.</p>
-<p>Analyzing the chart above, we see that Brazil is the country that has the highest percentage of use of renewable energy. According to the International Energy Agency, Brazil is the third largest renewable energy generator in the world and according to the Energy Research Company (EPE), the country has a predominant renewable energy electrical matrix, “with emphasis on the hydraulic generation which accounts for 68.1% of the domestic supply”and is one of the great Brazilian forces when it comes to renewable energy, thus justifying this high percentage.</p>
-</div>
-<div id="what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita" class="section level3 hasAnchor" number="1.3.5">
-<h3><span class="header-section-number">1.3.5</span> What is the estimated population size using Energy Supply and Energy Supply per capita?<a href="gpd-and-energy-supply.html#what-is-the-estimated-population-size-using-energy-supply-and-energy-supply-per-capita" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p align="center">
-<p><img src="images/project1/4.PNG" width="600" /></p>
-</p>
-<p align="center">
-<p>FIGURE 1.4: The distribution of the Estimated Population in Billions of people.</p>
-</p>
-<p>As the data were not available due to the size of the population, a simple way is to use the Energy Supply and Energy Supply values per capita to make an estimate. Doing a quick search on the internet is easy to see that the figures are very close to the real estimate of the population of these countries. We see that China has almost 1.4 billion people, followed by India with 1.3 billion and then the USA with approximately 300 million.</p>
-</div>
-<div id="what-is-the-proportion-of-self-citations-to-the-total-citations" class="section level3 hasAnchor" number="1.3.6">
-<h3><span class="header-section-number">1.3.6</span> What is the proportion of self-citations to the total citations?<a href="gpd-and-energy-supply.html#what-is-the-proportion-of-self-citations-to-the-total-citations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p align="center">
-<p><img src="images/project1/5.PNG" width="600" /></p>
-</p>
-<p>FIGURE 1.5: The distribution of the rank of the country with more self citations.</p>
-<p>Analyzing now more data related to Scimago Journal Rank, which is a measure of the scientific influence of academic journals that accounts for the number of citations received for a period and the importance or prestige of the journals from which these situations come, we see that China is the country which has a higher proportion of self-quotes on Energy and Telecommunications articles showing how interested China has been in this area in recent years.</p>
-<p>In Latin America, this impact is very visible with the recent revolution in the electricity transmission and distribution sector with the arrival of the Chinese state conglomerates State Grid and Three Gorges in the markets of Chile and Peru and which continue to expand their business in Brazil.</p>
-</div>
-<div id="what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita" class="section level3 hasAnchor" number="1.3.7">
-<h3><span class="header-section-number">1.3.7</span> What is the correlation between the number of documents cited per capita and the supply of energy per capita?<a href="gpd-and-energy-supply.html#what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>An interesting analysis that can be seen with the data provided is whether there is a correlation between the number of documents cited per capita and the energy supply and we can see that there is a great relationship between these aspects what it is 0.75. We see then that the greater the interest of a country in studies related to Energy, the greater is also the energy supply of that same country.</p>
+<div id="perfil-e-interpretação-da-solução-de-4-clusters" class="section level3 hasAnchor" number="7.2.4">
+<h3><span class="header-section-number">7.2.4</span> Perfil e Interpretação da Solução de 4 clusters<a href="telecom-análise-de-clusters.html#perfil-e-interpretação-da-solução-de-4-clusters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project7/17.png" /></p>
+<p>Na análise com 4 clusters vemos uma padrão bem parecido com o que ja vimos com 3 clusters no cluster 4 (lá era cluster 3) e cluster 1. Para o cluster 2 e cluster 3 temos uma mudança com a separação do grande grupo que tínhamos antes. Agora é possível ver que o grupo 2 prioriza mais chamadas locais e de longa distância, já o grupo 4 prefere chamadas internacionais.</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p>No clusplot podemos ver que um grupo superpos outro quando aumentando para 4 clusters. Vamos dar uma olhada nas componentes principais.</p>
+<p><img src="images/project7/18.png" /></p>
+<p>Da solução com 4 clusters, graficamente quando olhamos as componentes principais vemos uma mistura no maior grupo, acontecendo uma superposição entre o clusters azul claro e rosa. Vamos analisar se utilizando os clusters não-hierárquicos nós não conseguimos fazer uma separação melhor.</p>
 </div>
 </div>
-<div id="conclusion" class="section level2 hasAnchor" number="1.4">
-<h2><span class="header-section-number">1.4</span> Conclusion<a href="gpd-and-energy-supply.html#conclusion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>After analyzing the dataset separately, we were able to use one of the great advantages of python to analyze data is the joining of data. With Datasets together we were able to make interesting inferences about the data. From GPDs at home in two countries to the correlation that there is energy supply and the number of citations visualizing graphs and data, showing the great power that the Python language has in data analysis and proving to be a great tool for Data Science.</p>
+<div id="clusters-não-hierárquicos" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Clusters não-Hierárquicos<a href="telecom-análise-de-clusters.html#clusters-não-hierárquicos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Agora que temos um análise mais clara dos clusters, iremos utilizar a solução para 3 ou 4 clusters para a clusterização não-hierárquica.</p>
+<p>Vamos iniciar criando os centroides para as duas soluções</p>
+<pre><code>##   hcw_3         V1         V2         V3
+## 1     1  1.4252845  1.4015138  1.5874899
+## 2     2 -0.1557206 -0.3547145 -0.3002139
+## 3     3 -1.7031825 -0.8015346 -1.3478718</code></pre>
+<pre><code>##   hcw_4         V1         V2         V3
+## 1     1  1.4252845  1.4015138  1.5874899
+## 2     2 -0.1696400 -0.6759335 -0.1690270
+## 3     3 -0.1183404  0.5079141 -0.6525141
+## 4     4 -1.7031825 -0.8015346 -1.3478718</code></pre>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p>Do resultados, obtivemos 2 clusters que têm centroids que fazem intersecçao entre os grupos o que não parece ser melhor que os grupos formados somente pela clusterização hierárquica.</p>
+<p><img src="images/project7/19.png" /></p>
+<p>Vamos ver agora a formação para 4 clusters.</p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p>Para 4 clusters temos uma solução muito mais homogenia, com uma melhor separação entre os clusters meio.</p>
+<p><img src="images/project7/20.png" /></p>
+<p>Quando olhamos o gráfico em 3d com as componentes principais podemos ver uma separação muito melhor do que ocorreu com o caso de clusterização hierárquica.</p>
+</div>
+<div id="interpretação-e-validação-do-modelo" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Interpretação e Validação do Modelo<a href="telecom-análise-de-clusters.html#interpretação-e-validação-do-modelo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<pre><code>## INDICES: 1
+## Zlongdist Zinternat    Zlocal 
+##  1.420743  1.406559  1.579906 
+## ------------------------------------------------------------ 
+## INDICES: 2
+##  Zlongdist  Zinternat     Zlocal 
+## -0.1556963 -0.3585888 -0.2993492 
+## ------------------------------------------------------------ 
+## INDICES: 3
+##  Zlongdist  Zinternat     Zlocal 
+## -1.7031825 -0.8015346 -1.3478718</code></pre>
+<pre><code>## INDICES: 1
+## Zlongdist Zinternat    Zlocal 
+##  1.425285  1.401514  1.587490 
+## ------------------------------------------------------------ 
+## INDICES: 2
+##  Zlongdist  Zinternat     Zlocal 
+## -0.1608099 -0.6250803 -0.1811889 
+## ------------------------------------------------------------ 
+## INDICES: 3
+##  Zlongdist  Zinternat     Zlocal 
+## -0.1312782  0.7149430 -0.7684430 
+## ------------------------------------------------------------ 
+## INDICES: 4
+##  Zlongdist  Zinternat     Zlocal 
+## -1.6995970 -0.7981076 -1.3458312</code></pre>
+<div id="idade" class="section level3 hasAnchor" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> Idade<a href="telecom-análise-de-clusters.html#idade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Vamos analisar o perfil demográfico começando pela idade.</p>
+<p><img src="images/project7/21.png" /></p>
+<p>Com 3 grupos temos um perfil bem semelhantes entre os grupos. A mediana de todos eles estão entre 40 e 50 anos. Quando analisamos 4 grupos a mediana também apresenta uma idade entre 40 e 50 anos. Com uma mediana menor para o grupo 4 que só fazem ligações locais.</p>
+</div>
+<div id="sexo" class="section level3 hasAnchor" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> Sexo<a href="telecom-análise-de-clusters.html#sexo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Vamos agora olhar o perfil por sexo.</p>
+<p><img src="images/project7/22.png" /></p>
+<p>Para sexo tanto a solução para 3 quanto para 4 clusters apresentam um uso maior por mulheres.</p>
+</div>
+<div id="estado-civil" class="section level3 hasAnchor" number="7.4.3">
+<h3><span class="header-section-number">7.4.3</span> Estado Civil<a href="telecom-análise-de-clusters.html#estado-civil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project7/23.png" /></p>
+<p>Para o caso do Estado Civil vemos que pessoas casadas são as que mais usam o serviços em todos os grupos em mandas as soluções.</p>
+</div>
+<div id="tipo-de-plano" class="section level3 hasAnchor" number="7.4.4">
+<h3><span class="header-section-number">7.4.4</span> Tipo de Plano<a href="telecom-análise-de-clusters.html#tipo-de-plano" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project7/24.png" /></p>
+<p>Para o tipo de plano, notamos que o clister formado por pessoas que somente fazem ligações locais não apresentam nenhum tipo de plano. O time de marketing pode investir neste cluster para fazer-los mudar de plano.</p>
+</div>
+<div id="churn" class="section level3 hasAnchor" number="7.4.5">
+<h3><span class="header-section-number">7.4.5</span> Churn<a href="telecom-análise-de-clusters.html#churn" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="images/project7/25.png" /></p>
+<p>Por último temos a variável status que mostra o churn dos clientes, o time de marketing conhecendo melhor o que cada grupo significa podem fazer estratégias baseadas na clusterização para tentar reter os clientes.</p>
+</div>
+</div>
+<div id="conclusão" class="section level2 hasAnchor" number="7.5">
+<h2><span class="header-section-number">7.5</span> Conclusão<a href="telecom-análise-de-clusters.html#conclusão" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Da análise feita nos dados e nos métodos de Clusters hierárquico e não-hierárquico, chegamos na resposta que o número ideal de clusters para ser usado na empresa está entre 3 e 4. Além disso, dos métodos apresentados, utilizar o método Ward de clusterização hierárquica para descobrir os centroides e depois aplicar o método não-hierárquico k-means aparentou ser um método muito poderoso para clusterização.</p>
 
 </div>
 </div>
@@ -832,8 +529,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="medical-insurance-costs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="hotmart-sales-analytics.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -887,6 +584,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

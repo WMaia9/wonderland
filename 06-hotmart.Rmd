@@ -1,7 +1,3 @@
----
----
----
-
 # Hotmart Sales Analytics
 
 Code: [GitHub](https://github.com/WMaia9/hotmart)
@@ -23,7 +19,7 @@ Os dados são disponibilizados pela Hotmart e se trata de uma amostra de compras
 Podemos ver que o dataset tem 1599829 amostras e 14 colunas. De acordo com a Hotmart, cada campo significa:
 
 | Variáveis                       | Descrição                                                                                                                                                             |
-|----------------|--------------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | purchase_id                     | Identificação da compra na Hotmart                                                                                                                                    |
 | product_id                      | Identificação do produto na Hotmart;                                                                                                                                  |
 | affiliate_id                    | Identificação do afiliado na Hotmart;                                                                                                                                 |
@@ -241,9 +237,8 @@ Os parâmetros do modelo ARIMA são definidos da seguinte forma:
 -   d: O número de vezes que as observações brutas são diferenciadas
 -   q: O tamanho da janela de média móvel
 
-```{=html}
 <!-- -->
-```
+
     MSE error: 7473419.795985948
 
 ![](images/project6/14.png)

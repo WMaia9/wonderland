@@ -246,7 +246,7 @@ Before we can finalize any scaling technique, let's check the skewness of our nu
 
 -   skewness = 0 : normally distributed.
 
--   skewness > 0 : more weight in the left tail of the distribution.
+-   skewness \> 0 : more weight in the left tail of the distribution.
 
 -   skewness \< 0 : more weight in the right tail of the distribution.
 
@@ -404,7 +404,7 @@ An ensemble-learning meta-regressor for stacking regression. Stacking is an ense
 
 The StackingCVRegressor, however, uses the concept of out-of-fold predictions: the dataset is split into k folds, and in k successive rounds, k-1 folds are used to fit the first level regressor. In each round, the first-level regressors are then applied to the remaining subset that was not used for model fitting in each iteration. The resulting predictions are then stacked and provided -- as input data -- to the second-level regressor. After the training of the StackingCVRegressor, the first-level regressors are fit to the entire dataset for optimal predictions.
 
-Ref. [\<http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/>](http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/){.uri}
+Ref. [\<http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/\>](http://rasbt.github.io/mlxtend/user_guide/regressor/StackingCVRegressor/){.uri}
 
 ![](images/project5/paste-B7B477F1.png){width="421"}
 
@@ -430,19 +430,19 @@ TABLE 5.12: Results for Model Blending with 5-Fold Cross-Validation.
 
 TABLE 5.13: Summary all models
 
-|         Model          | RMSLE on Training | RMSLE on Test |
-|:----------------------:|:-----------------:|:-------------:|
-|   Linear Regression    |  0.3829 ± 0.0051  |    0.3798     |
-|     Bayesian Ridge     |  0.4134 ± 0.0031  |    0.4145     |
-|         Lasso          |  0.3831 ± 0.0050  |    0.3801     |
-|      Elastic Net       |  0.4064 ± 0.0031  |    0.4035     |
-|         Ridge          |  0.4064 ± 0.0031  |    0.4035     |
-| Support Vector Machine |  0.3461 ± 0.0064  |    0.3427     |
-|   Gradient Boosting    |  0.3148 ± 0.0050  |    0.3128     |
-|        LightGBM        |  0.3152 ± 0.0038  |    0.3198     |
-|         XGBoot         |  0.3164 ± 0.0040  |    0.3124     |
-|      Stakcing CV       |  0.3112 ± 0.0048  |    0.3198     |
-|        Blending        |      0.2973       |    0.2923     |
+|         Model          | RMSLE on Training | RMSLE on Test | R2 on Teste |
+|:----------------------:|:-----------------:|:-------------:|-------------|
+|   Linear Regression    |  0.3829 ± 0.0051  |    0.3798     |             |
+|     Bayesian Ridge     |  0.4134 ± 0.0031  |    0.4145     |             |
+|         Lasso          |  0.3831 ± 0.0050  |    0.3801     |             |
+|      Elastic Net       |  0.4064 ± 0.0031  |    0.4035     |             |
+|         Ridge          |  0.3829 ± 0.0050  |    0.3798     |             |
+| Support Vector Machine |  0.3461 ± 0.0064  |    0.3427     |             |
+|   Gradient Boosting    |  0.3148 ± 0.0050  |    0.3128     |             |
+|        LightGBM        |  0.3190 ± 0.0026  |    0.3180     |             |
+|         XGBoot         |  0.3164 ± 0.0040  |    0.3124     |             |
+|      Stakcing CV       |  0.3112 ± 0.0048  |    0.3198     |             |
+|        Blending        |      0.2973       |    0.2923     |             |
 
 ## Use Case of the Model
 
