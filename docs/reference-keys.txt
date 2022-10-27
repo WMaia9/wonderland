@@ -1,5 +1,5 @@
 gpd-and-energy-supply
-introduction
+introduction-1
 data
 energy-indicators
 country-gdp
@@ -14,7 +14,7 @@ what-is-the-proportion-of-self-citations-to-the-total-citations
 what-is-the-correlation-between-the-number-of-documents-cited-per-capita-and-the-supply-of-energy-per-capita
 conclusion
 medical-insurance-costs
-introduction-1
+introduction-2
 project-goals
 analysis
 evaluation
@@ -27,7 +27,7 @@ adding-more-variables-to-the-model
 visualization-of-the-fitted-models
 conclusion-1
 quantium-retail-strategy-and-analytics
-introduction-2
+introduction-3
 data-2
 exploring-the-data-1
 examining-transaction-data
@@ -36,7 +36,7 @@ data-analysis-on-customer-segments
 deep-dive-into-specific-customer-segments-for-insights
 conclusion-2
 ok-cupid
-introduction-3
+introduction-4
 project-goals-1
 analysis-1
 evaluation-1
@@ -72,7 +72,7 @@ decision-trees
 final-model
 conclusion-3
 real-estate-são-paulo-rent-prediction
-introduction-4
+introduction-5
 analysis-2
 data-4
 data-preparation-1
