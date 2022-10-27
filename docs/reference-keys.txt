@@ -123,7 +123,7 @@ análise-de-predições
 padrões-de-repetição
 média-móvel
 arima
-telecom-análise-de-clusters
+telecom-clusters-analysis
 análise-exploratória-dos-dados
 estatística-de-hopkins
 heatmap

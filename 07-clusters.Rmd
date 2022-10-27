@@ -1,4 +1,4 @@
-# Telecom Análise de Clusters
+# Telecom Clusters Analysis
 
 ## Análise Exploratória dos Dados
 
