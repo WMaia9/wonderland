@@ -1,6 +1,6 @@
 ---
 title: "Data Science Portfolio"
-subtitle: "A Showcase of my Projects and my abilities"
+subtitle: "A Showcase of my Projects"
 author: "Wesley Maia"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -34,9 +34,10 @@ All codes and projects in this portfolio can be found on my Github page: [GitHub
 
 # About Me {#author .unnumbered}
 
-I'm a data scientist currently working at the Hand Talk company, which applies artificial intelligence for accessibility. I have a Bachelor of Science in Physics, an MBA in Data Science and Analytics and studying for a master's degree. in Data Science.
+About Me
+I am a Master’s student in Mathematics, Statistics, and Computing at the University of São Paulo, advised by Sergio A. David. My research focuses on applying machine learning techniques to solve complex problems in natural language processing, and computational linguistics.
 
-I'm passionate about technology and science. At all times, I am always looking to learn new things.
+With a strong background in Data Science and Machine Learning, I have contributed to several projects involving the application of deep learning and natural language processing (NLP) models to solve real-world problems. Currently, I am working at Hand Talk, the world’s largest platform for automatic translation in Sign Languages, where I lead efforts to enhance accessibility through AI-driven solutions.
 
 On this page, you will find some of the projects I am currently working on. You can see my Linkedin. [Here](https://www.linkedin.com/in/wesley-maia-62009612a/).\
 
